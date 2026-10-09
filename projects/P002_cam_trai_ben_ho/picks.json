@@ -1,0 +1,34 @@
+{
+  "SH01": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images/SH01_w0.20_s333333.png",
+    "seed": 333333
+  },
+  "SH02": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images/SH02_w0.50_s111111.png",
+    "seed": 111111
+  },
+  "SH04": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images/SH04_w0.00_s111111.png",
+    "seed": 111111
+  },
+  "SH05": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images/SH05_w0.50_s111111.png",
+    "seed": 111111
+  },
+  "SH08": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images/SH08_w0.10_s444444.png",
+    "seed": 444444
+  },
+  "SH07": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images/SH07_w0.00_s111111.png",
+    "seed": 111111
+  },
+  "SH06": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images/SH06_w0.40_s333333.png",
+    "seed": 333333
+  },
+  "SH03": {
+    "image": "projects/P002_cam_trai_ben_ho/build/images-lora/SH03_w0.00_s222222.png",
+    "seed": 222222
+  }
+}

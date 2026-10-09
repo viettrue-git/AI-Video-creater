@@ -1,0 +1,31 @@
+P001 — RỪNG CỔ — KỊCH BẢN NARRATOR (BẢN NHÁP v1, 05/10/2026)
+Mục đích: (1) văn bản chuẩn để A/B test TTS tiếng Việt, (2) nháp nội dung MVP 30 giây, 9:16.
+Trạng thái: NHÁP — nội dung/câu chữ do bạn quyết định, sửa thoải mái.
+Ước lượng: ~85 từ ≈ 30 giây ở tốc độ đọc kể chuyện (~170 từ/phút). Thời lượng thật sẽ đo sau khi có giọng TTS.
+
+[SHOT 1 — toàn cảnh rừng cổ, sương mù, nắng xuyên tán lá]
+Có những nơi trên bản đồ không có tên.
+
+[SHOT 2 — nhân vật đi giữa những thân cây khổng lồ]
+Người ta bảo khu rừng này đã đứng đó hàng nghìn năm, và chưa ai đi hết được nó.
+
+[SHOT 3 — cận mặt, ánh mắt nhìn lên tán cây]
+Nhưng anh không đến đây để chinh phục.
+
+[SHOT 4 — tay chạm vào vỏ cây phủ rêu]
+Anh đến để lắng nghe.
+
+[SHOT 5 — nhìn từ sau, ba lô, con đường mòn dẫn sâu vào rừng]
+Mỗi bước chân là một câu hỏi. Mỗi cơn gió là một lời đáp.
+
+[SHOT 6 — nhân vật dừng lại trước một khoảng sáng lớn]
+Và ở nơi sâu nhất của khu rừng…
+
+[SHOT 7 — toàn cảnh, nhân vật nhỏ bé giữa thiên nhiên]
+…anh tìm thấy điều mà mình đã đánh mất từ lâu.
+
+---
+GHI CHÚ TEST TTS
+- Câu ngắn/dài xen kẽ để thử ngữ điệu và ngắt nghỉ.
+- Dấu "…" để thử khả năng ngừng kéo dài.
+- Từ khó phát âm cho máy: "chinh phục", "khổng lồ", "nghìn".

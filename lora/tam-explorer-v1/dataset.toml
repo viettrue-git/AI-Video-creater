@@ -1,0 +1,17 @@
+# kohya sd-scripts dataset config — character LoRA "Tâm" (trigger: tamxplr man)
+# Images are 768x1344 (9:16); resolution=1024 is an area cap, so they train at native size via bucketing.
+[general]
+enable_bucket = true
+bucket_no_upscale = true
+bucket_reso_steps = 64
+caption_extension = ".txt"
+shuffle_caption = false   # text-encoder outputs are cached -> captions must stay fixed
+keep_tokens = 1
+
+[[datasets]]
+resolution = 1024
+batch_size = 1
+
+  [[datasets.subsets]]
+  image_dir = 'C:\AIVideoManager\lora\tam-explorer-v1\dataset'
+  num_repeats = 10

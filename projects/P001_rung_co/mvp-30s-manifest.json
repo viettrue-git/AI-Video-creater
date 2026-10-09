@@ -1,0 +1,19 @@
+{
+  "_note": "MVP v2 (~29.2s) 05/10/2026: script v2 forest -> meadow, voice Thanh Binh (audio-narration-v2). duration = narration + 0.9s (SH02 capped by clip 4.2s, SH08 +2s music tail). Set music to the chosen track in music/.",
+  "output": "projects/P001_rung_co/final/P001-mvp-v2-30s.mp4",
+  "music": "projects/P001_rung_co/music/kulakovka-inspiring-cinematic-272565.mp3",
+  "music_license": "Pixabay Content License, proof: music/kulakovka-inspiring-cinematic-272565.png (Content ID Registered - possible YouTube claim)",
+  "music_start": 0.5,
+  "music_volume": 0.35,
+  "fade_out": 1.5,
+  "shots": [
+    {"id": "SH01", "clip": "experiments/video-spike/VS-SH01.mp4",   "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_01.wav", "duration": 2.74},
+    {"id": "SH02", "clip": "experiments/video-spike/VS-SH02.mp4",   "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_02.wav", "duration": 4.2},
+    {"id": "SH03", "clip": "experiments/video-spike/MVP2-SH03.mp4", "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_03.wav", "duration": 2.42},
+    {"id": "SH04", "clip": "experiments/video-spike/MVP2-SH04.mp4", "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_04.wav", "duration": 1.94},
+    {"id": "SH05", "clip": "experiments/video-spike/VS-SH05.mp4",   "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_05.wav", "duration": 3.94},
+    {"id": "SH06", "clip": "experiments/video-spike/MVP2-SH06.mp4", "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_06.wav", "duration": 3.46},
+    {"id": "SH07", "clip": "experiments/video-spike/MVP2-SH07.mp4", "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_07.wav", "duration": 4.82},
+    {"id": "SH08", "clip": "experiments/video-spike/MVP2-SH08.mp4", "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_08.wav", "duration": 5.7}
+  ]
+}

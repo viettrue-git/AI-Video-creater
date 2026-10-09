@@ -1,0 +1,73 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": { "title": "IN_VideoModel" },
+    "inputs": { "unet_name": "wan2.2_ti2v_5B_fp16.safetensors", "weight_dtype": "default" }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": { "title": "TextEncoder" },
+    "inputs": { "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors", "type": "wan", "device": "default" }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": { "title": "VideoVAE" },
+    "inputs": { "vae_name": "wan2.2_vae.safetensors" }
+  },
+  "4": {
+    "class_type": "ModelSamplingSD3",
+    "_meta": { "title": "ModelShift" },
+    "inputs": { "model": ["1", 0], "shift": 8.0 }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "IN_PositivePrompt" },
+    "inputs": { "text": "", "clip": ["2", 0] }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "IN_NegativePrompt" },
+    "inputs": { "text": "", "clip": ["2", 0] }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "_meta": { "title": "IN_StartImage" },
+    "inputs": { "image": "start.png" }
+  },
+  "8": {
+    "class_type": "Wan22ImageToVideoLatent",
+    "_meta": { "title": "IN_VideoSize" },
+    "inputs": { "vae": ["3", 0], "start_image": ["7", 0], "width": 704, "height": 1280, "length": 121, "batch_size": 1 }
+  },
+  "9": {
+    "class_type": "KSampler",
+    "_meta": { "title": "IN_Sampler" },
+    "inputs": {
+      "model": ["4", 0],
+      "positive": ["5", 0],
+      "negative": ["6", 0],
+      "latent_image": ["8", 0],
+      "seed": 111111,
+      "steps": 20,
+      "cfg": 5.0,
+      "sampler_name": "uni_pc",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "10": {
+    "class_type": "VAEDecodeTiled",
+    "_meta": { "title": "DecodeTiled" },
+    "inputs": { "samples": ["9", 0], "vae": ["3", 0], "tile_size": 384, "overlap": 64, "temporal_size": 128, "temporal_overlap": 8 }
+  },
+  "11": {
+    "class_type": "CreateVideo",
+    "_meta": { "title": "IN_Fps" },
+    "inputs": { "images": ["10", 0], "fps": 24.0 }
+  },
+  "12": {
+    "class_type": "SaveVideo",
+    "_meta": { "title": "OUT_Video" },
+    "inputs": { "video": ["11", 0], "filename_prefix": "spike/clip", "format": "mp4", "format.codec": "auto" }
+  }
+}

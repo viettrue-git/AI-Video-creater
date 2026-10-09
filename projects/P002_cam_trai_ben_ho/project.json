@@ -1,0 +1,18 @@
+{
+  "_note": "P002 config for scripts/make_video.py. Music/ambience: placeholder = P001 music until the user picks calmer tracks (phase 4 sound library).",
+  "id": "P002",
+  "title": "Cắm trại bên hồ lúc hoàng hôn",
+  "character": "explorer-v1",
+  "use_lora": true,
+  "voice": "Thanh Bình",
+  "pad_seconds": 0.9,
+  "tail_seconds": 2.0,
+  "seeds_per_shot": 4,
+  "fade_out": 1.5,
+  "music": {"prompt": "calm warm acoustic guitar and soft piano, gentle strings, peaceful sunset, cinematic, hopeful, instrumental", "bpm": 80},
+  "ambience": [
+    {"prompt": "gentle lake water lapping on a pebble shore, light breeze, distant birds, peaceful evening nature ambience", "to_shot": "SH06"},
+    {"prompt": "campfire crackling and popping, close, warm, outdoors at night, nature ambience", "from_shot": "SH04", "to_shot": "SH06"},
+    {"prompt": "crickets chirping at night, calm summer night ambience, distant frogs, no music", "from_shot": "SH07"}
+  ]
+}

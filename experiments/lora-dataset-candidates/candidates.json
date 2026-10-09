@@ -1,0 +1,187 @@
+[
+ {
+  "file": "experiments/A02-ease-in/S1_w0.60_s222222.png",
+  "source": "test A02-ease-in S1",
+  "n": 1
+ },
+ {
+  "file": "experiments/A03-prompt-fix/S1_w0.60_s111111.png",
+  "source": "test A03-prompt-fix S1",
+  "n": 2
+ },
+ {
+  "file": "experiments/A03-prompt-fix/S1_w0.70_s111111.png",
+  "source": "test A03-prompt-fix S1",
+  "n": 3
+ },
+ {
+  "file": "experiments/A03-prompt-fix/S1_w0.60_s222222.png",
+  "source": "test A03-prompt-fix S1",
+  "n": 4
+ },
+ {
+  "file": "experiments/B01-ease-in/S1_w0.50_s111111.png",
+  "source": "test B01-ease-in S1",
+  "n": 5
+ },
+ {
+  "file": "experiments/B01-ease-in/S1_w0.60_s111111.png",
+  "source": "test B01-ease-in S1",
+  "n": 6
+ },
+ {
+  "file": "experiments/B01-ease-in/S1_w0.50_s222222.png",
+  "source": "test B01-ease-in S1",
+  "n": 7
+ },
+ {
+  "file": "experiments/B01-ease-in/S1_w0.60_s222222.png",
+  "source": "test B01-ease-in S1",
+  "n": 8
+ },
+ {
+  "file": "experiments/B01-ease-in/S2_w0.50_s222222.png",
+  "source": "test B01-ease-in S2",
+  "n": 9
+ },
+ {
+  "file": "experiments/B01-ease-in/S2_w0.60_s222222.png",
+  "source": "test B01-ease-in S2",
+  "n": 10
+ },
+ {
+  "file": "experiments/B01-ease-in/S3_w0.50_s111111.png",
+  "source": "test B01-ease-in S3",
+  "n": 11
+ },
+ {
+  "file": "experiments/B01-ease-in/S3_w0.60_s111111.png",
+  "source": "test B01-ease-in S3",
+  "n": 12
+ },
+ {
+  "file": "experiments/B01-ease-in/S3_w0.50_s222222.png",
+  "source": "test B01-ease-in S3",
+  "n": 13
+ },
+ {
+  "file": "experiments/B01-ease-in/S4_w0.50_s111111.png",
+  "source": "test B01-ease-in S4",
+  "n": 14
+ },
+ {
+  "file": "experiments/B01-ease-in/S4_w0.60_s111111.png",
+  "source": "test B01-ease-in S4",
+  "n": 15
+ },
+ {
+  "file": "experiments/B01-ease-in/S4_w0.50_s333333.png",
+  "source": "test B01-ease-in S4",
+  "n": 16
+ },
+ {
+  "file": "experiments/B01-ease-in/S4_w0.60_s333333.png",
+  "source": "test B01-ease-in S4",
+  "n": 17
+ },
+ {
+  "file": "experiments/B01-ease-in/S5_w0.50_s111111.png",
+  "source": "test B01-ease-in S5",
+  "n": 18
+ },
+ {
+  "file": "experiments/B01-ease-in/S5_w0.50_s222222.png",
+  "source": "test B01-ease-in S5",
+  "n": 19
+ },
+ {
+  "file": "experiments/B01-ease-in/S3_w0.60_s222222.png",
+  "source": "test B01-ease-in S3",
+  "n": 20
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S1_w0.50_s111111.png",
+  "source": "test C01-hood-color-fix S1",
+  "n": 21
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S1_w0.50_s222222.png",
+  "source": "test C01-hood-color-fix S1",
+  "n": 22
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S3_w0.50_s222222.png",
+  "source": "test C01-hood-color-fix S3",
+  "n": 23
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S4_w0.50_s111111.png",
+  "source": "test C01-hood-color-fix S4",
+  "n": 24
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S4_w0.50_s222222.png",
+  "source": "test C01-hood-color-fix S4",
+  "n": 25
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S4_w0.50_s333333.png",
+  "source": "test C01-hood-color-fix S4",
+  "n": 26
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S5_w0.50_s111111.png",
+  "source": "test C01-hood-color-fix S5",
+  "n": 27
+ },
+ {
+  "file": "experiments/C01-hood-color-fix/S5_w0.50_s222222.png",
+  "source": "test C01-hood-color-fix S5",
+  "n": 28
+ },
+ {
+  "file": "experiments/P001-vertical-slice/SH02_w0.50_s111111.png",
+  "source": "P001 video pick",
+  "n": 29
+ },
+ {
+  "file": "experiments/P001-vertical-slice/SH05_w0.50_s111111.png",
+  "source": "P001 video pick",
+  "n": 30
+ },
+ {
+  "file": "experiments/P001-mvp-v2/SH03_w0.50_s222222.png",
+  "source": "P001 video pick",
+  "n": 31
+ },
+ {
+  "file": "experiments/P001-mvp-v2/SH06_w0.50_s111111.png",
+  "source": "P001 video pick",
+  "n": 32
+ },
+ {
+  "file": "experiments/P001-mvp-v2/SH07_w0.40_s222222.png",
+  "source": "P001 video pick",
+  "n": 33
+ },
+ {
+  "file": "projects/P002_cam_trai_ben_ho/build/images/SH02_w0.50_s111111.png",
+  "source": "P002 pick SH02",
+  "n": 34
+ },
+ {
+  "file": "projects/P002_cam_trai_ben_ho/build/images/SH03_w0.50_s111111.png",
+  "source": "P002 pick SH03",
+  "n": 35
+ },
+ {
+  "file": "projects/P002_cam_trai_ben_ho/build/images/SH05_w0.50_s111111.png",
+  "source": "P002 pick SH05",
+  "n": 36
+ },
+ {
+  "file": "projects/P002_cam_trai_ben_ho/build/images/SH06_w0.40_s333333.png",
+  "source": "P002 pick SH06",
+  "n": 37
+ }
+]

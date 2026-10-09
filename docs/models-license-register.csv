@@ -1,0 +1,36 @@
+component,type,source,license,commercial_use,status,downloaded,notes
+sd_xl_base_1.0.safetensors,image checkpoint,https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0,CreativeML OpenRAIL++-M,OK (follow use restrictions),in use,2026-09,weak at stylized 3D look
+ip-adapter-plus_sdxl_vit-h.safetensors,ipadapter,https://huggingface.co/h94/IP-Adapter,Apache-2.0,OK,in use,2026-09,
+CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors,clip vision,https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K,MIT,OK,in use,2026-09,
+ComfyUI_IPAdapter_plus,custom node,https://github.com/cubiq/ComfyUI_IPAdapter_plus,GPL-3.0,OK (tool use),in use (pinned a0f451a),2026-09,maintenance-only since 2025-04-14; do not update blindly
+ComfyUI 0.37.0,engine,https://github.com/comfyanonymous/ComfyUI,GPL-3.0,OK (outputs not covered),in use,2026-09,
+DynaVision XL,image checkpoint,https://civitai.com/models/122606,Civitai permissions (sell images allowed),OK [VERIFY on page],candidate,,best match for stylized 3D per research; ~6.8GB
+Samaritan 3D Cartoon v4,image checkpoint,https://civitai.com/models/81270,Civitai permissions,OK [VERIFY],candidate,,~6.5GB
+RealCartoon-XL V7,image checkpoint,https://civitai.com/models/125907,Civitai permissions,OK [VERIFY],candidate,,~7.1GB
+Pony Diffusion V6 (and merges),image checkpoint,civitai,Pony license,NO (bans monetized inference),avoid,,
+Qwen-Image-Edit-2511,image edit,huggingface Qwen,Apache-2.0,OK [VERIFY],later (needs 32GB RAM),,GGUF Q4 ~11.9GB + 9.4GB text encoder
+FLUX.2 klein 4B,image/edit,black-forest-labs,Apache-2.0,OK [VERIFY],candidate,,9B and dev variants are non-commercial
+Qwen-Image 2.1,image,Qwen,non-commercial,NO,avoid,,per research 2026-10
+Wan 2.2 TI2V-5B (GGUF Q6_K/Q8 QuantStack),video,https://huggingface.co/QuantStack,Apache-2.0,OK,next (Video Spike),,704x1280 24fps 121 frames (4n+1)
+Wan 2.2 I2V-A14B (GGUF Q4_K_M),video,https://huggingface.co/QuantStack,Apache-2.0,OK,after RAM upgrade,,480x832 16fps 81 frames; high+low noise 9.65GB each
+lightx2v Wan2.2 I2V A14B 4-step LoRA,speed lora,https://huggingface.co/lightx2v,Apache-2.0,OK,after RAM upgrade,,
+Wan22_TI2V_5B_Turbo_lora (Kijai),speed lora,https://huggingface.co/Kijai,UNKNOWN,UNCLEAR,verify before use,,
+umt5_xxl_fp8_e4m3fn_scaled / wan2.2_vae / wan_2.1_vae,text encoder / vae,Comfy-Org repackaged,Apache-2.0,OK [VERIFY],next,,
+RIFE 4.25/4.26 + ComfyUI-Frame-Interpolation,interpolation,github,MIT,OK,planned,,
+Real-ESRGAN,upscale,https://github.com/xinntao/Real-ESRGAN,BSD-3-Clause,OK,planned,,
+SeedVR2,video upscale,huggingface,Apache-2.0,OK [VERIFY],option,,
+4x-UltraSharp,upscale,,CC-BY-NC-SA,NO,avoid,,
+VieNeu-TTS v3 Turbo,tts vi (local),huggingface,Apache-2.0 (preset voices cleared for monetized use),OK [VERIFY],to A/B test,,~1.1GB VRAM
+VoxCPM2,tts (local),huggingface,Apache-2.0,OK [VERIFY],to A/B test,,~8GB VRAM
+Google Cloud TTS Chirp 3 HD vi-VN,tts vi (cloud),cloud.google.com,paid service terms,OK (paid),to A/B test,,~$30/1M chars; 1M free/month
+FPT.AI / Viettel AI TTS,tts vi (cloud),fpt.ai / viettelai.vn,paid service terms,OK (paid),to A/B test,,~$7-13/1M chars
+viXTTS / XTTS-v2,tts,coqui,CPML non-commercial,NO,avoid,,Coqui closed; no commercial license available
+F5-TTS (+ vi fine-tunes),tts,,CC-BY-NC,NO,avoid,,
+InsightFace models (FaceID/InstantID/PuLID/ReActor),face,,non-commercial,NO,avoid,,
+Flux.1 dev / Kontext dev,image,black-forest-labs,FLUX.1 dev non-commercial (outputs allowed),NO (policy: avoid),avoid,,
+MusicGen weights,music,meta,CC-BY-NC-4.0,NO,avoid,,
+Stable Audio Open / 3.0,music/sfx,stability.ai,Stability Community License,OK under $1M annual revenue,option,,
+Royalty-free library (YouTube Audio Library / Pixabay),music/sfx,,per-track license,OK (keep proof),MVP choice,,save license proof per track
+Inspiring Cinematic - Kulakovka (pixabay.com/music/main-title-inspiring-cinematic-272565),music,https://pixabay.com/music/main-title-inspiring-cinematic-272565/,Pixabay Content License,OK (Content ID Registered: YouTube may claim; dispute with proof),in use P001,2026-10-05,proof projects/P001_rung_co/music/kulakovka-inspiring-cinematic-272565.png
+Forest ambience (Pixabay id 26617; uploader freesound_community),sfx,pixabay.com/sound-effects (id 26617),Pixabay Content License,OK [PROOF MISSING - screenshot before public release],in use P001 v4,2026-10-07,projects/P001_rung_co/sfx/freesound_community-forest-ambience-26617.mp3
+Wind rustling grass (Pixabay id 339094; uploader dragon-studio),sfx,pixabay.com/sound-effects (id 339094),Pixabay Content License,OK [PROOF MISSING - screenshot before public release],in use P001 v4,2026-10-07,projects/P001_rung_co/sfx/dragon-studio-wind-rustling-grass-339094.mp3

@@ -1,0 +1,21 @@
+{
+  "api": "workflows/api/character-scene-ipadapter-v1.json",
+  "output": "workflows/ui/character-scene-ipadapter-v1-ui.json",
+  "overrides": {
+    "2": {"text": "full body shot, walking between giant ancient trees in a misty forest, dramatic sunlight rays through the canopy, young man, 25 years old, short messy black hair, brown eyes, angular face, light stubble, athletic build, dark green adventure jacket with the hood down, grey hoodie underneath, brown leather backpack, dark grey cargo pants with knee pads, brown leather hiking boots, stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition"},
+    "3": {"text": "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, extra limbs, text, watermark, logo"},
+    "13": {"weight": 0.5, "weight_type": "ease in", "end_at": 0.8}
+  },
+  "groups": [
+    {"title": "1. MODEL", "color": "#3f789e", "nodes": ["1"],
+     "note": "Checkpoint SDXL (đang dùng SDXL base 1.0, license OK thương mại).\nSau này thử checkpoint 3D khác: chỉ đổi ở đây."},
+    {"title": "2. CHARACTER — ảnh tham chiếu", "color": "#8A8", "nodes": ["10", "11"],
+     "note": "Ảnh nhân vật chuẩn: char_main_front.png (nửa người, chính diện).\nKHÔNG dùng cả character sheet (sẽ copy bố cục sheet).\nPrep Image: 'pad' giữ nguyên toàn bộ ảnh khi đưa vào CLIP Vision."},
+    {"title": "3. IP-ADAPTER — giữ nhân vật", "color": "#b58b2a", "nodes": ["12", "13"],
+     "note": "Preset PLUS (high strength).\nCấu hình đã test: weight_type = ease in, end_at = 0.8.\nWEIGHT THEO SHOT: cận mặt/đi bộ 0.5 · bước ra/qua vai 0.4 · toàn cảnh/bàn tay 0.1–0.3.\nweight >= 0.7 sẽ copy nền trắng của ảnh tham chiếu."},
+    {"title": "4. SCENE — prompt & khung hình", "color": "#a1309b", "nodes": ["2", "3", "4"],
+     "note": "Prompt = [mô tả cảnh] + [khối nhân vật cố định] + [khối style].\nKhối nhân vật giữ NGUYÊN CHỮ ở mọi shot.\nKhung hình 9:16 = 768 x 1344."},
+    {"title": "5. SAMPLER & OUTPUT", "color": "#335", "nodes": ["20", "21", "22"],
+     "note": "dpmpp_2m / karras, 25 step, CFG 6.5 (~22 giây/ảnh trên RTX 3060).\nSeed: thử 4 seed/shot rồi chọn ảnh đúng nhân vật nhất.\nẢnh lưu ở ComfyUI/output/tests/."}
+  ]
+}

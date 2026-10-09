@@ -1,0 +1,10 @@
+{
+  "_note": "Vertical Slice v2 05/10/2026: shots 1, 2, 5, voice Thanh Bình regenerated with babble QC; duration = narration + 0.6s; deflicker in assembler.",
+  "output": "projects/P001_rung_co/final/P001-vertical-slice-v2.mp4",
+  "music": null,
+  "shots": [
+    {"id": "SH01", "clip": "experiments/video-spike/VS-SH01.mp4", "narration": "projects/P001_rung_co/audio-narration/thanh-binh/shot_01.wav", "duration": 2.84},
+    {"id": "SH02", "clip": "experiments/video-spike/VS-SH02.mp4", "narration": "projects/P001_rung_co/audio-narration/thanh-binh/shot_02.wav", "duration": 4.04},
+    {"id": "SH05", "clip": "experiments/video-spike/VS-SH05.mp4", "narration": "projects/P001_rung_co/audio-narration/thanh-binh/shot_05.wav", "duration": 3.96}
+  ]
+}

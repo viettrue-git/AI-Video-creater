@@ -1,0 +1,29 @@
+{
+  "_note": "P003 shot prompts (English, from script.txt). LoRA mode (use_lora): IP-Adapter off; ipa_weight kept for non-LoRA runs. Lessons: no hand close-ups, medium instead of extreme close-up, no flicker/shimmer/twinkle words.",
+  "shots": [
+    {"id": "SH01", "ipa_weight": 0.2, "eq": "brightness=-0.10:saturation=0.8:gamma_r=0.9:gamma_b=1.15",
+     "scene": "extreme wide shot of a steep mountain trail before dawn, deep blue hour sky, a small lake far below in the valley, a tiny lone figure hiking up the trail far away",
+     "motion": "very slow camera drift upward along the mountain, the tiny figure keeps hiking at a steady pace, thin mist moves slowly in the valley, stylized 3D animated movie, calm smooth motion"},
+    {"id": "SH02", "ipa_weight": 0.4, "eq": "brightness=-0.10:saturation=0.8:gamma_r=0.9:gamma_b=1.15",
+     "scene": "low angle view from behind, in the sharp foreground green leaves and mountain grass covered with many clear cold dew drops and light frost, he climbs a steep rocky mountain path ahead slightly out of focus, thick mist in the valley, cold blue dawn light, shallow depth of field",
+     "motion": "a clear dew drop slowly rolls down a leaf in the foreground, he keeps climbing the steep path ahead with natural steps, the camera slowly rises, mist drifts in the valley, stylized 3D animated movie, smooth natural motion"},
+    {"id": "SH03", "ipa_weight": 0.5, "eq": "brightness=-0.10:saturation=0.8:gamma_r=0.9:gamma_b=1.15",
+     "scene": "medium close-up, side profile view of his face and upper body, he pauses on the grassy mountain path to catch his breath, mouth slightly open, a small puff of white breath vapor in front of his mouth, green grassy mountain slope and misty valley behind, soft early morning daylight, light clear sky",
+     "motion": "he exhales slowly through his mouth, a thick cloud of white breath vapor comes out of his mouth and drifts forward away from his face, then fades, he inhales and exhales again, very slow camera push in, stylized 3D animated movie, calm subtle motion"},
+    {"id": "SH04", "ipa_weight": 0.0, "character_override": "",
+     "scene": "wide landscape, a vast sea of clouds below dark mountain peaks, the horizon beginning to glow pink and gold before sunrise, no people",
+     "motion": "the sea of clouds flows slowly between the peaks, the horizon glow grows gradually warmer, very slow camera pan, stylized 3D animated movie, calm epic motion"},
+    {"id": "SH05", "ipa_weight": 0.5, "eq": "brightness=-0.04:gamma_b=1.05",
+     "scene": "full body, front view, he steps up onto the rocky mountain summit with a happy smile, early morning light, sky turning gold",
+     "motion": "he takes the last step onto the summit and straightens up with a smile, gentle wind moves his hair, slow camera pull back, stylized 3D animated movie, smooth natural motion"},
+    {"id": "SH06", "ipa_weight": 0.4,
+     "scene": "view from behind, full body, he stands on the mountain summit facing the rising sun above a sea of clouds, golden sunrise light, backpack visible",
+     "motion": "he stands still facing the sunrise, the sun slowly rises above the clouds, warm light spreads across the sky, gentle wind, slow camera drift sideways, stylized 3D animated movie, calm epic motion"},
+    {"id": "SH07", "ipa_weight": 0.5,
+     "scene": "medium shot, three-quarter view, warm golden sunrise light on his face, peaceful smile, sea of clouds blurred behind",
+     "motion": "warm sunlight gently brightens on his face, he smiles calmly and breathes, very slow camera push in, stylized 3D animated movie, calm subtle motion"},
+    {"id": "SH08", "ipa_weight": 0.1, "character_override": "a tiny lone figure standing on the summit",
+     "scene": "extreme wide shot, a tiny lone figure on a rocky mountain peak above an endless sea of clouds, brilliant golden sunrise, epic peaceful scale",
+     "motion": "very slow camera pull back, the clouds drift gently below the peak, golden light spreads across the sky, stylized 3D animated movie, calm epic motion"}
+  ]
+}

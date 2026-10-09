@@ -1,0 +1,42 @@
+# Engine (has its own git repo, models are huge)
+ComfyUI/
+
+# Local tool config / scratch
+.claude/
+AIClaude/
+__pycache__/
+*.pyc
+.env
+.env.*
+
+# Heavy generated media (back these up separately, not in git)
+experiments/**/*.png
+experiments/**/*.jpg
+experiments/**/*.mp4
+experiments/*.log
+projects/**/shots/
+projects/**/final/
+projects/*/build/
+*.safetensors
+*.gguf
+*.ckpt
+*.pth
+*.mp4
+*.wav
+*.mp3
+
+# Keep character reference images (small, critical for consistency)
+!projects/**/refs/*.png
+
+# Separate tool environments (TTS, LoRA trainer)
+tools/
+
+# LoRA training: keep configs + captions in git, not images / cached latents / trained weights
+lora/*/dataset/*.png
+lora/*/dataset/*.npz
+lora/*/output/
+
+# Generated audio (AI tests / renders) and the transient render queue
+*.flac
+*.ogg
+experiments/render-queue.json

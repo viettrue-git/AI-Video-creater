@@ -1,0 +1,17 @@
+{
+  "_note": "P003 — first video made end-to-end with the full pipeline: character LoRA 'Tâm' + AI-generated music/ambience.",
+  "id": "P003",
+  "title": "Leo núi đón bình minh",
+  "character": "explorer-v1",
+  "use_lora": true,
+  "voice": "Thanh Bình",
+  "pad_seconds": 0.9,
+  "tail_seconds": 2.0,
+  "seeds_per_shot": 4,
+  "fade_out": 1.5,
+  "music": {"prompt": "inspiring cinematic, gentle soft piano intro, slowly building with warm strings, rising to a hopeful orchestral swell at sunrise, instrumental", "bpm": 85},
+  "ambience": [
+    {"prompt": "cold mountain wind blowing over rocks before dawn, quiet, nature ambience, no music", "to_shot": "SH04"},
+    {"prompt": "gentle wind on a mountain summit at sunrise, distant morning birds, peaceful nature ambience, no music", "from_shot": "SH05"}
+  ]
+}

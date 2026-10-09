@@ -1,0 +1,13 @@
+{
+  "_note": "Generalization test (07/10/2026): 5 scenes that appear in NO LoRA training image. Run with and without LoRA (character_block without trigger; the runner adds nothing) — use character-consistency-test-scenes-unseen-lora.json for the LoRA run.",
+  "character_block": "tamxplr man, young man, 25 years old, short messy black hair, brown eyes, angular face, light stubble, athletic build, dark green adventure jacket with the hood down, grey hoodie underneath, brown leather backpack, dark grey cargo pants with knee pads, brown leather hiking boots",
+  "style_block": "stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+  "negative": "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, extra limbs, text, watermark, logo",
+  "scenes": {
+    "N1": "full body shot, crossing an old stone bridge over a river in a small village, morning light",
+    "N2": "close-up portrait, curious expression, looking at a map in a busy train station, warm indoor light",
+    "N3": "medium shot, browsing fruit at a colorful outdoor street market, bright daylight",
+    "N4": "full body, standing inside a grand old library with tall bookshelves, soft window light",
+    "N5": "full body, standing on a wooden dock by a calm lake at dusk, view from the side, purple sky"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_note": "P001 in the project format (07/10/2026). Built files staged from v4 to verify the pipeline.",
+  "id": "P001",
+  "title": "Rừng cổ → thảo nguyên",
+  "character": "explorer-v1",
+  "voice": "Thanh Bình",
+  "pad_seconds": 0.9,
+  "tail_seconds": 2.0,
+  "seeds_per_shot": 4,
+  "fade_out": 1.5,
+  "music": {"tag": "music-inspiring", "start": 0.5},
+  "ambience": [
+    {"tag": "forest", "to_shot": "SH06"},
+    {"tag": "meadow-wind", "from_shot": "SH07"}
+  ]
+}

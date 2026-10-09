@@ -1,0 +1,29 @@
+{
+  "_note": "Same format as experiments/character-consistency-test-scenes.json so character_consistency_test_runner.py can render shot images. Character/style/negative blocks = C01 config. Video motion prompts are in video_motion.",
+  "character_block": "young man, 25 years old, short messy black hair, brown eyes, angular face, light stubble, athletic build, dark green adventure jacket with the hood down, grey hoodie underneath, brown leather backpack, dark grey cargo pants with knee pads, brown leather hiking boots",
+  "style_block": "stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+  "negative": "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, malformed fingers, bad hands, pointing finger, extra limbs, text, watermark, logo",
+  "scenes": {
+    "SH01": "extreme wide establishing shot of an immense ancient forest, colossal trees, morning mist, golden sunbeams through the canopy, a tiny lone figure walking on a path far away",
+    "SH02": "full body shot, walking between giant ancient trees in a misty forest, dramatic sunlight rays through the canopy",
+    "SH03": "extreme close-up, his face fills the frame, looking up at the forest canopy with wonder, soft green light on his face",
+    "SH04": "stylized 3D animated movie still, extreme close-up of a hand resting flat against the mossy bark of a giant ancient tree, palm pressed gently on the bark, fingers together and relaxed, only the hand and forearm in frame, no face, soft sun flecks, shallow depth of field",
+    "SH05": "view from behind, he walks away along a narrow trail leading deep into the misty forest, backpack clearly visible, sun rays ahead",
+    "SH06": "full body shot from behind, he walks along the forest trail toward a huge bright opening at the edge of the forest, blinding warm light ahead, dark tree silhouettes framing the light",
+    "SH07": "over-the-shoulder view from behind, he steps out of the forest edge, in front of him a vast open meadow of tall green grass and colorful wildflowers stretching to the horizon, rolling hills, bright blue sky, soft clouds",
+    "SH08": "extreme wide shot, a tiny lone figure of the young man standing in an endless meadow of green grass and colorful wildflowers, rolling hills to the horizon, vast blue sky with soft clouds, golden afternoon light, epic scale"
+  },
+  "video_motion": {
+    "SH01": "the tiny figure keeps walking at a calm natural pace, natural arm swing, steady grounded steps along the path, slow gentle camera drift forward, mist flows slowly, sunbeams glow softly, stylized 3D animated movie, smooth motion",
+    "SH02": "the young man walks slowly along the forest path, the camera smoothly tracks backward at the same pace keeping his full body in frame, sunlight rays through the trees, leaves sway gently, stylized 3D animated movie, smooth natural motion",
+    "SH03": "he slowly raises his eyes toward the canopy, subtle smile, soft dappled light on his face, very slow camera push in, stylized 3D animated movie",
+    "SH04": "his hand rests completely still on the mossy bark, only soft sunlight and tiny dust particles drift in the air, very slow camera drift, stylized 3D animated movie, calm",
+    "SH05": "he walks away from the camera along the trail, walking at a calm natural pace, natural arm swing, steady grounded steps, the camera follows slowly behind him keeping his full body in frame, mist drifts, stylized 3D animated movie, smooth natural motion",
+    "SH06": "he walks toward the bright light at the forest edge, the camera follows slowly behind him, the light grows warmer and brighter, mist drifts, stylized 3D animated movie, smooth natural motion",
+    "SH07": "he takes a slow step forward out of the forest, the camera slowly rises over his shoulder revealing the vast flower meadow, grass and flowers sway in the wind, stylized 3D animated movie, smooth motion",
+    "SH08": "very slow camera pull back, wind sends gentle waves through the grass and wildflowers, clouds drift slowly, stylized 3D animated movie, calm epic motion"
+  },
+  "character_overrides": {
+    "SH04": "bare hand of a young man, sleeve of a dark green adventure jacket over a grey hoodie cuff"
+  }
+}

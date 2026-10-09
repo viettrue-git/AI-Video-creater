@@ -1,0 +1,36 @@
+THƯ VIỆN ÂM THANH — DANH SÁCH CẦN TẢI (tạo 08/10/2026)
+
+CÁCH LÀM
+1. Vào pixabay.com/sound-effects (tiếng môi trường) hoặc pixabay.com/music (nhạc).
+2. Gõ từ khoá gợi ý, nghe thử, chọn bài phù hợp. TRÁNH bài có nhãn "Content ID Registered".
+3. Tải file về, THẢ VÀO ĐÚNG THƯ MỤC cùng tên tag bên dưới (không cần đổi tên file).
+4. (Nên làm) chụp màn hình trang bài, lưu .png CÙNG TÊN với file âm thanh, cùng thư mục.
+5. Báo Claude "đã tải xong" — máy tự đưa vào thư viện, đo độ to, tính âm lượng.
+
+Mỗi thư mục 1–2 file là đủ. Tiếng môi trường nên dài ≥ 20 giây, nhạc ≥ 40 giây.
+Đã có sẵn: forest, meadow-wind, music-inspiring (từ P001).
+
+TIẾNG MÔI TRƯỜNG (pixabay.com/sound-effects)
+  thư mục            từ khoá gợi ý
+  forest-night       night forest ambience, owl night
+  birds-morning      morning birds, dawn chorus
+  mountain-wind      mountain wind, high altitude wind
+  lake-water         lake water gentle, lapping water shore
+  river-stream       river stream, creek water flowing
+  ocean-waves        ocean waves beach, sea waves calm
+  rain               rain ambience, light rain
+  thunderstorm       thunderstorm rain, thunder distant
+  campfire           campfire crackling, fire crackle
+  night-crickets     crickets night, summer night insects
+  city-day           city street ambience, traffic city day
+  city-night-rain    city rain night, rainy street
+  snow-wind          winter wind snow, blizzard light
+  footsteps-dirt     footsteps dirt path, walking gravel
+
+NHẠC NỀN (pixabay.com/music) — không lời
+  music-calm-warm         calm acoustic, warm piano ambient
+  music-mysterious        mysterious ambient, dark atmospheric
+  music-epic              epic cinematic orchestral
+  music-emotional         emotional piano, sad cinematic
+  music-happy-adventure   happy adventure, uplifting acoustic
+  (music-inspiring đã có 1 bài, có thể thêm bài thứ 2)

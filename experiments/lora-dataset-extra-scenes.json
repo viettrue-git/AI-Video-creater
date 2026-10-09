@@ -1,0 +1,18 @@
+{
+  "_note": "Extra LoRA dataset images (07/10/2026) for missing variety: profile/3-4 views, expressions, close-ups, sitting/kneeling, night/sunset/daylight, new backgrounds. Same character/style/negative blocks as characters/explorer-v1.json.",
+  "character_block": "young man, 25 years old, short messy black hair, brown eyes, angular face, light stubble, athletic build, dark green adventure jacket with the hood down, grey hoodie underneath, brown leather backpack, dark grey cargo pants with knee pads, brown leather hiking boots",
+  "style_block": "stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+  "negative": "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, orange jacket, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, malformed fingers, bad hands, pointing finger, extra limbs, text, watermark, logo",
+  "scenes": {
+    "D01": "full body side profile view, walking to the left across a sunny grassy hill, clear blue sky",
+    "D02": "medium shot, three-quarter view, warm friendly smile, soft neutral grey studio background, studio lighting",
+    "D03": "close-up portrait, laughing happily, bright daylight in a green park, shallow depth of field",
+    "D04": "close-up portrait, calm serious expression, cool blue moonlight at night, dark forest background",
+    "D05": "full body, sitting on a large rock, resting, looking at a mountain valley, soft morning light",
+    "D06": "full body, kneeling on the forest floor checking an old compass in his hands, dappled sunlight",
+    "D07": "full body front view, standing with arms crossed, confident, on a beach at golden sunset",
+    "D08": "medium shot, drinking from a metal water bottle, red desert canyon, bright midday sun",
+    "D09": "three-quarter back view looking over his shoulder toward the camera, snowy mountain pass, overcast light",
+    "D10": "medium shot, sitting on a log at night, warm orange glow on his face from a campfire out of frame, starry sky"
+  }
+}

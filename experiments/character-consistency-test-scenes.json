@@ -1,0 +1,12 @@
+{
+  "character_block": "young man, 25 years old, short messy black hair, brown eyes, angular face, light stubble, athletic build, dark green adventure jacket with the hood down, grey hoodie underneath, brown leather backpack, dark grey cargo pants with knee pads, brown leather hiking boots",
+  "style_block": "stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+  "negative": "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, extra limbs, text, watermark, logo",
+  "scenes": {
+    "S1": "full body shot, walking between giant ancient trees in a misty forest, dramatic sunlight rays through the canopy",
+    "S2": "close-up portrait of his face, warm golden sunset light, shallow depth of field, mountains blurred in background",
+    "S3": "medium shot, sitting at a rustic wooden table inside a cozy cabin, reading an old map, warm lamp light",
+    "S4": "low angle shot, running through a neon-lit city street at night in the rain, wet reflections, motion",
+    "S5": "view from behind, three-quarter back view, standing on the edge of a cliff overlooking a vast valley, backpack clearly visible, wind"
+  }
+}

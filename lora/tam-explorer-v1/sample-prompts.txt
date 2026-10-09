@@ -1,0 +1,2 @@
+tamxplr man, close-up portrait, three-quarter view, soft smile, sitting by a calm lake at sunset, stylized 3D animated movie still, cinematic 3D render --n blurry, low quality, deformed, extra fingers, text, watermark --w 768 --h 1344 --s 25 --l 6.5 --d 42
+tamxplr man, full body, standing on a wooden bridge over a river, morning light, stylized 3D animated movie still, cinematic 3D render --n blurry, low quality, deformed, extra fingers, text, watermark --w 768 --h 1344 --s 25 --l 6.5 --d 7

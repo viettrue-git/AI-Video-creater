@@ -1,0 +1,23 @@
+{
+  "api": "workflows/api/wan22-ti2v-5b-image-to-video-v1.json",
+  "output": "workflows/ui/wan22-ti2v-5b-image-to-video-v1-ui.json",
+  "overrides": {
+    "5": {"text": "the young man walks slowly along the forest path, the camera smoothly tracks backward at the same pace keeping his full body in frame, sunlight rays through the trees, leaves sway gently, stylized 3D animated movie, smooth natural motion"},
+    "6": {"text": "static, frozen, blurry, low quality, distorted face, deformed hands, extra limbs, morphing, flickering, jitter, text, watermark, subtitles"},
+    "7": {"image": "SH02_w0.50_s111111.png"},
+    "8": {"length": 81},
+    "12": {"filename_prefix": "video/manual"}
+  },
+  "groups": [
+    {"title": "1. MODELS (Wan 2.2 5B)", "color": "#3f789e", "nodes": ["1", "2", "3", "4"],
+     "note": "Wan 2.2 TI2V-5B fp16 + text encoder umt5 fp8 + wan2.2_vae (Apache-2.0).\nModel shift = 8.\nTRƯỚC KHI CHẠY VIDEO: khởi động lại ComfyUI sạch\n(scripts/restart-comfyui-server-clean.ps1) nếu vừa tạo ảnh."},
+    {"title": "2. ẢNH ĐẦU VÀO & ĐỘ DÀI", "color": "#8A8", "nodes": ["7", "8"],
+     "note": "Ảnh đầu vào = ảnh shot đã chọn (768x1344, tự crop giữa).\nKhung 704 x 1280, 24 fps.\nlength phải dạng 4n+1: 49 (2s) · 81 (3.4s) · 101 (4.2s) · 117 (4.9s).\n81 frame ~ 11–12 phút trên RTX 3060."},
+    {"title": "3. PROMPT CHUYỂN ĐỘNG", "color": "#a1309b", "nodes": ["5", "6"],
+     "note": "Mô tả CHUYỂN ĐỘNG + CAMERA, không cần tả lại nhân vật.\nNói rõ camera: 'camera tracks backward ... keeping his full body in frame'.\nTRÁNH chữ flicker / shimmer (gây nhấp nháy)."},
+    {"title": "4. SAMPLER", "color": "#b58b2a", "nodes": ["9"],
+     "note": "uni_pc / simple, 20 step, CFG 5.\n~15 giây/step (49 frame) · ~29 giây/step (81 frame)."},
+    {"title": "5. GIẢI MÃ & LƯU VIDEO", "color": "#335", "nodes": ["10", "11", "12"],
+     "note": "VAE Decode Tiled: temporal_size 128 = giải mã cả clip một lần.\nĐỪNG giảm temporal_size (16/32 gây nhấp nháy theo nhịp).\nVideo lưu ở ComfyUI/output/video/."}
+  ]
+}

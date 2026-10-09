@@ -1,0 +1,2 @@
+# Real-ESRGAN x2plus (BSD-3-Clause) — AI upscale for video clips
+https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth upscale_models/RealESRGAN_x2plus.pth

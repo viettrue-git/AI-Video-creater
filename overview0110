@@ -1,0 +1,676 @@
+1. MỤC TIÊU DỰ ÁN
+
+Xây dựng một AI Video Factory có khả năng sản xuất video bằng AI theo quy trình:
+
+Ý tưởng
+   ↓
+Kịch bản
+   ↓
+Shot List
+   ↓
+Character / Style
+   ↓
+AI Image Generation
+   ↓
+Character Consistency
+   ↓
+Image → Video
+   ↓
+Quality Check
+   ↓
+TTS / Music / SFX
+   ↓
+FFmpeg
+   ↓
+Final Video
+   ↓
+Tự động hóa bằng Python + AI Agent
+Định hướng
+Ưu tiên chạy local để tiết kiệm chi phí.
+Sử dụng ComfyUI làm engine chính.
+Có thể dùng cloud AI cho những shot khó khi cần.
+Về lâu dài xây dựng AI Agent để tự động điều phối toàn bộ pipeline.
+Có định hướng sử dụng cho sản phẩm/video thương mại, vì vậy cần kiểm tra license của model trước khi sử dụng thương mại.
+2. KIẾN TRÚC DỰ KIẾN
+
+Kiến trúc dài hạn:
+
+                ┌───────────────┐
+                │     IDEA      │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │  LOCAL LLM    │
+                │ Qwen / Ollama │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │ SCRIPT / SHOT │
+                │     LIST      │
+                └───────┬───────┘
+                        ↓
+        ┌─────────────────────────────┐
+        │          COMFYUI            │
+        │                             │
+        │ Character → Image → Video   │
+        └──────────────┬──────────────┘
+                       ↓
+                ┌───────────────┐
+                │ QUALITY CHECK │
+                └───────┬───────┘
+                        ↓
+             ┌──────────┴──────────┐
+             ↓                     ↓
+        Local Video            Cloud AI
+        Generation             Fallback
+             └──────────┬──────────┘
+                        ↓
+                ┌───────────────┐
+                │ TTS / MUSIC / │
+                │      SFX      │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │    FFMPEG     │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │  FINAL VIDEO  │
+                └───────────────┘
+3. PHẦN CỨNG HIỆN TẠI
+CPU     : Intel Core i5-12400F
+GPU     : NVIDIA RTX 3060 12GB
+RAM     : 16GB
+OS      : Windows 64-bit
+
+Dự kiến trong tương lai:
+
+RAM → 32GB
+
+RTX 3060 12GB hiện tại phù hợp để học và xây dựng workflow, nhưng khi chuyển sang video generation lớn sẽ cần tối ưu VRAM/model.
+
+4. MÔI TRƯỜNG ĐÃ CÀI ĐẶT
+
+Project:
+
+C:\AIVideoManager\ComfyUI
+
+Python:
+
+Python 3.12.10
+
+Virtual Environment:
+
+C:\AIVideoManager\ComfyUI\venv
+
+PyTorch:
+
+PyTorch 2.11.0+cu128
+CUDA 12.8
+
+Đã kiểm tra:
+
+torch.cuda.is_available() = True
+
+GPU được nhận:
+
+NVIDIA GeForce RTX 3060
+
+ComfyUI chạy tại:
+
+http://127.0.0.1:8188
+5. GIAI ĐOẠN 1 — COMFYUI
+Đã hoàn thành
+Cài ComfyUI.
+Thiết lập Python environment.
+Cấu hình PyTorch + CUDA.
+Kiểm tra GPU.
+Chạy ComfyUI thành công.
+6. GIAI ĐOẠN 2 — SDXL IMAGE GENERATION
+
+Đã cài:
+
+sd_xl_base_1.0.safetensors
+
+Tại:
+
+ComfyUI\models\checkpoints\
+
+Đã hoàn thành workflow Image Generation cơ bản.
+
+Workflow
+Load Checkpoint
+       ↓
+CLIP Text Encode
+   ↙         ↘
+Positive    Negative
+      \       /
+       ↓     ↓
+       KSampler
+           ↑
+    Empty Latent Image
+           ↓
+       VAE Decode
+           ↓
+       Save Image
+Đã hiểu vai trò các node
+
+Load Checkpoint
+
+Load model:
+
+MODEL
+CLIP
+VAE
+
+CLIP Text Encode
+
+Chuyển prompt thành conditioning.
+
+Empty Latent Image
+
+Tạo latent canvas.
+
+KSampler
+
+Thực hiện quá trình diffusion/denoising.
+
+VAE Decode
+
+Chuyển latent thành hình ảnh RGB.
+
+Save Image
+
+Lưu ảnh kết quả.
+
+7. KSampler — KIẾN THỨC ĐÃ NẮM
+
+Đã tìm hiểu:
+
+Steps
+
+Số bước denoising.
+
+Ví dụ:
+
+10
+20
+30
+
+Steps cao hơn thường cho quá trình refinement nhiều hơn nhưng thời gian render tăng.
+
+CFG
+
+Mức độ model bám prompt.
+
+Ví dụ:
+
+CFG 4
+CFG 7
+CFG 12
+Seed
+
+Điểm khởi tạo randomness.
+
+Ví dụ:
+
+123456
+
+Cùng seed + cùng workflow/settings → có thể tái tạo kết quả tương tự.
+
+Random Seed
+
+Dùng khi muốn tạo các biến thể mới.
+
+Đặc biệt hữu ích trong giai đoạn test Character Consistency.
+
+8. GIAI ĐOẠN 3 — CHARACTER DESIGN
+
+Đã tạo Character Sheet cho nhân vật chính.
+
+Character
+Nam
+25 tuổi
+Tóc đen ngắn hơi rối
+Mắt nâu
+Khuôn mặt góc cạnh
+Râu nhẹ
+Thân hình athletic
+Trang phục
+Áo khoác phiêu lưu xanh đậm
+Ba lô da nâu
+Quần cargo tối màu
+Boots đen
+Style
+Stylized 3D animated movie character
+Cinematic 3D rendering
+Seed ban đầu
+123456
+
+Character Sheet này hiện là reference image chính cho Character Consistency.
+
+9. GIAI ĐOẠN 4 — IP-ADAPTER
+
+Mục tiêu:
+
+Giữ cùng một nhân vật khi thay đổi scene, background, pose và camera.
+
+Đã cài:
+
+ComfyUI_IPAdapter_plus
+
+Repository:
+
+ComfyUI_IPAdapter_plus
+10. MODEL IP-ADAPTER ĐÃ CÀI
+IP-Adapter
+ip-adapter-plus_sdxl_vit-h.safetensors
+
+Đặt tại:
+
+ComfyUI\models\ipadapter\
+CLIP Vision
+CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+
+Đặt tại:
+
+ComfyUI\models\clip_vision\
+
+ComfyUI đã nhận diện được cả hai model.
+
+11. CÁC NODE IP-ADAPTER ĐÃ CÓ
+
+Đã có:
+
+Load Image
+Load CLIP Vision
+IPAdapter Unified Loader
+IPAdapter Advanced
+12. CẤU HÌNH IP-ADAPTER HIỆN TẠI
+
+Workflow hiện tại:
+
+Load Checkpoint
+       │
+       ▼
+IPAdapter Unified Loader
+       │
+       ▼
+IPAdapter Advanced
+       │
+       ▼
+KSampler
+
+Các kết nối:
+
+Load Checkpoint.MODEL
+        ↓
+Unified Loader.model
+Unified Loader.ipadapter
+        ↓
+IPAdapter Advanced.ipadapter
+Unified Loader.model
+        ↓
+IPAdapter Advanced.model
+IPAdapter Advanced.MODEL
+        ↓
+KSampler.model
+
+Character reference:
+
+Load Image.IMAGE
+        ↓
+IPAdapter Advanced.image
+
+CLIP Vision:
+
+Load CLIP Vision.CLIP_VISION
+        ↓
+IPAdapter Advanced.clipvision
+13. LỖI ĐÃ XỬ LÝ
+
+Ban đầu:
+
+IPAdapter Unified Loader failed
+
+Nguyên nhân được xác định là cấu hình preset không phù hợp với model.
+
+Model đang dùng:
+
+ip-adapter-plus_sdxl_vit-h.safetensors
+
+Ban đầu chọn:
+
+STANDARD
+
+→ lỗi.
+
+Đổi thành:
+
+PLUS
+
+→ workflow chạy thành công.
+
+Đây là cấu hình hiện tại:
+
+IPAdapter Unified Loader = PLUS
+14. CHARACTER CONSISTENCY — TRẠNG THÁI HIỆN TẠI
+
+Đây là phần đang làm.
+
+Mục tiêu test:
+
+Character Sheet
+       ↓
+IP-Adapter
+       ↓
+Scene mới
+
+Ví dụ:
+
+Nhân vật đi khám phá một khu rừng cổ.
+
+Nhưng:
+
+khuôn mặt vẫn giữ
+tóc vẫn giữ
+trang phục vẫn giữ
+backpack vẫn giữ
+nhân vật vẫn nhận diện được là cùng một người
+
+Trong khi:
+
+background thay đổi
+pose thay đổi
+camera thay đổi
+lighting thay đổi
+15. TEST ĐẦU TIÊN
+
+Prompt scene dự kiến:
+
+cinematic 3D animated movie scene of the same young male adventurer exploring an ancient forest, walking between giant trees, wearing his dark green adventure jacket, brown leather backpack, dark cargo pants and black boots, dramatic sunlight through the trees, detailed environment, cinematic composition, high quality 3D animation
+
+Negative:
+
+blurry, low quality, distorted, deformed, bad anatomy, extra fingers, extra limbs, different character, different clothes, text, watermark
+
+KSampler:
+
+Steps = 20
+CFG = 7
+Seed = random
+
+IPAdapter:
+
+Weight = 1.0
+16. TẠI SAO TEST DÙNG RANDOM SEED
+
+Ở giai đoạn Character Consistency:
+
+Seed = random
+
+để tạo nhiều biến thể và kiểm tra:
+
+IP-Adapter có thực sự giữ nhân vật hay không?
+
+Sau khi tìm được kết quả tốt:
+
+Seed = seed cụ thể
+
+để cố định kết quả và tiếp tục phát triển scene.
+
+17. VIỆC TIẾP THEO NGAY SAU ĐÂY
+Bước 1
+
+Hoàn thành test Character Consistency.
+
+Queue Prompt
+↓
+Render
+↓
+So sánh với Character Sheet
+Bước 2
+
+Render khoảng:
+
+2–3 biến thể
+
+với:
+
+Seed = random
+Bước 3
+
+Đánh giá:
+
+Face
+Hair
+Clothes
+Body
+Backpack
+Overall character identity
+Bước 4
+
+Nếu chưa ổn:
+
+Điều chỉnh IPAdapter weight
+
+Nếu ổn:
+
+Giữ cấu hình
+↓
+Xây workflow scene
+18. TỔ CHỨC WORKFLOW COMFYUI
+
+Hiện tại workflow bắt đầu có nhiều node nên cần tổ chức lại.
+
+Mục tiêu bố cục:
+
+┌──────────────────┐
+│    CHARACTER     │
+│ Character Sheet  │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│   IP-ADAPTER     │
+│ Consistency      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│      SCENE       │
+│ Prompt / KSampler│
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│      OUTPUT      │
+│ VAE / Save Image │
+└──────────────────┘
+
+Các Group dự kiến:
+
+CHARACTER
+IP-ADAPTER
+SCENE
+OUTPUT
+
+Mục tiêu là biến workflow thành một pipeline trực quan, tránh dây nối chằng chịt khi dự án lớn hơn.
+
+19. GIAI ĐOẠN TIẾP THEO — IMAGE TO VIDEO
+
+Sau khi Character Consistency ổn định:
+
+IMAGE
+  ↓
+VIDEO MODEL
+  ↓
+VIDEO
+
+Dự kiến nghiên cứu:
+
+Wan / Wan 2.x
+
+Do RTX 3060 chỉ có 12GB VRAM nên sẽ ưu tiên:
+
+model nhẹ
+quantized model
+workflow tiết kiệm VRAM
+resolution phù hợp
+batch nhỏ
+20. SAU IMAGE-TO-VIDEO
+
+Khi video generation hoạt động:
+
+Character
+    ↓
+Scene Image
+    ↓
+Video
+    ↓
+Quality Check
+
+Nếu shot lỗi:
+
+Regenerate
+
+Nếu shot khó:
+
+Cloud AI
+21. AUDIO PIPELINE
+
+Sau video:
+
+Video
+ ↓
+TTS
+ ↓
+Music
+ ↓
+SFX
+
+Có thể tạo:
+
+voice
+narrator
+character dialogue
+background music
+environment sound
+impact sound
+cinematic effects
+22. FINAL VIDEO
+
+Dùng:
+
+FFmpeg
+
+để:
+
+Video
++
+Voice
++
+Music
++
+SFX
+↓
+Final MP4
+23. GIAI ĐOẠN TỰ ĐỘNG HÓA
+
+Chỉ bắt đầu sau khi workflow thủ công đã ổn định.
+
+Mục tiêu cuối:
+
+User:
+"Tạo video 60 giây về một nhà thám hiểm khám phá rừng cổ"
+
+AI Agent tự thực hiện:
+
+IDEA
+ ↓
+SCRIPT
+ ↓
+SHOT LIST
+ ↓
+CHARACTER
+ ↓
+SCENE PROMPTS
+ ↓
+COMFYUI
+ ↓
+IMAGE
+ ↓
+VIDEO
+ ↓
+QUALITY CHECK
+ ↓
+REGENERATE nếu lỗi
+ ↓
+TTS
+ ↓
+MUSIC
+ ↓
+SFX
+ ↓
+FFMPEG
+ ↓
+FINAL VIDEO
+
+Python sẽ đóng vai trò orchestrator, còn các model/tool thực hiện từng nhiệm vụ.
+
+24. ROADMAP TỔNG THỂ
+[1] ComfyUI
+      ✅
+
+[2] SDXL Image Generation
+      ✅
+
+[3] Character Design
+      ✅
+
+[4] IP-Adapter
+      ✅
+
+[5] Character Consistency
+      🔄 ĐANG LÀM
+
+[6] Workflow Organization
+      ⏭️ TIẾP THEO
+
+[7] Scene Generation
+      ⏳
+
+[8] Image → Video
+      ⏳
+
+[9] Quality Control
+      ⏳
+
+[10] TTS / Music / SFX
+      ⏳
+
+[11] FFmpeg
+      ⏳
+
+[12] Python Automation
+      ⏳
+
+[13] AI Agent
+      ⏳
+
+[14] AI Video Factory hoàn chỉnh
+      🎯 MỤC TIÊU
+25. ĐIỂM DỪNG HIỆN TẠI
+
+Đang dừng tại:
+
+Character Consistency với SDXL + IP-Adapter PLUS
+
+Đã xác nhận:
+
+ComfyUI          ✅
+RTX 3060         ✅
+CUDA             ✅
+SDXL             ✅
+Image Generation ✅
+Character Sheet  ✅
+IP-Adapter       ✅
+CLIP Vision      ✅
+IPAdapter PLUS   ✅

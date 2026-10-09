@@ -1,0 +1,914 @@
+AI VIDEO FACTORY — TỔNG HỢP DỰ ÁN (v2)
+
+Ngày cập nhật: 02/10/2026
+Phiên bản trước: v1 (30/09/2026)
+Trạng thái: Đang xây dựng — hoàn thành nền tảng Image Generation, đang hoàn thiện Character Consistency.
+
+Thay đổi chính so với v1:
+- Thêm MVP, mốc thời gian, spec đầu ra.
+- Thay cách test Character Consistency bằng giao thức test có đo lường (seed cố định, ma trận weight, chấm điểm).
+- Thêm phương án dự phòng Character LoRA.
+- Thêm "Video Spike" chạy song song để kiểm tra sớm khả năng làm video trên máy hiện tại.
+- Đưa nâng cấp RAM lên trước giai đoạn video.
+- Thêm "Vertical Slice" (video 15 giây đi đủ các khâu) trước khi tối ưu từng khâu.
+- Thêm Definition of Done cho từng giai đoạn.
+- Thêm bảng kiểm tra license, danh sách rủi ro, quản lý phiên bản, cấu trúc thư mục.
+- v1 chỉ dùng narrator, chưa làm thoại nhân vật/lip-sync.
+
+Ký hiệu:
+[CẦN CHỐT]  = quyết định bạn cần đưa ra.
+[ĐỀ XUẤT]   = gợi ý, điều chỉnh theo thực tế.
+[KIỂM TRA]  = thông tin cần xác minh lại tại nguồn chính thức trước khi dùng.
+
+
+0. TÓM TẮT NHANH (ĐỌC PHẦN NÀY TRƯỚC KHI LÀM TIẾP)
+
+Đang dừng tại:
+
+Character Consistency với SDXL + IP-Adapter PLUS
+
+3 rủi ro lớn nhất:
+
+1. IP-Adapter một mình có thể không giữ nhân vật đủ ổn định
+   → test có đo lường, dự phòng Character LoRA.
+2. Image → Video có thể quá chậm/không chạy nổi trên RTX 3060 12GB + RAM 16GB
+   → làm Video Spike ngay, nâng RAM trước giai đoạn video.
+3. License thương mại
+   → chỉ dùng model đã có trong bảng license (mục 18) với trạng thái "OK".
+
+Việc làm tiếp theo (theo thứ tự):
+
+1. Crop ảnh reference chính diện từ Character Sheet.
+2. Chạy test ma trận weight × seed cố định × 5 scene, chấm điểm.
+3. Song song: Video Spike với Wan I2V, ghi lại thời gian render và VRAM/RAM.
+4. Chốt spec đầu ra.
+5. Nếu IP-Adapter chưa đạt → chuyển sang train Character LoRA.
+
+
+1. MỤC TIÊU DỰ ÁN
+
+Xây dựng một AI Video Factory có khả năng sản xuất video bằng AI theo quy trình:
+
+Ý tưởng
+   ↓
+Kịch bản
+   ↓
+Shot List
+   ↓
+Character / Style
+   ↓
+AI Image Generation
+   ↓
+Character Consistency
+   ↓
+Image → Video
+   ↓
+Quality Check
+   ↓
+TTS / Music / SFX
+   ↓
+FFmpeg
+   ↓
+Final Video
+   ↓
+Tự động hóa bằng Python + AI Agent
+
+Định hướng:
+
+- Ưu tiên chạy local để tiết kiệm chi phí.
+- Sử dụng ComfyUI làm engine chính.
+- Có thể dùng cloud AI cho những shot khó khi cần.
+- Về lâu dài xây dựng AI Agent để tự động điều phối toàn bộ pipeline.
+- Có định hướng sử dụng cho sản phẩm/video thương mại
+  → mọi model/tool phải qua kiểm tra license (mục 18) trước khi đưa vào pipeline.
+
+Mục đích sử dụng & kênh phát hành: [CẦN CHỐT]
+
+- Loại nội dung: ............ (phim ngắn hoạt hình / quảng cáo sản phẩm / kênh kể chuyện / ...)
+- Kênh: ............ (YouTube / YouTube Shorts / TikTok / Facebook Reels / khách hàng)
+- Ngôn ngữ thoại: ............ (tiếng Việt / tiếng Anh)
+
+Lý do cần chốt: quyết định tỷ lệ khung hình, độ dài video, lựa chọn TTS và yêu cầu license.
+
+Ngân sách cloud tối đa mỗi tháng: [CẦN CHỐT] ............ USD
+
+
+2. MVP & MỐC THỜI GIAN
+
+MVP (phiên bản đầu tiên cần đạt):
+
+- Video dài 30 giây.
+- 1 nhân vật chính (nhân vật nhà thám hiểm hiện tại).
+- 5–8 shot, mỗi shot 3–5 giây.
+- Chỉ có giọng narrator (KHÔNG có thoại nhân vật, KHÔNG lip-sync).
+- Có nhạc nền + vài SFX môi trường.
+- Ghép bằng FFmpeg thành 1 file MP4 theo spec ở mục 3.
+- Làm thủ công (chưa cần tự động hóa).
+- Mọi model dùng trong MVP đều có license cho phép thương mại.
+
+Mốc thời gian [ĐỀ XUẤT — chỉnh theo thời gian thực tế bạn có]:
+
+M1 — đến 16/10/2026
+     Character Consistency đạt Definition of Done (hoặc đã quyết định chuyển sang LoRA).
+     Video Spike có số liệu thực tế.
+
+M2 — đến 30/10/2026
+     Chốt spec đầu ra.
+     Workflow đã tổ chức lại, export API JSON, đưa vào git.
+     Vertical Slice: video 15 giây, 3 shot, đi đủ các khâu.
+
+M3 — đến 30/11/2026
+     MVP video 30 giây hoàn chỉnh.
+
+M4 — Quý 1/2027
+     Python script chạy lại MVP end-to-end từ shot list (bán tự động).
+
+M5 — Sau M4
+     AI Agent điều phối từ ý tưởng → video.
+
+
+3. SPEC ĐẦU RA [CẦN CHỐT]
+
+Chọn 1 trong 2:
+
+Phương án A — 16:9 (YouTube)
+   Ảnh SDXL      : 1344 × 768
+   Video render  : 832 × 480 (hoặc 1280 × 720 nếu máy chạy nổi)
+   Output cuối   : 1920 × 1080 (upscale ở bước cuối)
+
+Phương án B — 9:16 (Shorts / TikTok / Reels)
+   Ảnh SDXL      : 768 × 1344
+   Video render  : 480 × 832 (hoặc 720 × 1280)
+   Output cuối   : 1080 × 1920
+
+Thông số chung [ĐỀ XUẤT]:
+
+   fps render       : theo model video (thường 16 hoặc 24) [KIỂM TRA theo model]
+   fps output       : 24 (nội suy khung hình nếu model chỉ ra 16 fps)
+   Độ dài mỗi shot  : 3–5 giây
+   Video codec      : H.264, yuv420p
+   Audio            : AAC, 48 kHz, stereo
+   Container        : MP4
+
+Quy tắc quan trọng:
+
+Ảnh scene phải render ĐÚNG tỷ lệ khung hình của video ngay từ đầu.
+Render sai tỷ lệ → sau này phải crop (mất bố cục) hoặc render lại toàn bộ.
+
+
+4. KIẾN TRÚC DỰ KIẾN
+
+Kiến trúc dài hạn:
+
+                ┌───────────────┐
+                │     IDEA      │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │  LLM          │
+                │ Local (Qwen / │
+                │ Ollama) hoặc  │
+                │ Cloud         │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │ SCRIPT / SHOT │
+                │     LIST      │
+                └───────┬───────┘
+                        ↓
+        ┌─────────────────────────────┐
+        │          COMFYUI            │
+        │                             │
+        │ Character → Image → Video   │
+        └──────────────┬──────────────┘
+                       ↓
+                ┌───────────────┐
+                │ QUALITY CHECK │
+                └───────┬───────┘
+                        ↓
+             ┌──────────┴──────────┐
+             ↓                     ↓
+        Local Video            Cloud AI
+        Generation             Fallback
+             └──────────┬──────────┘
+                        ↓
+                ┌───────────────┐
+                │ TTS / MUSIC / │
+                │      SFX      │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │    FFMPEG     │
+                └───────┬───────┘
+                        ↓
+                ┌───────────────┐
+                │  FINAL VIDEO  │
+                └───────────────┘
+
+Lưu ý tài nguyên:
+
+LLM local và ComfyUI dùng chung GPU 12GB → sẽ tranh VRAM.
+Cách xử lý:
+- Chạy tuần tự: LLM xong → giải phóng VRAM → mới chạy ComfyUI.
+  (Ollama: keep_alive = 0 để unload model sau khi trả lời;
+   ComfyUI: endpoint /free để unload model.) [KIỂM TRA cú pháp khi triển khai]
+- Hoặc dùng LLM cloud cho bước viết kịch bản/shot list (rẻ, chất lượng tốt hơn).
+
+
+5. PHẦN CỨNG
+
+Hiện tại:
+
+CPU     : Intel Core i5-12400F
+GPU     : NVIDIA RTX 3060 12GB
+RAM     : 16GB
+OS      : Windows 64-bit
+Ổ đĩa   : [CẦN ĐIỀN] dung lượng / còn trống ...... GB
+
+Kế hoạch nâng cấp (ĐÃ ĐIỀU CHỈNH):
+
+RAM → tối thiểu 32GB, khuyến nghị 64GB
+     → làm TRƯỚC giai đoạn Image → Video (không để "tương lai").
+
+Lý do:
+Model video lớn (ví dụ Wan 14B, kể cả bản quantized) cần offload/block swap sang RAM hệ thống.
+Với 16GB RAM, máy dễ bị treo hoặc lỗi hết bộ nhớ, dù GPU vẫn đủ.
+Nút thắt thực tế ở giai đoạn video là RAM, không chỉ VRAM.
+
+Việc nên làm thêm:
+
+- Pagefile Windows: đặt trên SSD, khoảng 32–64GB (đỡ treo khi thiếu RAM).
+- Ổ đĩa: dự trù ≥ 300–500GB trống cho model (checkpoint, video model, LoRA, audio model).
+- Không để thư mục output/model trong OneDrive (tránh đồng bộ hàng trăm GB).
+
+
+6. MÔI TRƯỜNG ĐÃ CÀI ĐẶT
+
+Project:
+C:\AIVideoManager\ComfyUI
+
+Python:
+Python 3.12.10
+
+Virtual Environment:
+C:\AIVideoManager\ComfyUI\venv
+
+PyTorch:
+PyTorch 2.11.0+cu128
+CUDA 12.8
+
+Đã kiểm tra:
+torch.cuda.is_available() = True
+
+GPU được nhận:
+NVIDIA GeForce RTX 3060
+
+ComfyUI chạy tại:
+http://127.0.0.1:8188
+
+Lưu ý tương thích:
+
+Python 3.12 + PyTorch 2.11 khá mới. Một số custom node / thư viện
+(insightface, sageattention, xformers, ...) có thể chưa có bản build sẵn cho Windows.
+→ Trước khi cài custom node mới: tạo snapshot (mục 17), đọc yêu cầu phiên bản của node.
+→ Ghi lại phiên bản ComfyUI và từng custom node đang chạy ổn định.
+
+Phiên bản ComfyUI hiện tại: [CẦN ĐIỀN] ......
+Phiên bản ComfyUI_IPAdapter_plus: [CẦN ĐIỀN] ......
+
+
+7. NHỮNG GÌ ĐÃ HOÀN THÀNH
+
+7.1 ComfyUI
+
+- Cài ComfyUI.
+- Thiết lập Python environment.
+- Cấu hình PyTorch + CUDA.
+- Kiểm tra GPU.
+- Chạy ComfyUI thành công.
+
+7.2 SDXL Image Generation
+
+Đã cài:
+sd_xl_base_1.0.safetensors
+Tại:
+ComfyUI\models\checkpoints\
+
+Workflow cơ bản:
+
+Load Checkpoint
+       ↓
+CLIP Text Encode
+   ↙         ↘
+Positive    Negative
+      \       /
+       ↓     ↓
+       KSampler
+           ↑
+    Empty Latent Image
+           ↓
+       VAE Decode
+           ↓
+       Save Image
+
+Vai trò các node:
+
+Load Checkpoint    : load MODEL, CLIP, VAE.
+CLIP Text Encode   : chuyển prompt thành conditioning.
+Empty Latent Image : tạo latent canvas (quyết định kích thước ảnh).
+KSampler           : thực hiện quá trình diffusion/denoising.
+VAE Decode         : chuyển latent thành ảnh RGB.
+Save Image         : lưu ảnh kết quả (kèm metadata workflow trong PNG).
+
+7.3 Kiến thức KSampler
+
+Steps : số bước denoising (10 / 20 / 30). Cao hơn → refinement nhiều hơn, render lâu hơn.
+CFG   : mức độ bám prompt (4 / 7 / 12). Quá cao → ảnh gắt, cháy màu.
+Seed  : điểm khởi tạo randomness. Cùng seed + cùng workflow/settings → tái tạo kết quả tương tự.
+Random seed : dùng khi muốn khám phá biến thể mới.
+
+Nguyên tắc khi THỬ NGHIỆM (bổ sung v2):
+
+Mỗi lần chỉ thay đổi 1 biến.
+Muốn so sánh tác động của một tham số (weight, CFG, steps, ...) → PHẢI cố định seed.
+Random seed chỉ dùng ở giai đoạn khám phá, không dùng khi tinh chỉnh tham số.
+
+7.4 Character Design
+
+Đã tạo Character Sheet cho nhân vật chính.
+
+Character:
+- Nam, 25 tuổi
+- Tóc đen ngắn hơi rối
+- Mắt nâu
+- Khuôn mặt góc cạnh
+- Râu nhẹ
+- Thân hình athletic
+
+Trang phục:
+- Áo khoác phiêu lưu xanh đậm
+- Ba lô da nâu
+- Quần cargo tối màu
+- Boots đen
+
+Style:
+- Stylized 3D animated movie character
+- Cinematic 3D rendering
+
+Seed ban đầu: 123456
+
+Tên nhân vật / trigger word dự kiến (dùng cho LoRA sau này): [CẦN CHỐT] ......
+
+7.5 IP-Adapter
+
+Đã cài: ComfyUI_IPAdapter_plus
+
+Model:
+ip-adapter-plus_sdxl_vit-h.safetensors          → ComfyUI\models\ipadapter\
+CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors     → ComfyUI\models\clip_vision\
+
+ComfyUI đã nhận diện được cả hai model.
+
+Node đang dùng:
+Load Image, Load CLIP Vision, IPAdapter Unified Loader, IPAdapter Advanced
+
+Kết nối hiện tại:
+
+Load Checkpoint.MODEL          → Unified Loader.model
+Unified Loader.model           → IPAdapter Advanced.model
+Unified Loader.ipadapter       → IPAdapter Advanced.ipadapter
+Load Image.IMAGE               → IPAdapter Advanced.image
+Load CLIP Vision.CLIP_VISION   → IPAdapter Advanced.clip_vision
+IPAdapter Advanced.MODEL       → KSampler.model
+
+Lỗi đã xử lý:
+
+IPAdapter Unified Loader failed
+Nguyên nhân: preset không khớp model.
+Model ip-adapter-plus_sdxl_vit-h → preset STANDARD bị lỗi → đổi sang PLUS → chạy thành công.
+
+Cấu hình hiện tại: IPAdapter Unified Loader = PLUS
+
+
+8. CHARACTER CONSISTENCY — GIAO THỨC TEST (THAY THẾ CÁCH TEST CŨ)
+
+Mục tiêu:
+
+Giữ nhận diện nhân vật (mặt, tóc, trang phục, ba lô, vóc dáng)
+khi thay đổi background, pose, camera, lighting.
+
+Lưu ý: cần đạt CẢ HAI:
+- Giữ nhân vật (identity)
+- Vẫn làm đúng scene theo prompt (prompt adherence)
+Weight IP-Adapter quá cao thường "copy" luôn pose/bố cục/nền của ảnh gốc → hỏng scene.
+
+8.1 Chuẩn bị ảnh reference
+
+Vấn đề: CLIP Vision resize/crop ảnh về khoảng 224×224.
+Character Sheet nhiều góc nhìn → bị nén, cắt mất chi tiết → nhận diện kém.
+
+Cách làm:
+1. Crop từ Character Sheet 1 ảnh CHÍNH DIỆN, NỬA NGƯỜI (thấy mặt + áo khoác + quai ba lô),
+   nền trơn, nhân vật nằm giữa khung.
+2. Lưu thành: refs\char_main_front.png
+3. Thêm node "Prep Image For ClipVision" giữa Load Image và IPAdapter Advanced.
+4. (Tùy chọn, test sau) thêm ảnh thứ 2: góc nghiêng 3/4 hoặc phía sau (để giữ ba lô).
+
+8.2 Chọn checkpoint
+
+sd_xl_base_1.0 cho phong cách "3D animated" khá yếu.
+→ Thử thêm 1–2 checkpoint SDXL fine-tune phong cách 3D/stylized.
+→ BẮT BUỘC đọc license từng checkpoint (nhiều model trên Civitai cấm dùng thương mại).
+→ Ghi vào bảng model (mục 17.3) trước khi dùng.
+
+8.3 Ma trận test
+
+Bước A — dò nhanh (1 scene):
+   Scene S1, seed cố định 111111
+   Weight: 0.5 / 0.7 / 0.85 / 1.0
+   → chọn ra 2 mức weight tốt nhất.
+
+Bước B — test đầy đủ:
+   2 mức weight tốt nhất × 3 seed cố định (111111, 222222, 333333) × 5 scene
+   = 30 ảnh.
+
+Bước C — tinh chỉnh (nếu cần):
+   Với weight tốt nhất, thử:
+   - weight_type khác nhau (linear, style transfer, ...)
+   - end_at = 1.0 so với end_at = 0.8
+
+Cấu hình cố định khi test:
+   Steps = 25, CFG = 6–7, sampler/scheduler giữ nguyên trong suốt đợt test.
+   Kích thước ảnh = theo spec mục 3 (1344×768 hoặc 768×1344).
+
+5 scene test:
+
+S1 — Toàn thân, đi bộ trong rừng cổ, nắng xuyên tán lá (scene gốc của v1).
+S2 — Cận mặt (close-up), ánh hoàng hôn → test giữ khuôn mặt.
+S3 — Trong nhà, ngồi bên bàn gỗ, ánh đèn ấm → test pose ngồi + đổi lighting.
+S4 — Thành phố đêm mưa, đang chạy, góc máy thấp → test chuyển động + góc máy.
+S5 — Nhìn từ phía sau / 3/4 lưng, đứng trên vách núi → test ba lô + vóc dáng.
+
+Prompt mẫu S1 (từ v1):
+
+cinematic 3D animated movie scene of the same young male adventurer exploring an ancient forest, walking between giant trees, wearing his dark green adventure jacket, brown leather backpack, dark cargo pants and black boots, dramatic sunlight through the trees, detailed environment, cinematic composition, high quality 3D animation
+
+Negative:
+
+blurry, low quality, distorted, deformed, bad anatomy, extra fingers, extra limbs, different character, different clothes, text, watermark
+
+8.4 Bảng chấm điểm (1–5 cho mỗi ảnh)
+
+Face            : khuôn mặt có giống ảnh reference không
+Hair            : kiểu tóc, màu tóc
+Clothes         : áo khoác xanh đậm, quần cargo, boots
+Backpack        : ba lô da nâu (đúng màu, đúng kiểu)
+Body            : vóc dáng athletic
+Prompt adherence: có đúng scene/pose/camera/lighting theo prompt không
+Artifacts       : lỗi tay, mặt méo, chi thừa (5 = không lỗi)
+
+Identity score = trung bình (Face, Hair, Clothes, Backpack, Body)
+
+Ghi tất cả vào experiments\log.csv (mẫu ở mục 17.4).
+
+8.5 Definition of Done — Character Consistency
+
+ĐẠT khi:
+≥ 80% ảnh có Identity score ≥ 4  VÀ  Prompt adherence ≥ 4
+trên cả 5 scene.
+
+Nếu đạt:
+→ Ghi lại cấu hình chuẩn (checkpoint, weight, weight_type, end_at, ảnh ref)
+→ Lưu workflow thành: workflows\character_scene_v1.json
+→ Chuyển sang Workflow Organization.
+
+Nếu đạt 60–80%:
+→ Tinh chỉnh thêm (Bước C, đổi checkpoint, thêm ảnh ref thứ 2).
+
+Nếu dưới 60%, hoặc tinh chỉnh vẫn không lên:
+→ Chuyển sang phương án dự phòng 8.6.
+
+8.6 Phương án dự phòng — Character LoRA
+
+Đây là cách giữ nhân vật ổn định nhất hiện nay cho SDXL.
+
+Các bước:
+1. Chọn 20–30 ảnh nhân vật đạt chuẩn (lấy từ các lần test), đa dạng:
+   góc máy, pose, ánh sáng, bối cảnh, cận/trung/toàn.
+2. Caption từng ảnh, có trigger word riêng (ví dụ tên nhân vật).
+3. Train SDXL LoRA bằng kohya_ss hoặc OneTrainer.
+   12GB VRAM train được (bật gradient checkpointing, cache latents).
+   RAM 16GB có thể chậm/chật — ưu tiên đóng các ứng dụng khác khi train.
+   Thông số khởi điểm [ĐỀ XUẤT, KIỂM TRA theo hướng dẫn của tool]:
+   rank 16–32, khoảng 1500–3000 steps.
+4. Dùng kết hợp: LoRA 0.7–0.9 + IP-Adapter 0.4–0.6.
+5. Test lại theo đúng giao thức 8.3–8.5.
+
+Phương án khác để cân nhắc sau:
+- Model chỉnh sửa ảnh (image edit) có khả năng giữ nhân vật tốt (ví dụ Qwen-Image-Edit),
+  nhưng nặng, cần bản GGUF trên 12GB VRAM. [KIỂM TRA license + yêu cầu phần cứng]
+
+TRÁNH (vì license thương mại):
+- IP-Adapter FaceID, InstantID, PuLID → phụ thuộc model InsightFace (license non-commercial).
+  Ngoài ra các phương pháp này nhận diện kém với khuôn mặt 3D stylized.
+
+
+9. TỔ CHỨC WORKFLOW COMFYUI
+
+Mục tiêu bố cục:
+
+┌──────────────────┐
+│    CHARACTER     │
+│ Ref image / LoRA │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│   IP-ADAPTER     │
+│ Consistency      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│      SCENE       │
+│ Prompt / KSampler│
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│      OUTPUT      │
+│ VAE / Save Image │
+└──────────────────┘
+
+Group: CHARACTER, IP-ADAPTER, SCENE, OUTPUT
+
+Bổ sung v2 — thiết kế sẵn cho tự động hóa:
+
+1. Đặt tên (title) rõ ràng cho mọi node đầu vào sẽ thay đổi theo shot:
+   IN_PositivePrompt, IN_NegativePrompt, IN_Seed, IN_RefImage,
+   IN_IPAWeight, IN_Width, IN_Height, OUT_Image
+2. Save Image: đặt filename_prefix theo shot, ví dụ P001/shot_001/img
+3. Lưu workflow ở 2 dạng:
+   workflows\ui\character_scene_v1.json   (mở lại trong ComfyUI)
+   workflows\api\character_scene_v1.json  (Export (API) — dùng cho Python)
+4. Mỗi khi đổi cấu hình chuẩn → tăng số phiên bản (v1, v2, ...) và commit git.
+
+Definition of Done:
+Workflow chạy được chỉ bằng cách thay các node IN_*; có cả bản UI và API trong git.
+
+
+10. VIDEO SPIKE (MỚI — LÀM SONG SONG VỚI MỤC 8)
+
+Mục tiêu: biết SỚM máy hiện tại có làm video được không, trước khi đầu tư sâu vào các bước khác.
+
+Cách làm:
+- Lấy 1 ảnh bất kỳ (không cần đạt chuẩn nhân vật), đúng tỷ lệ khung hình theo spec.
+- Chạy Image → Video với model Wan:
+  + Phương án nhẹ: Wan 2.2 TI2V-5B
+  + Phương án chất lượng: Wan I2V 14B bản GGUF quantized (Q4–Q5) qua node ComfyUI-GGUF
+  [KIỂM TRA tên/phiên bản model mới nhất và yêu cầu VRAM trước khi tải]
+- Độ phân giải 832×480 (hoặc 480×832), độ dài khoảng 3–5 giây.
+
+Số liệu cần ghi lại:
+
+Model / bản quant         : ......
+Độ phân giải / số frame   : ......
+Thời gian render 1 clip   : ...... phút
+VRAM cao nhất             : ...... GB
+RAM cao nhất              : ...... GB
+Có lỗi hết bộ nhớ / treo  : có / không
+Chất lượng chuyển động    : 1–5
+Nhân vật có bị biến dạng  : 1–5
+
+Tính thời gian sản xuất:
+
+Thời gian 1 video ≈ số shot × số lần render trung bình mỗi shot × thời gian 1 clip
+
+Ví dụ: video 30 giây = 8 shot × 3 lần × 15 phút ≈ 6 giờ render.
+
+Ngưỡng quyết định [ĐỀ XUẤT]:
+
+≤ 10 phút/clip, ổn định      → tiếp tục local.
+10–20 phút/clip              → chấp nhận được cho MVP; nâng RAM; render qua đêm.
+> 20 phút/clip hoặc hay treo → nâng RAM trước; dùng model nhẹ hơn;
+                               cân nhắc cloud cho video (theo ngân sách mục 1).
+
+Definition of Done:
+Có 1 clip chạy thành công + đủ bảng số liệu ở trên + đã chọn hướng đi (local / cloud / kết hợp).
+
+
+11. IMAGE → VIDEO
+
+Sau khi Character Consistency đạt chuẩn và Video Spike có kết quả:
+
+Scene Image (đạt chuẩn nhân vật)
+  ↓
+Video Model (Wan)
+  ↓
+Clip 3–5 giây
+
+Ưu tiên do RTX 3060 12GB:
+- Model nhẹ / quantized (GGUF)
+- Workflow tiết kiệm VRAM (block swap / offload)
+- Độ phân giải theo spec, batch = 1
+- Clip ngắn (3–5 giây) — clip càng dài nhân vật càng dễ "trôi" (drift)
+
+Lưu ý giữ nhân vật trong video:
+- Image → Video giữ tốt khung đầu, nhưng nhân vật có thể biến dạng ở cuối clip.
+- Ảnh đầu vào phải đạt chuẩn nhân vật (qua QC ảnh trước khi đem làm video).
+- Prompt chuyển động nên đơn giản, rõ ràng (đi, quay đầu, camera tiến chậm, ...).
+
+Definition of Done:
+5 clip từ 5 scene khác nhau, mỗi clip đạt tiêu chí QC video (mục 12).
+
+
+12. QUALITY CONTROL
+
+Định nghĩa từ bây giờ (chấm thủ công, sau này tự động hóa).
+
+QC ảnh scene (trước khi làm video):
+- Identity score ≥ 4
+- Prompt adherence ≥ 4
+- Không lỗi tay/mặt/chi thừa rõ ràng
+- Đúng kích thước/tỷ lệ theo spec
+
+QC clip video:
+- Nhân vật giữ nhận diện đến hết clip (≥ 4)
+- Không biến dạng nặng (mặt chảy, tay méo, vật thể biến mất)
+- Không nhấp nháy (flicker) nặng
+- Chuyển động đúng ý shot list
+- Đúng độ dài
+
+Quy tắc regenerate:
+- Tối đa 3 lần render lại cho 1 shot.
+- Vẫn lỗi → viết lại prompt/đơn giản hóa chuyển động, hoặc đưa sang cloud,
+  hoặc thay shot khác trong kịch bản.
+
+Tự động hóa QC sau này (giai đoạn Python/Agent):
+- CLIP score (ảnh có khớp prompt)
+- VLM chấm điểm theo bảng tiêu chí trên (ví dụ Qwen-VL chạy local hoặc cloud)
+- Tiêu chí tự động phải được so sánh với điểm chấm tay trước khi tin dùng.
+
+
+13. AUDIO PIPELINE
+
+Phạm vi v1 (MVP):
+- Narrator (giọng kể chuyện)
+- Nhạc nền
+- SFX môi trường / va chạm
+
+NGOÀI phạm vi v1:
+- Thoại nhân vật + lip-sync (khớp khẩu hình).
+  Đây là một bài toán riêng, nặng, cần model lip-sync riêng → để sau MVP.
+
+TTS:
+- Ngôn ngữ: [CẦN CHỐT]
+- Nếu tiếng Việt: lựa chọn local ít hơn tiếng Anh → TEST SỚM (song song giai đoạn video).
+  So sánh 2–3 lựa chọn local + 1 lựa chọn cloud về độ tự nhiên, phát âm, ngữ điệu.
+- Kiểm tra license từng model TTS (nhiều model phổ biến là non-commercial, xem mục 18).
+- Nếu clone giọng người thật → phải có sự đồng ý bằng văn bản của người đó.
+
+Music / SFX:
+- Kiểm tra license (xem mục 18).
+- Lưu nguồn + license của từng file nhạc/SFX dùng trong video.
+
+Definition of Done:
+Có giọng narrator 30 giây đạt chất lượng nghe được + 1 bản nhạc + 3–5 SFX, tất cả đều hợp lệ license.
+
+
+14. FINAL VIDEO — FFMPEG
+
+Video clips
++
+Voice
++
+Music
++
+SFX
+↓
+Final MP4 (theo spec mục 3)
+
+Các việc FFmpeg cần làm:
+- Nối các clip theo thứ tự shot list.
+- Đồng bộ fps (nội suy nếu cần) và độ phân giải; upscale ở bước cuối.
+- Trộn audio: narrator to rõ, nhạc nền giảm âm lượng khi có giọng (ducking).
+- Chuẩn hóa âm lượng (loudnorm) cho nền tảng phát hành.
+- Xuất H.264 + AAC, yuv420p.
+
+Lưu lệnh FFmpeg thành script (scripts\assemble.*) để tái sử dụng — đây là bước đầu của tự động hóa.
+
+
+15. VERTICAL SLICE (MỚI)
+
+Mục tiêu: đi đủ TẤT CẢ các khâu 1 lần với chất lượng thấp, để lộ sớm lỗi tích hợp
+(lệch fps, độ dài audio/video không khớp, chuyển cảnh, tỷ lệ khung hình, ...).
+
+Nội dung:
+- Video 15 giây, 3 shot.
+- Dùng ảnh/clip từ Video Spike và test nhân vật (không cần đạt chuẩn).
+- Narrator TTS bất kỳ + 1 bản nhạc + 1–2 SFX.
+- Ghép bằng FFmpeg theo spec.
+
+Definition of Done:
+Có 1 file MP4 15 giây đúng spec + danh sách vấn đề phát hiện được và cách xử lý.
+
+
+16. GIAI ĐOẠN TỰ ĐỘNG HÓA
+
+Chỉ bắt đầu sau khi MVP làm thủ công đã ổn định.
+
+Mục tiêu cuối:
+
+User:
+"Tạo video 60 giây về một nhà thám hiểm khám phá rừng cổ"
+
+AI Agent tự thực hiện:
+
+IDEA → SCRIPT → SHOT LIST → CHARACTER → SCENE PROMPTS → COMFYUI → IMAGE
+→ QC ẢNH → VIDEO → QC VIDEO → REGENERATE nếu lỗi → TTS → MUSIC → SFX → FFMPEG → FINAL VIDEO
+
+Python là orchestrator, các model/tool thực hiện từng nhiệm vụ.
+
+Lộ trình tự động hóa từng bước [ĐỀ XUẤT]:
+1. Script FFmpeg ghép video (đã có từ mục 14).
+2. Python gọi ComfyUI API: đọc shot list (CSV) → thay node IN_* trong workflow API JSON
+   → gửi lên ComfyUI → lưu kết quả vào đúng thư mục shot.
+3. Thêm bước TTS + ghép audio.
+4. Thêm QC tự động + regenerate.
+5. Cuối cùng mới thêm LLM/Agent cho bước ý tưởng → kịch bản → shot list.
+
+Kỹ thuật:
+- ComfyUI API: gửi workflow API JSON tới /prompt, theo dõi tiến trình qua websocket.
+- Quản lý VRAM giữa LLM và ComfyUI (xem mục 4).
+- Mỗi lần chạy ghi log: shot, seed, tham số, thời gian, kết quả QC.
+
+Definition of Done (M4):
+1 lệnh Python chạy lại MVP từ shot list → ra MP4, không cần thao tác tay trong ComfyUI.
+
+
+17. QUẢN LÝ DỰ ÁN & PHIÊN BẢN (MỚI)
+
+17.1 Cấu trúc thư mục [ĐỀ XUẤT]
+
+C:\AIVideoManager\
+  ComfyUI\                      (engine, không sửa trực tiếp)
+  factory\                      (git repo)
+    docs\                       (tài liệu này, bảng license, bảng model)
+    workflows\
+      ui\
+      api\
+    scripts\                    (FFmpeg, Python)
+    experiments\
+      log.csv                   (nhật ký thí nghiệm)
+    projects\
+      P001_rung_co\
+        brief.txt
+        script.txt
+        shotlist.csv
+        refs\                   (ảnh reference nhân vật)
+        shots\
+          shot_001\
+            image\
+            video\
+            audio\
+        final\
+
+File nặng (ảnh, video, model) KHÔNG đưa vào git (.gitignore),
+nhưng cần sao lưu định kỳ ra ổ ngoài / cloud storage.
+
+17.2 Git & snapshot
+
+- git cho: workflows, scripts, docs, shotlist, log thí nghiệm.
+- Commit mỗi khi có cấu hình chuẩn mới hoặc trước khi thay đổi lớn.
+- ComfyUI-Manager: tạo snapshot TRƯỚC mỗi lần update ComfyUI hoặc cài custom node.
+- Không update ComfyUI giữa lúc đang sản xuất một video.
+
+17.3 Bảng model (docs\models.csv)
+
+Cột:
+tên file | loại | nguồn (URL) | license | dùng thương mại (OK/KHÔNG/CHƯA RÕ) | ngày tải | ghi chú
+
+Mỗi model mới tải về → thêm vào bảng ngay.
+
+17.4 Nhật ký thí nghiệm (experiments\log.csv)
+
+Cột:
+ngày | mã test | checkpoint | LoRA (weight) | ảnh ref | IPA weight | weight_type | end_at
+| seed | steps | cfg | scene | Face | Hair | Clothes | Backpack | Body
+| Prompt adherence | Artifacts | Identity score | file ảnh | ghi chú
+
+17.5 Shot list (projects\Pxxx\shotlist.csv)
+
+Cột:
+shot_id | thời lượng (s) | mô tả | góc máy | chuyển động | prompt | seed
+| ảnh đạt | clip đạt | lời narrator | SFX | trạng thái
+
+
+18. KIỂM TRA LICENSE (MỚI)
+
+Nguyên tắc: chỉ đưa vào pipeline sản xuất những thành phần có trạng thái "OK".
+Thông tin dưới đây là tóm tắt tại thời điểm viết — [KIỂM TRA] lại tại trang chính thức,
+vì license có thể thay đổi theo phiên bản.
+
+Thành phần                         | License (tóm tắt)                    | Thương mại
+-----------------------------------|--------------------------------------|-----------
+SDXL base 1.0                      | CreativeML OpenRAIL++-M              | OK (tuân thủ điều khoản sử dụng)
+IP-Adapter (model + node)          | Apache 2.0                           | OK
+CLIP-ViT-H-14 laion2B              | MIT                                  | OK [KIỂM TRA]
+Wan 2.x                            | Apache 2.0                           | OK [KIỂM TRA theo bản dùng]
+Qwen (LLM)                         | Phần lớn Apache 2.0                  | OK [KIỂM TRA theo kích thước model]
+Ollama                             | MIT                                  | OK
+FFmpeg                             | LGPL/GPL                             | OK cho việc dùng làm công cụ
+InsightFace (FaceID/InstantID/PuLID)| Non-commercial                      | KHÔNG
+Flux.1 dev / Kontext dev           | Non-commercial (trừ khi mua license) | KHÔNG
+MusicGen (weights)                 | CC-BY-NC 4.0                         | KHÔNG
+XTTS-v2                            | Coqui Public Model License           | KHÔNG
+F5-TTS (weights gốc)               | CC-BY-NC                             | KHÔNG [KIỂM TRA bản fine-tune]
+Stable Audio Open                  | Stability AI Community License       | CÓ ĐIỀU KIỆN (ngưỡng doanh thu)
+Checkpoint / LoRA trên Civitai     | Mỗi model một khác                   | ĐỌC TỪNG CÁI
+Suno / Udio / TTS cloud            | Theo gói dịch vụ                     | Thường cần gói trả phí
+
+Ngoài model:
+- Không dùng tên, hình ảnh, giọng của người thật/nhân vật có bản quyền khi chưa được phép.
+- Lưu bằng chứng license (ảnh chụp trang license, ngày tải) trong docs\licenses\.
+
+
+19. DANH SÁCH RỦI RO (MỚI)
+
+ID  | Rủi ro                                   | Mức  | Dấu hiệu sớm                          | Phương án
+----|------------------------------------------|------|---------------------------------------|-----------------------------------------
+R1  | IP-Adapter không giữ đủ nhân vật         | Cao  | Identity score < 4 ở nhiều scene      | Character LoRA (8.6)
+R2  | Video quá chậm / không chạy nổi          | Cao  | Spike > 20 phút/clip, lỗi bộ nhớ      | Nâng RAM, model nhẹ, cloud
+R3  | RAM 16GB gây treo máy                    | Cao  | Treo khi load model video             | Nâng RAM 32–64GB, tăng pagefile
+R4  | Vi phạm license thương mại               | Cao  | Model chưa có trong bảng license      | Chỉ dùng model trạng thái "OK"
+R5  | Update ComfyUI làm hỏng custom node      | TB   | Node đỏ / lỗi import sau update       | Snapshot, ghi phiên bản, không update giữa chừng
+R6  | Nhân vật biến dạng trong video           | TB   | Mặt/trang phục đổi ở cuối clip        | Clip ngắn, ảnh đầu vào đạt chuẩn, QC
+R7  | TTS tiếng Việt kém                       | TB   | Phát âm sai, giọng máy                | Test sớm, dùng TTS cloud
+R8  | Lip-sync phức tạp                        | TB   | —                                     | Bỏ khỏi v1, chỉ narrator
+R9  | Phạm vi phình to                         | TB   | Thêm tính năng trước khi xong MVP     | Bám MVP mục 2
+R10 | Mất workflow / dữ liệu                   | TB   | —                                     | Git + sao lưu định kỳ
+R11 | Hết dung lượng ổ đĩa                     | Thấp | Ổ C < 100GB trống                     | Dọn output, chuyển model sang ổ khác
+
+
+20. ROADMAP TỔNG THỂ (ĐÃ ĐIỀU CHỈNH)
+
+[1]  ComfyUI                                   ✅
+[2]  SDXL Image Generation                     ✅
+[3]  Character Design                          ✅
+[4]  IP-Adapter                                ✅
+[5]  Character Consistency (+ LoRA nếu cần)    🔄 ĐANG LÀM       → DoD: mục 8.5
+[6]  Video Spike                               🔄 SONG SONG      → DoD: mục 10
+[7]  Chốt spec + Workflow Organization         ⏭️ TIẾP THEO      → DoD: mục 3, 9
+[8]  Vertical Slice 15 giây                    ⏳                → DoD: mục 15
+[9]  Nâng cấp RAM                              ⏳ (trước bước 11)
+[10] Scene Generation (5–8 shot MVP)           ⏳                → DoD: QC ảnh mục 12
+[11] Image → Video                             ⏳                → DoD: mục 11
+[12] Quality Control                           ⏳                → DoD: mục 12
+[13] Narrator / Music / SFX                    ⏳                → DoD: mục 13
+[14] FFmpeg dựng hoàn chỉnh                    ⏳                → DoD: mục 14
+[15] MVP video 30 giây                         🎯 M3             → DoD: mục 2
+[16] Python Automation                         ⏳ M4             → DoD: mục 16
+[17] AI Agent                                  ⏳ M5
+[18] AI Video Factory hoàn chỉnh               🎯 MỤC TIÊU
+
+
+21. ĐIỂM DỪNG HIỆN TẠI & VIỆC TIẾP THEO
+
+Đang dừng tại:
+
+Character Consistency với SDXL + IP-Adapter PLUS
+
+Đã xác nhận:
+
+ComfyUI          ✅
+RTX 3060         ✅
+CUDA             ✅
+SDXL             ✅
+Image Generation ✅
+Character Sheet  ✅
+IP-Adapter       ✅
+CLIP Vision      ✅
+IPAdapter PLUS   ✅
+
+Checklist làm tiếp:
+
+[ ] 1. Tạo thư mục factory\ + git, chép tài liệu này vào docs\.
+[ ] 2. Tạo docs\models.csv, điền các model đã có + license.
+[ ] 3. Snapshot ComfyUI hiện tại bằng ComfyUI-Manager.
+[ ] 4. Chốt spec đầu ra (mục 3) — ít nhất là tỷ lệ khung hình.
+[ ] 5. Crop ảnh ref chính diện → refs\char_main_front.png, thêm Prep Image For ClipVision.
+[ ] 6. Test Bước A (1 scene, 4 mức weight, seed cố định).
+[ ] 7. Test Bước B (2 weight × 3 seed × 5 scene), chấm điểm vào log.csv.
+[ ] 8. Song song: Video Spike, điền bảng số liệu mục 10.
+[ ] 9. Đánh giá theo DoD mục 8.5 → giữ cấu hình hoặc chuyển sang LoRA.
+[ ] 10. Tổ chức workflow, đặt tên node IN_*, export UI + API JSON, commit git.
+[ ] 11. Vertical Slice 15 giây.
+
+
+22. NHẬT KÝ QUYẾT ĐỊNH
+
+30/09/2026 — Chọn ComfyUI làm engine chính, ưu tiên chạy local.
+30/09/2026 — IPAdapter Unified Loader dùng preset PLUS (STANDARD lỗi với model plus_sdxl_vit-h).
+02/10/2026 — Đổi cách test Character Consistency: seed cố định khi tinh chỉnh, ma trận weight, chấm điểm.
+02/10/2026 — Thêm Video Spike chạy song song để kiểm tra sớm khả năng làm video.
+02/10/2026 — Đưa nâng cấp RAM lên trước giai đoạn Image → Video.
+02/10/2026 — MVP v1 chỉ dùng narrator, chưa làm thoại nhân vật / lip-sync.
+02/10/2026 — Chỉ dùng model đã có trong bảng license với trạng thái "OK".
+02/10/2026 — Không dùng FaceID / InstantID / PuLID (InsightFace non-commercial).

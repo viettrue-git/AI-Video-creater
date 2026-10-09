@@ -1,0 +1,811 @@
+{
+ "last_node_id": 116,
+ "last_link_id": 13,
+ "nodes": [
+  {
+   "id": 1,
+   "type": "UNETLoader",
+   "pos": [
+    40,
+    260
+   ],
+   "size": [
+    340,
+    128
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      1
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_VideoModel",
+   "properties": {
+    "Node name for S&R": "UNETLoader"
+   },
+   "widgets_values": [
+    "wan2.2_ti2v_5B_fp16.safetensors",
+    "default"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "CLIPLoader",
+   "pos": [
+    40,
+    428
+   ],
+   "size": [
+    340,
+    154
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "CLIP",
+     "type": "CLIP",
+     "links": [
+      2,
+      3
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "TextEncoder",
+   "properties": {
+    "Node name for S&R": "CLIPLoader"
+   },
+   "widgets_values": [
+    "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+    "wan",
+    "default"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "VAELoader",
+   "pos": [
+    40,
+    622
+   ],
+   "size": [
+    340,
+    102
+   ],
+   "flags": {},
+   "order": 3,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "VAE",
+     "type": "VAE",
+     "links": [
+      4,
+      11
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "VideoVAE",
+   "properties": {
+    "Node name for S&R": "VAELoader"
+   },
+   "widgets_values": [
+    "wan2.2_vae.safetensors"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "ModelSamplingSD3",
+   "pos": [
+    40,
+    764
+   ],
+   "size": [
+    340,
+    102
+   ],
+   "flags": {},
+   "order": 4,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 1
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      6
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "ModelShift",
+   "properties": {
+    "Node name for S&R": "ModelSamplingSD3"
+   },
+   "widgets_values": [
+    8.0
+   ]
+  },
+  {
+   "id": 5,
+   "type": "CLIPTextEncode",
+   "pos": [
+    1000,
+    260
+   ],
+   "size": [
+    340,
+    222
+   ],
+   "flags": {},
+   "order": 9,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 2
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      7
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_PositivePrompt",
+   "properties": {
+    "Node name for S&R": "CLIPTextEncode"
+   },
+   "widgets_values": [
+    "the young man walks slowly along the forest path, the camera smoothly tracks backward at the same pace keeping his full body in frame, sunlight rays through the trees, leaves sway gently, stylized 3D animated movie, smooth natural motion"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "CLIPTextEncode",
+   "pos": [
+    1000,
+    522
+   ],
+   "size": [
+    340,
+    222
+   ],
+   "flags": {},
+   "order": 10,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 3
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      8
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_NegativePrompt",
+   "properties": {
+    "Node name for S&R": "CLIPTextEncode"
+   },
+   "widgets_values": [
+    "static, frozen, blurry, low quality, distorted face, deformed hands, extra limbs, morphing, flickering, jitter, text, watermark, subtitles"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "LoadImage",
+   "pos": [
+    520,
+    260
+   ],
+   "size": [
+    340,
+    154
+   ],
+   "flags": {},
+   "order": 6,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      5
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "MASK",
+     "type": "MASK",
+     "links": [],
+     "slot_index": 1
+    }
+   ],
+   "title": "IN_StartImage",
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "SH02_w0.50_s111111.png",
+    "image"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "Wan22ImageToVideoLatent",
+   "pos": [
+    520,
+    454
+   ],
+   "size": [
+    340,
+    206
+   ],
+   "flags": {},
+   "order": 7,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 4
+    },
+    {
+     "name": "start_image",
+     "type": "IMAGE",
+     "link": 5
+    }
+   ],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      9
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_VideoSize",
+   "properties": {
+    "Node name for S&R": "Wan22ImageToVideoLatent"
+   },
+   "widgets_values": [
+    704,
+    1280,
+    81,
+    1
+   ]
+  },
+  {
+   "id": 9,
+   "type": "KSampler",
+   "pos": [
+    1480,
+    260
+   ],
+   "size": [
+    340,
+    336
+   ],
+   "flags": {},
+   "order": 12,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 6
+    },
+    {
+     "name": "positive",
+     "type": "CONDITIONING",
+     "link": 7
+    },
+    {
+     "name": "negative",
+     "type": "CONDITIONING",
+     "link": 8
+    },
+    {
+     "name": "latent_image",
+     "type": "LATENT",
+     "link": 9
+    }
+   ],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      10
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_Sampler",
+   "properties": {
+    "Node name for S&R": "KSampler"
+   },
+   "widgets_values": [
+    111111,
+    "fixed",
+    20,
+    5.0,
+    "uni_pc",
+    "simple",
+    1.0
+   ]
+  },
+  {
+   "id": 10,
+   "type": "VAEDecodeTiled",
+   "pos": [
+    1960,
+    260
+   ],
+   "size": [
+    340,
+    206
+   ],
+   "flags": {},
+   "order": 14,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "samples",
+     "type": "LATENT",
+     "link": 10
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 11
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      12
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "DecodeTiled",
+   "properties": {
+    "Node name for S&R": "VAEDecodeTiled"
+   },
+   "widgets_values": [
+    384,
+    64,
+    128,
+    8
+   ]
+  },
+  {
+   "id": 11,
+   "type": "CreateVideo",
+   "pos": [
+    1960,
+    506
+   ],
+   "size": [
+    340,
+    206
+   ],
+   "flags": {},
+   "order": 15,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "images",
+     "type": "IMAGE",
+     "link": 12
+    },
+    {
+     "name": "audio",
+     "type": "AUDIO",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "VIDEO",
+     "type": "VIDEO",
+     "links": [
+      13
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_Fps",
+   "properties": {
+    "Node name for S&R": "CreateVideo"
+   },
+   "widgets_values": [
+    24.0,
+    "auto",
+    "sRGB",
+    "none"
+   ]
+  },
+  {
+   "id": 12,
+   "type": "SaveVideo",
+   "pos": [
+    1960,
+    752
+   ],
+   "size": [
+    340,
+    154
+   ],
+   "flags": {},
+   "order": 16,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "video",
+     "type": "VIDEO",
+     "link": 13
+    }
+   ],
+   "outputs": [
+    {
+     "name": "VIDEO",
+     "type": "VIDEO",
+     "links": [],
+     "slot_index": 0
+    }
+   ],
+   "title": "OUT_Video",
+   "properties": {
+    "Node name for S&R": "SaveVideo"
+   },
+   "widgets_values": [
+    "video/manual",
+    "mp4",
+    "auto"
+   ]
+  },
+  {
+   "id": 112,
+   "type": "Note",
+   "pos": [
+    40,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 0,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "Wan 2.2 TI2V-5B fp16 + text encoder umt5 fp8 + wan2.2_vae (Apache-2.0).\nModel shift = 8.\nTRƯỚC KHI CHẠY VIDEO: khởi động lại ComfyUI sạch\n(scripts/restart-comfyui-server-clean.ps1) nếu vừa tạo ảnh."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 113,
+   "type": "Note",
+   "pos": [
+    520,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 5,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "Ảnh đầu vào = ảnh shot đã chọn (768x1344, tự crop giữa).\nKhung 704 x 1280, 24 fps.\nlength phải dạng 4n+1: 49 (2s) · 81 (3.4s) · 101 (4.2s) · 117 (4.9s).\n81 frame ~ 11–12 phút trên RTX 3060."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 114,
+   "type": "Note",
+   "pos": [
+    1000,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 8,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "Mô tả CHUYỂN ĐỘNG + CAMERA, không cần tả lại nhân vật.\nNói rõ camera: 'camera tracks backward ... keeping his full body in frame'.\nTRÁNH chữ flicker / shimmer (gây nhấp nháy)."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 115,
+   "type": "Note",
+   "pos": [
+    1480,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 11,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "uni_pc / simple, 20 step, CFG 5.\n~15 giây/step (49 frame) · ~29 giây/step (81 frame)."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 116,
+   "type": "Note",
+   "pos": [
+    1960,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 13,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "VAE Decode Tiled: temporal_size 128 = giải mã cả clip một lần.\nĐỪNG giảm temporal_size (16/32 gây nhấp nháy theo nhịp).\nVideo lưu ở ComfyUI/output/video/."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  }
+ ],
+ "links": [
+  [
+   1,
+   1,
+   0,
+   4,
+   0,
+   "MODEL"
+  ],
+  [
+   2,
+   2,
+   0,
+   5,
+   0,
+   "CLIP"
+  ],
+  [
+   3,
+   2,
+   0,
+   6,
+   0,
+   "CLIP"
+  ],
+  [
+   4,
+   3,
+   0,
+   8,
+   0,
+   "VAE"
+  ],
+  [
+   5,
+   7,
+   0,
+   8,
+   1,
+   "IMAGE"
+  ],
+  [
+   6,
+   4,
+   0,
+   9,
+   0,
+   "MODEL"
+  ],
+  [
+   7,
+   5,
+   0,
+   9,
+   1,
+   "CONDITIONING"
+  ],
+  [
+   8,
+   6,
+   0,
+   9,
+   2,
+   "CONDITIONING"
+  ],
+  [
+   9,
+   8,
+   0,
+   9,
+   3,
+   "LATENT"
+  ],
+  [
+   10,
+   9,
+   0,
+   10,
+   0,
+   "LATENT"
+  ],
+  [
+   11,
+   3,
+   0,
+   10,
+   1,
+   "VAE"
+  ],
+  [
+   12,
+   10,
+   0,
+   11,
+   0,
+   "IMAGE"
+  ],
+  [
+   13,
+   11,
+   0,
+   12,
+   0,
+   "VIDEO"
+  ]
+ ],
+ "groups": [
+  {
+   "id": 1,
+   "title": "1. MODELS (Wan 2.2 5B)",
+   "bounding": [
+    0,
+    0,
+    420,
+    906
+   ],
+   "color": "#3f789e",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 2,
+   "title": "2. ẢNH ĐẦU VÀO & ĐỘ DÀI",
+   "bounding": [
+    480,
+    0,
+    420,
+    700
+   ],
+   "color": "#8A8",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 3,
+   "title": "3. PROMPT CHUYỂN ĐỘNG",
+   "bounding": [
+    960,
+    0,
+    420,
+    784
+   ],
+   "color": "#a1309b",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 4,
+   "title": "4. SAMPLER",
+   "bounding": [
+    1440,
+    0,
+    420,
+    636
+   ],
+   "color": "#b58b2a",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 5,
+   "title": "5. GIẢI MÃ & LƯU VIDEO",
+   "bounding": [
+    1920,
+    0,
+    420,
+    946
+   ],
+   "color": "#335",
+   "font_size": 24,
+   "flags": {}
+  }
+ ],
+ "config": {},
+ "extra": {
+  "ds": {
+   "scale": 0.75,
+   "offset": [
+    20,
+    20
+   ]
+  }
+ },
+ "version": 0.4
+}

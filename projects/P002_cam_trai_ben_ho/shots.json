@@ -1,0 +1,29 @@
+{
+  "_note": "P002 shot prompts (English, written from script.txt). ipa_weight per shot (P001 lessons): face/full body 0.5, from behind 0.4, wide 0.1-0.2, no character 0. character_override '' = shot without the character description.",
+  "shots": [
+    {"id": "SH01", "ipa_weight": 0.2,
+     "scene": "extreme wide shot of a calm mirror-like mountain lake in the late afternoon, mountains reflected in the still water, golden light, a tiny lone figure walking along the grassy shore far away",
+     "motion": "very slow camera drift forward over the lake, gentle ripples on the water, the tiny figure keeps walking at a calm natural pace along the shore, stylized 3D animated movie, calm smooth motion"},
+    {"id": "SH02", "ipa_weight": 0.5,
+     "scene": "full body shot, he stands on the grassy lakeshore and sets his backpack down on the grass beside him, looking out at the calm lake, warm late afternoon light",
+     "motion": "he slowly lowers the backpack to the ground and straightens up, looking at the lake, gentle breeze in his hair, slow camera push in, stylized 3D animated movie, smooth natural motion"},
+    {"id": "SH03", "ipa_weight": 0.5,
+     "scene": "wide shot, a small grey and green dome camping tent already pitched on the grassy lakeshore, the tent is clearly visible on the left side of the frame, he crouches beside the tent hammering a tent peg into the ground, lake and mountains behind, warm sunset light",
+     "motion": "he pulls the tent fabric tight and the small tent takes shape, calm steady movements, lake shimmering softly behind, slow camera drift, stylized 3D animated movie, smooth natural motion"},
+    {"id": "SH04", "ipa_weight": 0.0, "character_override": "",
+     "scene": "close-up of a small campfire just catching on dry twigs and branches, first bright flames and glowing embers, lakeshore pebbles around, dusk light, no people",
+     "motion": "the flames grow and dance gently, sparks and embers drift upward, smoke curls softly, very slow camera push in, stylized 3D animated movie, calm"},
+    {"id": "SH05", "ipa_weight": 0.5,
+     "scene": "close-up portrait of his face lit by warm orange firelight, calm gentle smile, looking out toward the lake, dusk sky behind",
+     "motion": "warm firelight glows softly on his face, he blinks slowly and smiles gently, very slow camera push in, stylized 3D animated movie, calm subtle motion"},
+    {"id": "SH06", "ipa_weight": 0.4,
+     "scene": "view from behind, he sits on a log beside a small campfire facing the calm lake, small tent nearby, vibrant orange and purple sunset sky reflected in the water",
+     "motion": "he sits still and calm, the campfire flickers gently, the sunset colors slowly shift on the lake, slow camera drift sideways, stylized 3D animated movie, calm smooth motion"},
+    {"id": "SH07", "ipa_weight": 0.0, "character_override": "",
+     "scene": "wide shot of the lake at dusk, the last glow of sunset on the horizon, deep blue sky with the first stars appearing, stars reflected in the still water, mountain silhouettes, no people",
+     "motion": "the sky slowly darkens and more stars appear, faint reflections shimmer softly on the still lake, very slow camera tilt up, stylized 3D animated movie, calm"},
+    {"id": "SH08", "ipa_weight": 0.1, "character_override": "a small glowing orange tent and a tiny figure sitting by a campfire",
+     "scene": "extreme wide shot at night, a tiny warm glowing tent and campfire on the shore of a calm lake under a vast starry sky with the milky way, mountains silhouettes, stars reflected in the lake, epic peaceful scale",
+     "motion": "very slow camera pull back, the stars twinkle softly, the campfire glows gently, stylized 3D animated movie, calm epic motion"}
+  ]
+}

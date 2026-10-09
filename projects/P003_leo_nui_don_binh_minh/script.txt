@@ -1,0 +1,32 @@
+P003 — LEO NÚI ĐÓN BÌNH MINH — KỊCH BẢN NARRATOR v1 (08/10/2026)
+Nối tiếp P002: sáng hôm sau, Tâm rời bờ hồ từ trước bình minh, leo lên đỉnh núi đón mặt trời mọc trên biển mây.
+Mục tiêu ~30 giây, 9:16, giọng Thanh Bình. NHÁP — sửa câu chữ thoải mái.
+
+[SHOT 1 — toàn cảnh đường mòn trên núi lúc trời còn xanh thẫm, hồ nước nhỏ xa phía dưới, nhân vật nhỏ bé]
+Trước khi trời sáng, anh đã lên đường.
+
+[SHOT 2 — từ phía sau, anh leo con dốc đá, sương mù phía dưới]
+Con đường lên đỉnh dốc và lạnh, nhưng bước chân anh không dừng lại.
+
+[SHOT 3 — trung cảnh nhìn nghiêng, anh dừng lại thở, hơi thở thành làn sương mỏng]
+Mỗi hơi thở là một làn sương mỏng.
+
+[SHOT 4 — toàn cảnh không người: biển mây phủ dưới các đỉnh núi, chân trời bắt đầu ửng sáng]
+Phía dưới, biển mây đang thức giấc.
+
+[SHOT 5 — toàn thân, anh bước lên đỉnh núi, mỉm cười]
+Và rồi, anh chạm tới đỉnh núi.
+
+[SHOT 6 — từ phía sau, anh đứng trên đỉnh nhìn mặt trời nhô lên khỏi biển mây]
+Mặt trời nhô lên, nhuộm vàng cả bầu trời.
+
+[SHOT 7 — trung cảnh 3/4, ánh nắng vàng ấm trên gương mặt, nụ cười bình yên]
+Có những khoảnh khắc chỉ đến với người dám bước tiếp.
+
+[SHOT 8 — toàn cảnh rộng: nhân vật nhỏ bé trên đỉnh núi trên biển mây, bình minh vàng rực]
+Và hành trình của anh, vẫn còn ở phía trước.
+
+---
+GHI CHÚ
+- Bài học P001/P002: không cận bàn tay; hạn chế cận mặt (LoRA còn yếu) → SHOT 7 là trung cảnh.
+- Âm thanh (AI tạo): gió núi + chim sớm; nhạc piano/dây dâng dần lên lúc mặt trời mọc.

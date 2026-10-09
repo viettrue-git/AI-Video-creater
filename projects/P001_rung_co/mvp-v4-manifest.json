@@ -1,0 +1,23 @@
+{
+  "_note": "MVP v4 07/10/2026 = v3 + ambience (forest 0-19.6s crossfading into meadow wind from 17.9s; SH07 starts at 18.7s). Ambience files are ~-39 LUFS, so gains 3.0/2.5 put them ~8 dB under the music bed; the whole bed ducks under the narrator.",
+  "output": "projects/P001_rung_co/final/P001-mvp-v4-30s.mp4",
+  "music": "projects/P001_rung_co/music/kulakovka-inspiring-cinematic-272565.mp3",
+  "music_license": "Pixabay Content License, proof: music/kulakovka-inspiring-cinematic-272565.png (Content ID Registered - possible YouTube claim)",
+  "music_start": 0.5,
+  "music_volume": 0.35,
+  "fade_out": 1.5,
+  "ambience": [
+    {"file": "projects/P001_rung_co/sfx/freesound_community-forest-ambience-26617.mp3", "start": 0, "end": 19.6, "volume": 3.0, "fade": 1.5},
+    {"file": "projects/P001_rung_co/sfx/dragon-studio-wind-rustling-grass-339094.mp3", "start": 17.9, "end": 29.22, "volume": 2.5, "fade": 1.5}
+  ],
+  "shots": [
+    {"id": "SH01", "clip": "experiments/upscaled/MVP3-SH01.mp4",          "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_01.wav", "duration": 2.74},
+    {"id": "SH02", "clip": "experiments/upscaled/MVP3-SH02.mp4",          "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_02.wav", "duration": 4.2},
+    {"id": "SH03", "clip": "experiments/upscaled/MVP2-SH03.mp4",          "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_03.wav", "duration": 2.42},
+    {"id": "SH04", "eq": "gamma=1.25", "clip": "experiments/upscaled/MVP3-SH04.mp4",          "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_04.wav", "duration": 1.94},
+    {"id": "SH05", "clip": "experiments/upscaled/MVP3-SH05-s222222.mp4",  "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_05.wav", "duration": 3.94},
+    {"id": "SH06", "clip": "experiments/upscaled/MVP2-SH06.mp4",          "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_06.wav", "duration": 3.46},
+    {"id": "SH07", "clip": "experiments/upscaled/MVP2-SH07.mp4",          "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_07.wav", "duration": 4.82},
+    {"id": "SH08", "eq": "saturation=0.82", "clip": "experiments/upscaled/MVP2-SH08.mp4",          "narration": "projects/P001_rung_co/audio-narration-v2/thanh-binh/shot_08.wav", "duration": 5.7}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "_note": "Shared character definition (from P001 tests A01-C01, 05/10/2026). Projects reference it by name in project.json.",
+  "name": "explorer-v1",
+  "ref_image": "projects/P001_rung_co/refs/char_main_front.png",
+  "character_block": "young man, 25 years old, short messy black hair, brown eyes, angular face, light stubble, athletic build, dark green adventure jacket with the hood down, grey hoodie underneath, brown leather backpack, dark grey cargo pants with knee pads, brown leather hiking boots",
+  "style_block": "stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+  "negative": "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, malformed fingers, bad hands, pointing finger, extra limbs, text, watermark, logo",
+  "ipa": {"weight_type": "ease in", "end_at": 0.8},
+  "lora": {"_note": "Character 'Tâm' (epoch 6, trained 07/10/2026). Test L04: LoRA 0.8 WITHOUT IP-Adapter keeps identity and restores poses (sitting, back view); close-ups still weak.",
+           "file": "tam-explorer-v1.safetensors", "strength": 0.8, "trigger": "tamxplr man"}
+}

@@ -1,0 +1,822 @@
+{
+ "last_node_id": 126,
+ "last_link_id": 14,
+ "nodes": [
+  {
+   "id": 1,
+   "type": "CheckpointLoaderSimple",
+   "pos": [
+    40,
+    260
+   ],
+   "size": [
+    340,
+    154
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      4
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "CLIP",
+     "type": "CLIP",
+     "links": [
+      1,
+      2
+     ],
+     "slot_index": 1
+    },
+    {
+     "name": "VAE",
+     "type": "VAE",
+     "links": [
+      13
+     ],
+     "slot_index": 2
+    }
+   ],
+   "title": "IN_Checkpoint",
+   "properties": {
+    "Node name for S&R": "CheckpointLoaderSimple"
+   },
+   "widgets_values": [
+    "sd_xl_base_1.0.safetensors"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "CLIPTextEncode",
+   "pos": [
+    1480,
+    260
+   ],
+   "size": [
+    340,
+    222
+   ],
+   "flags": {},
+   "order": 9,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 1
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      9
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_PositivePrompt",
+   "properties": {
+    "Node name for S&R": "CLIPTextEncode"
+   },
+   "widgets_values": [
+    "full body shot, walking between giant ancient trees in a misty forest, dramatic sunlight rays through the canopy, young man, 25 years old, short messy black hair, brown eyes, angular face, light stubble, athletic build, dark green adventure jacket with the hood down, grey hoodie underneath, brown leather backpack, dark grey cargo pants with knee pads, brown leather hiking boots, stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "CLIPTextEncode",
+   "pos": [
+    1480,
+    522
+   ],
+   "size": [
+    340,
+    222
+   ],
+   "flags": {},
+   "order": 10,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 2
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      10
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_NegativePrompt",
+   "properties": {
+    "Node name for S&R": "CLIPTextEncode"
+   },
+   "widgets_values": [
+    "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, extra limbs, text, watermark, logo"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "EmptyLatentImage",
+   "pos": [
+    1480,
+    784
+   ],
+   "size": [
+    340,
+    154
+   ],
+   "flags": {},
+   "order": 11,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      11
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_Size",
+   "properties": {
+    "Node name for S&R": "EmptyLatentImage"
+   },
+   "widgets_values": [
+    768,
+    1344,
+    1
+   ]
+  },
+  {
+   "id": 10,
+   "type": "LoadImage",
+   "pos": [
+    520,
+    260
+   ],
+   "size": [
+    340,
+    154
+   ],
+   "flags": {},
+   "order": 3,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      3
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "MASK",
+     "type": "MASK",
+     "links": [],
+     "slot_index": 1
+    }
+   ],
+   "title": "IN_RefImage",
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "char_main_front.png",
+    "image"
+   ]
+  },
+  {
+   "id": 11,
+   "type": "PrepImageForClipVision",
+   "pos": [
+    520,
+    454
+   ],
+   "size": [
+    340,
+    154
+   ],
+   "flags": {},
+   "order": 4,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "link": 3
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      7
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "PrepRef",
+   "properties": {
+    "Node name for S&R": "PrepImageForClipVision"
+   },
+   "widgets_values": [
+    "LANCZOS",
+    "pad",
+    0.0
+   ]
+  },
+  {
+   "id": 12,
+   "type": "IPAdapterUnifiedLoader",
+   "pos": [
+    1000,
+    260
+   ],
+   "size": [
+    340,
+    128
+   ],
+   "flags": {},
+   "order": 6,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 4
+    },
+    {
+     "name": "ipadapter",
+     "type": "IPADAPTER",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      5
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "IPADAPTER",
+     "type": "IPADAPTER",
+     "links": [
+      6
+     ],
+     "slot_index": 1
+    }
+   ],
+   "title": "IPALoader",
+   "properties": {
+    "Node name for S&R": "IPAdapterUnifiedLoader"
+   },
+   "widgets_values": [
+    "PLUS (high strength)"
+   ]
+  },
+  {
+   "id": 13,
+   "type": "IPAdapterAdvanced",
+   "pos": [
+    1000,
+    428
+   ],
+   "size": [
+    340,
+    362
+   ],
+   "flags": {},
+   "order": 7,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 5
+    },
+    {
+     "name": "ipadapter",
+     "type": "IPADAPTER",
+     "link": 6
+    },
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "link": 7
+    },
+    {
+     "name": "image_negative",
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "name": "attn_mask",
+     "type": "MASK",
+     "link": null
+    },
+    {
+     "name": "clip_vision",
+     "type": "CLIP_VISION",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      8
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_IPAdapter",
+   "properties": {
+    "Node name for S&R": "IPAdapterAdvanced"
+   },
+   "widgets_values": [
+    0.5,
+    "ease in",
+    "concat",
+    0.0,
+    0.8,
+    "V only"
+   ]
+  },
+  {
+   "id": 20,
+   "type": "KSampler",
+   "pos": [
+    1960,
+    260
+   ],
+   "size": [
+    340,
+    336
+   ],
+   "flags": {},
+   "order": 13,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 8
+    },
+    {
+     "name": "positive",
+     "type": "CONDITIONING",
+     "link": 9
+    },
+    {
+     "name": "negative",
+     "type": "CONDITIONING",
+     "link": 10
+    },
+    {
+     "name": "latent_image",
+     "type": "LATENT",
+     "link": 11
+    }
+   ],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      12
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "IN_Sampler",
+   "properties": {
+    "Node name for S&R": "KSampler"
+   },
+   "widgets_values": [
+    111111,
+    "fixed",
+    25,
+    6.5,
+    "dpmpp_2m",
+    "karras",
+    1.0
+   ]
+  },
+  {
+   "id": 21,
+   "type": "VAEDecode",
+   "pos": [
+    1960,
+    636
+   ],
+   "size": [
+    340,
+    102
+   ],
+   "flags": {},
+   "order": 14,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "samples",
+     "type": "LATENT",
+     "link": 12
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 13
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      14
+     ],
+     "slot_index": 0
+    }
+   ],
+   "title": "Decode",
+   "properties": {
+    "Node name for S&R": "VAEDecode"
+   },
+   "widgets_values": []
+  },
+  {
+   "id": 22,
+   "type": "SaveImage",
+   "pos": [
+    1960,
+    778
+   ],
+   "size": [
+    340,
+    102
+   ],
+   "flags": {},
+   "order": 15,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "images",
+     "type": "IMAGE",
+     "link": 14
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [],
+     "slot_index": 0
+    }
+   ],
+   "title": "OUT_Image",
+   "properties": {
+    "Node name for S&R": "SaveImage"
+   },
+   "widgets_values": [
+    "tests/img"
+   ]
+  },
+  {
+   "id": 122,
+   "type": "Note",
+   "pos": [
+    40,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 0,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "Checkpoint SDXL (đang dùng SDXL base 1.0, license OK thương mại).\nSau này thử checkpoint 3D khác: chỉ đổi ở đây."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 123,
+   "type": "Note",
+   "pos": [
+    520,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "Ảnh nhân vật chuẩn: char_main_front.png (nửa người, chính diện).\nKHÔNG dùng cả character sheet (sẽ copy bố cục sheet).\nPrep Image: 'pad' giữ nguyên toàn bộ ảnh khi đưa vào CLIP Vision."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 124,
+   "type": "Note",
+   "pos": [
+    1000,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 5,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "Preset PLUS (high strength).\nCấu hình đã test: weight_type = ease in, end_at = 0.8.\nWEIGHT THEO SHOT: cận mặt/đi bộ 0.5 · bước ra/qua vai 0.4 · toàn cảnh/bàn tay 0.1–0.3.\nweight >= 0.7 sẽ copy nền trắng của ảnh tham chiếu."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 125,
+   "type": "Note",
+   "pos": [
+    1480,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 8,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "Prompt = [mô tả cảnh] + [khối nhân vật cố định] + [khối style].\nKhối nhân vật giữ NGUYÊN CHỮ ở mọi shot.\nKhung hình 9:16 = 768 x 1344."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 126,
+   "type": "Note",
+   "pos": [
+    1960,
+    80
+   ],
+   "size": [
+    340,
+    150
+   ],
+   "flags": {},
+   "order": 12,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Ghi chú",
+   "properties": {},
+   "widgets_values": [
+    "dpmpp_2m / karras, 25 step, CFG 6.5 (~22 giây/ảnh trên RTX 3060).\nSeed: thử 4 seed/shot rồi chọn ảnh đúng nhân vật nhất.\nẢnh lưu ở ComfyUI/output/tests/."
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  }
+ ],
+ "links": [
+  [
+   1,
+   1,
+   1,
+   2,
+   0,
+   "CLIP"
+  ],
+  [
+   2,
+   1,
+   1,
+   3,
+   0,
+   "CLIP"
+  ],
+  [
+   3,
+   10,
+   0,
+   11,
+   0,
+   "IMAGE"
+  ],
+  [
+   4,
+   1,
+   0,
+   12,
+   0,
+   "MODEL"
+  ],
+  [
+   5,
+   12,
+   0,
+   13,
+   0,
+   "MODEL"
+  ],
+  [
+   6,
+   12,
+   1,
+   13,
+   1,
+   "IPADAPTER"
+  ],
+  [
+   7,
+   11,
+   0,
+   13,
+   2,
+   "IMAGE"
+  ],
+  [
+   8,
+   13,
+   0,
+   20,
+   0,
+   "MODEL"
+  ],
+  [
+   9,
+   2,
+   0,
+   20,
+   1,
+   "CONDITIONING"
+  ],
+  [
+   10,
+   3,
+   0,
+   20,
+   2,
+   "CONDITIONING"
+  ],
+  [
+   11,
+   4,
+   0,
+   20,
+   3,
+   "LATENT"
+  ],
+  [
+   12,
+   20,
+   0,
+   21,
+   0,
+   "LATENT"
+  ],
+  [
+   13,
+   1,
+   2,
+   21,
+   1,
+   "VAE"
+  ],
+  [
+   14,
+   21,
+   0,
+   22,
+   0,
+   "IMAGE"
+  ]
+ ],
+ "groups": [
+  {
+   "id": 1,
+   "title": "1. MODEL",
+   "bounding": [
+    0,
+    0,
+    420,
+    454
+   ],
+   "color": "#3f789e",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 2,
+   "title": "2. CHARACTER — ảnh tham chiếu",
+   "bounding": [
+    480,
+    0,
+    420,
+    648
+   ],
+   "color": "#8A8",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 3,
+   "title": "3. IP-ADAPTER — giữ nhân vật",
+   "bounding": [
+    960,
+    0,
+    420,
+    830
+   ],
+   "color": "#b58b2a",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 4,
+   "title": "4. SCENE — prompt & khung hình",
+   "bounding": [
+    1440,
+    0,
+    420,
+    978
+   ],
+   "color": "#a1309b",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 5,
+   "title": "5. SAMPLER & OUTPUT",
+   "bounding": [
+    1920,
+    0,
+    420,
+    920
+   ],
+   "color": "#335",
+   "font_size": 24,
+   "flags": {}
+  }
+ ],
+ "config": {},
+ "extra": {
+  "ds": {
+   "scale": 0.75,
+   "offset": [
+    20,
+    20
+   ]
+  }
+ },
+ "version": 0.4
+}
