@@ -1,0 +1,24 @@
+HƯỚNG DẪN (đừng copy phần này)
+- Dán 1 LẦN khối dưới vào Muse. Muse tạo 8 ảnh demo (2 cảnh × 4 phong cách), gom 1 zip.
+- Tải zip, bỏ vào: experiments/style-demo-thuan-viet/   (thư mục đã tạo sẵn)
+- Xem xong, chọn phong cách (A/B/C/D) → mình áp phong cách đó + bộ "dấu hiệu Việt" cho toàn bộ gói ảnh.
+
+
+>>>>> COPY TỪ ĐÂY
+Mình cần thử phong cách tranh minh họa cho kênh lịch sử Việt Nam. Hãy tạo 8 hình demo: 2 cảnh, mỗi cảnh vẽ theo 4 phong cách khác nhau. Khổ NGANG 16:9. Không chữ, không logo. Gom tất cả vào MỘT file zip, đặt tên đúng mã (VD: A1.png, A2.png ... D2.png).
+
+BỐI CẢNH BẮT BUỘC — VIỆT NAM THẾ KỶ 13, KHÔNG PHẢI TRUNG HOA:
+- Người Việt thời ấy: đàn ông búi tóc nhỏ hoặc tóc ngắn, nhiều người vấn khăn, mặc áo nâu, áo the đen hoặc áo cánh, nhiều người đi chân đất; quý tộc mặc áo giao lĩnh cổ chéo, tay áo vừa phải, màu trầm (nâu, đen, chàm, đỏ son); phụ nữ vấn tóc, yếm, áo tứ thân, váy đụp.
+- Kiến trúc Việt: nhà gỗ lim, mái ngói mũi hài cong vút ở đầu đao như mũi thuyền, đình làng, chùa làng, tháp gạch nung đỏ kiểu tháp Phổ Minh, cổng tam quan; làng quê đồng bằng Bắc Bộ với cây đa, giếng nước, lũy tre, ao sen, ruộng lúa, dòng sông Hồng phù sa.
+- TRÁNH tuyệt đối: Tử Cấm Thành, tường đỏ ngói vàng kiểu cung điện Trung Hoa, áo bào tay rộng kiểu phim cổ trang Trung Quốc, tóc đuôi sam, chữ Hán trên biển hiệu, sư tử đá Trung Hoa.
+
+HAI CẢNH:
+Cảnh 1 — Đêm trong một gian nhà gỗ lim của một vương hầu Việt: người cha trung niên gầy yếu nằm trên giường gỗ, nắm tay người con trai trẻ đang quỳ bên cạnh; đèn dầu đặt trên án thư, ánh sáng ấm, chiếu cói, cột gỗ lim.
+Cảnh 2 — Một làng quê đồng bằng Bắc Bộ thế kỷ 13 lúc sáng sớm: dân làng áo nâu đi chân đất đang cùng đắp đê bên dòng sông Hồng phù sa; cây đa, lũy tre, mái đình cong như mũi thuyền; xa xa một ngọn tháp gạch đỏ; vài người lính thời Trần đứng cùng dân.
+
+BỐN PHONG CÁCH:
+A — TRANH SƠN MÀI VIỆT NAM: nền đen bóng sâu, màu đỏ son, vàng ánh kim, bạc, nâu cánh gián, có điểm vỏ trứng; đường nét mềm, chất liệu sơn mài truyền thống. (A1 = cảnh 1, A2 = cảnh 2)
+B — TRANH LỤA VIỆT NAM: nét vẽ mảnh, mềm mại, màu nhã, trầm dịu, nền lụa ngả vàng, không khí trữ tình, gần gũi. (B1, B2)
+C — TRANH KHẮC GỖ DÂN GIAN (Đông Hồ / Hàng Trống): nét khắc đậm, màu tự nhiên trên giấy dó (đỏ son, vàng hoè, xanh chàm, đen than), bố cục mộc mạc dân gian. (C1, C2)
+D — MINH HỌA ĐIỆN ẢNH HIỆN THỰC VIỆT NAM: như cảnh phim lịch sử Việt Nam quay thật, ánh sáng tự nhiên, chất liệu chân thực (gỗ, đất, vải nâu, da người dân lao động), màu ấm của đồng quê Bắc Bộ. (D1, D2)
+<<<<< ĐẾN ĐÂY

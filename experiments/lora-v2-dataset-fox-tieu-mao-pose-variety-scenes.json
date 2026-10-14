@@ -1,0 +1,33 @@
+{
+  "_note": "LoRA v2 dataset for Tiểu Mão, rendered WITH LoRA v1 e5 (strength 0.6, IPA off). v1 learned 'standing, facing camera' from its 35 front-heavy images, so every scene here forces a different pose/view; pose words go first.",
+  "character_block": "tieumao fox, cute small fox cub, orange fur, white chest, small blue satchel bag",
+  "style_block": "stylized 3D animated movie still, cute Pixar style 3D cartoon character, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+  "negative": "human, person, realistic photo, multiple characters, two foxes, character sheet, multiple views, collage, grid, clothes, jacket, vest, shirt, blue feet, blue shoes, shoes, boots, extra tail, extra legs, extra limbs, blurry, low quality, distorted, deformed, bad anatomy, text, watermark, logo, standing still, facing the camera",
+  "scenes": {
+    "V01": "sitting on the ground with legs stretched out, side view, eating a red apple, sunny meadow",
+    "V02": "lying on his belly on the grass, chin resting on his paws, looking at a ladybug, close to the camera, morning light",
+    "V03": "running fast to the right, side view, legs mid-stride, tail flying behind, dirt path in a forest, motion blur background",
+    "V04": "full body side profile, walking to the left on a mossy log over a stream, dappled sunlight",
+    "V05": "view from behind, walking away along a snowy path between pine trees, footprints in the snow, overcast",
+    "V06": "curled up asleep inside a hollow tree trunk, eyes closed, tail wrapped around his body, night, soft moonlight",
+    "V07": "climbing up a large rock with both paws, seen from below, low angle, blue sky",
+    "V08": "jumping high in the air, all four paws off the ground, catching a falling autumn leaf, orange forest",
+    "V09": "sitting at a small wooden desk, side view, writing in a notebook with a pencil, candle light at night",
+    "V10": "kneeling by a puddle, looking at his reflection in the water, three-quarter back view, rainy day",
+    "V11": "sitting cross-legged in a small wooden boat on a calm lake, rowing with an oar, sunset",
+    "V12": "hiding behind a large mushroom, only half of his face peeking out, magical glowing forest at dusk",
+    "V13": "three-quarter view from the side, looking up at the starry night sky with wonder, sitting on a hill",
+    "V14": "crouching and digging in the sand with both paws, side view, sunny beach, seashells",
+    "V15": "walking through tall golden wheat field, view from behind and slightly above, late afternoon",
+    "V16": "sitting on a tree branch high above the forest, legs dangling, side view, morning mist",
+    "V17": "pushing open a heavy old wooden door with both paws, side view, dark stone castle hallway, torch light",
+    "V18": "holding a small lantern up high, walking into a dark cave, three-quarter back view, blue crystals glowing",
+    "V19": "sliding down a snowy hill on a wooden sled, excited open mouth, winter, bright daylight",
+    "V20": "sitting under a big leaf as an umbrella, rain falling, side view, green forest",
+    "V21": "dancing happily on one leg, arms out, spinning, flower field, bright daylight",
+    "V22": "carefully crossing a rope bridge over a deep canyon, side view, wind, dramatic clouds",
+    "V23": "reading a big old book lying open on the floor, lying on his side, cozy room, fireplace light",
+    "V24": "drinking water from a stream with his paws cupped, kneeling, side view, forest, morning light",
+    "V25": "waving goodbye with one paw while walking away, looking back over his shoulder, sunset road"
+  }
+}

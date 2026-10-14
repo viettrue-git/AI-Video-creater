@@ -1,0 +1,43 @@
+{
+  "id": "P004",
+  "title": "Hạt mầm của cáo nhỏ",
+  "character": "fox-tieu-mao-v1",
+  "use_lora": true,
+  "pad_seconds": 0.9,
+  "tail_seconds": 2.0,
+  "seeds_per_shot": 4,
+  "fade_out": 1.5,
+  "music": {
+    "prompt": "gentle healing acoustic lullaby, soft piano and wind chimes, warm acoustic guitar, calm and curious at first, rising to a magical warm swell, then a peaceful soft ending, instrumental",
+    "bpm": 80
+  },
+  "ambience": [
+    {
+      "prompt": "sunny autumn forest, dry leaves rustling softly, distant birds chirping, gentle breeze, nature ambience, no music"
+    }
+  ],
+  "sfx": [
+    {
+      "prompt": "single soft magical plink, tiny bright glass chime, cute cartoon sound effect, clean, no music",
+      "shot": "SH01",
+      "offset": 0.4,
+      "seconds": 1.5
+    },
+    {
+      "prompt": "gentle water pouring from a small watering can onto soil, soft trickle, close, asmr, no music",
+      "shot": "SH04",
+      "offset": 0.2,
+      "seconds": 2.6
+    },
+    {
+      "prompt": "magical fairy dust sparkle burst, soft shimmering chimes rising, whimsical cartoon sound effect, no music",
+      "shot": "SH06",
+      "offset": 0.3,
+      "seconds": 3.0
+    }
+  ],
+  "series": "tieu-mao",
+  "episode": 1,
+  "summary": "Một hạt mầm phát sáng rơi trúng mũi Tiểu Mão; cậu gieo, tưới và chờ đợi đến khi hoa chuông rực sáng nở — gieo yêu thương, thiên nhiên đáp lại.",
+  "script_approved": "a632433fb224"
+}

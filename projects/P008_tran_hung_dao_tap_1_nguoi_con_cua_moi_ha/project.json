@@ -1,0 +1,281 @@
+{
+  "_note": "Channel 'Hào Khí Sử Việt' — series Trần Hưng Đạo, episode 1 of 3 (outline approved 13/10/2026). Long-form audio-story pipeline (16:9). Voice Thái Sơn (channel narrator).",
+  "id": "P008",
+  "title": "Trần Hưng Đạo — Tập 1: Người con của mối hận",
+  "character": "narrator-hao-khi-su-viet",
+  "video_source": "audio-story",
+  "teaser": {
+    "hook_text": "Thù cha…\nhay nợ nước?",
+    "hook_seconds": 5,
+    "segments": [
+      {
+        "shot": 1,
+        "image": "IMG01",
+        "focus": 0.4
+      },
+      {
+        "shot": 2,
+        "image": "IMG02",
+        "focus": 0.5
+      },
+      {
+        "shot": 4,
+        "image": "IMG03",
+        "focus": 0.5
+      },
+      {
+        "shot": 78,
+        "image": "IMG34",
+        "focus": 0.45
+      }
+    ],
+    "end_card": {
+      "image": "THUMB",
+      "focus": 0.68,
+      "seconds": 5,
+      "title": "TRẦN HƯNG ĐẠO",
+      "sub": "Tập 1 · Người con của mối hận",
+      "cta": "Xem trọn tập 34 phút\ntrên YouTube — link ở bình luận"
+    },
+    "music_index": 0
+  },
+  "story_audio": {
+    "_note": "4 layers (user approved 13/10): chapter music bed, scene ambience, accent sfx, silences before key historical lines.",
+    "music": [
+      {
+        "prompt": "solo Vietnamese bamboo flute (sao truc) playing a gentle, haunting and noble melody over soft strings, distant drum, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          1,
+          9
+        ],
+        "seed": 111111
+      },
+      {
+        "prompt": "dan tranh zither melody, graceful ancient royal court tune, light percussion, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          10,
+          18
+        ],
+        "seed": 222222
+      },
+      {
+        "prompt": "dan bau monochord melody, mysterious and slightly tense, plucked strings and soft gong, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          19,
+          26
+        ],
+        "seed": 333333
+      },
+      {
+        "prompt": "sorrowful dan nhi two-string fiddle melody with soft strings, emotional family tragedy, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          27,
+          33
+        ],
+        "seed": 444444
+      },
+      {
+        "prompt": "tender bamboo flute and dan tranh duet, reconciliation and quiet sorrow, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          34,
+          40
+        ],
+        "seed": 555555
+      },
+      {
+        "prompt": "bright hopeful bamboo flute melody with dan nguyet moon lute, youthful and heroic, light drums, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          41,
+          48
+        ],
+        "seed": 666666
+      },
+      {
+        "prompt": "playful romantic dan tranh and flute melody, warm night festival, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          49,
+          54
+        ],
+        "seed": 777777
+      },
+      {
+        "prompt": "lyrical solo bamboo flute, introspective and noble, soft drone strings, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          55,
+          65
+        ],
+        "seed": 888888
+      },
+      {
+        "prompt": "ominous low strings with a dan bau melody, war drums approaching, vast and threatening, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          66,
+          73
+        ],
+        "seed": 121212
+      },
+      {
+        "prompt": "epic battle music, pounding war drums, heroic bamboo flute melody over driving strings, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          74,
+          79
+        ],
+        "seed": 131313
+      },
+      {
+        "prompt": "triumphant victory theme, soaring bamboo flute melody, war drums and full strings, then calm, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          80,
+          85
+        ],
+        "seed": 141414
+      },
+      {
+        "prompt": "gathering storm, tense dan bau melody, distant drums, determined strings, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          86,
+          95
+        ],
+        "seed": 151515
+      },
+      {
+        "prompt": "rousing heroic theme, bamboo flute and dan tranh over strong drums, patriotic and resolute, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          96,
+          100
+        ],
+        "seed": 161616
+      },
+      {
+        "prompt": "dark cliffhanger, low drums and strings, then a quiet hopeful bamboo flute melody, clear memorable melody, slow and flowing, Vietnamese traditional instruments, warm cinematic, instrumental",
+        "shots": [
+          101,
+          105
+        ],
+        "seed": 171717
+      }
+    ],
+    "ambience": [
+      {
+        "prompt": "quiet night inside an old wooden house, crickets outside, soft wind, oil lamp flicker, ambience, no music",
+        "shots": [
+          1,
+          3
+        ]
+      },
+      {
+        "prompt": "wide river, wooden oars splashing, river wind, flags flapping, men murmuring, ambience, no music",
+        "shots": [
+          31,
+          31
+        ]
+      },
+      {
+        "prompt": "high mountain wind, distant temple bell, birds, misty forest, ambience, no music",
+        "shots": [
+          32,
+          34
+        ]
+      },
+      {
+        "prompt": "calm river, water lapping against a wooden boat, gentle wind, ambience, no music",
+        "shots": [
+          35,
+          36
+        ]
+      },
+      {
+        "prompt": "distant night festival crowd chatter and laughter, lanterns, crickets, ambience, no music",
+        "shots": [
+          50,
+          51
+        ]
+      },
+      {
+        "prompt": "ancient battlefield, horses galloping, arrows whooshing, war drums, distant shouting, ambience, no music",
+        "shots": [
+          74,
+          75
+        ]
+      },
+      {
+        "prompt": "river battle at dawn, many oars rowing, war cries, drums, splashing water, ambience, no music",
+        "shots": [
+          80,
+          80
+        ]
+      },
+      {
+        "prompt": "riverside wharf, wind, flags flapping, water lapping, distant crowd, ambience, no music",
+        "shots": [
+          96,
+          97
+        ]
+      }
+    ],
+    "sfx": [
+      {
+        "prompt": "metal sword drawn quickly from a scabbard, sharp ring, sound effect, no music",
+        "shot": 36,
+        "offset": 1.0,
+        "seconds": 1.5
+      },
+      {
+        "prompt": "heavy sword thrown and splashing into a river, sound effect, no music",
+        "shot": 36,
+        "at": 0.72,
+        "seconds": 2.0
+      },
+      {
+        "prompt": "metal sword drawn slowly from a scabbard, sound effect, no music",
+        "shot": 61,
+        "at": 0.5,
+        "seconds": 1.5
+      },
+      {
+        "prompt": "powerful ancient war drums rolling, building, sound effect, no music",
+        "shot": 74,
+        "offset": 0.0,
+        "seconds": 4.0
+      },
+      {
+        "prompt": "war horn blast and army battle cry, sound effect, no music",
+        "shot": 80,
+        "offset": 0.3,
+        "seconds": 3.0
+      },
+      {
+        "prompt": "a ripe orange being crushed and squeezed in a fist, juicy squish, sound effect, no music",
+        "shot": 97,
+        "at": 0.55,
+        "seconds": 1.5
+      }
+    ],
+    "silences": [
+      {
+        "shot": 2,
+        "before": 1.5,
+        "after": 0.5
+      },
+      {
+        "shot": 57,
+        "before": 1.2,
+        "after": 0.5
+      },
+      {
+        "shot": 78,
+        "before": 1.5,
+        "after": 0.8
+      }
+    ],
+    "chapter_sting": {
+      "prompt": "single deep bronze gong hit with long reverb tail, solemn, no music",
+      "seconds": 6
+    },
+    "music_lufs": -26.0,
+    "duck_ratio": 8
+  },
+  "series": "hao-khi-su-viet",
+  "episode": 1,
+  "summary": "Nhà Trần thay nhà Lý, mối hận của Trần Liễu, tuổi trẻ Trần Quốc Tuấn, lời trăng trối và sự lựa chọn nợ nước trên thù nhà, kháng chiến lần thứ nhất 1258, hội nghị Bình Than — cơn bão năm 1285 đang đến."
+}

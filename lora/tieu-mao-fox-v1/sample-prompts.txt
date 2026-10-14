@@ -1,0 +1,2 @@
+tieumao fox, close-up portrait of his face, curious expression, autumn forest, stylized 3D animated movie still, cinematic 3D render --n blurry, low quality, deformed, human, clothes, jacket, text, watermark --w 768 --h 1344 --s 25 --l 6.5 --d 42
+tieumao fox, full body, side view, walking on a wooden bridge over a river, morning light, stylized 3D animated movie still, cinematic 3D render --n blurry, low quality, deformed, human, clothes, jacket, text, watermark --w 768 --h 1344 --s 25 --l 6.5 --d 7

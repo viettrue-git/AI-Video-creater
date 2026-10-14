@@ -1,0 +1,17 @@
+{
+  "_note": "Muse mode: scene SCnn in muse-pack.txt = shot SHnn here. 'scene' is a short reference only (the real prompts are in muse-pack.txt); 'dialogue' = the exact lines Muse speaks, used for burned-in subtitles.",
+  "shots": [
+    {"id": "SH01", "trim_start": 0.8, "scene": "meeting by the stream: Tieu Mao slips, Tieu Ly picks up his camera (first 0.8 s = static photo pose: cut for the hook)",
+     "dialogue": ["Ơ... ơ... máy ảnh của mình!", "Cảm ơn bạn nhiều lắm! Mình là Tiểu Mão.", "Mình là Tiểu Ly."]},
+    {"id": "SH02", "scene": "Tieu Mao shakes off the water, Tieu Ly giggles",
+     "dialogue": ["Đợi chút... sắp khô rồi... xong!", "Bạn trông như cái bông lau bị ướt vậy!", "Bông lau đẹp trai nhất rừng nhé!"]},
+    {"id": "SH03", "scene": "the old map and the invitation, paws together",
+     "dialogue": ["Nhìn nè, Thung Lũng Hoa Nắng đó! Đi cùng mình nhé?", "Chốt! Cấm bỏ cuộc giữa chừng đó nha!"]},
+    {"id": "SH04", "scene": "walking along the forest trail toward the wooden bridge (no dialogue)"},
+    {"id": "SH05", "scene": "crossing the wooden bridge hand in paw",
+     "dialogue": ["Cầu rung quá... mình không dám đi...", "Nắm tay mình nè. Không sao đâu!", "Cảm ơn bạn nha!"]},
+    {"id": "SH06", "scene": "glowing crevice between the rocks (no dialogue)"},
+    {"id": "SH07", "scene": "glowing mushroom cave, mushroom hat and photo",
+     "dialogue": ["Woa... đẹp như trong mơ vậy!", "Đứng yên nào, mình chụp cho bạn một tấm!", "Mình có giống tiên rừng không?", "Giống... giống lắm!"]}
+  ]
+}

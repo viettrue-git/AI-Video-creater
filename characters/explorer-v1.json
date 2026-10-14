@@ -6,6 +6,7 @@
   "style_block": "stylized 3D animated movie still, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
   "negative": "character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, helmet, hat, vest, gilet, hood up, hooded head, olive jacket, khaki pants, blurry, low quality, distorted, deformed, bad anatomy, extra fingers, malformed fingers, bad hands, pointing finger, extra limbs, text, watermark, logo",
   "ipa": {"weight_type": "ease in", "end_at": 0.8},
+  "narration": {"voice": "Thanh Bình", "person": "third", "syllables_per_second": 4.5},
   "lora": {"_note": "Character 'Tâm' (epoch 6, trained 07/10/2026). Test L04: LoRA 0.8 WITHOUT IP-Adapter keeps identity and restores poses (sitting, back view); close-ups still weak.",
            "file": "tam-explorer-v1.safetensors", "strength": 0.8, "trigger": "tamxplr man"}
 }

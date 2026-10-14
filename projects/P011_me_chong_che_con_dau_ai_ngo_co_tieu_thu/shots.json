@@ -1,0 +1,249 @@
+{
+ "_note": "Muse mode, dubbed, fast pacing: SCnn in muse-pack.txt = SHnn. Muse makes picture + sound effects only; dialogue items {who, text, at} are voiced with the cast's fixed VieNeu voices. trim_end 4.0 keeps the first ~6 s of each 10 s clip — adjust trim_start/trim_end and 'at' after watching each clip.",
+ "shots": [
+  {
+   "id": "SH01",
+   "scene": "Lời chê đầu tiên",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "BA MIT",
+     "text": "Trời ơi! Một người bị chồng bỏ mà đòi làm dâu nhà này à?",
+     "at": 0.3
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Dạ... cháu...",
+     "at": 3.9
+    }
+   ]
+  },
+  {
+   "id": "SH02",
+   "scene": "Anh Dừa lên tiếng",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "ANH DUA",
+     "text": "Mẹ! Cô ấy là người con yêu.",
+     "at": 0.3
+    },
+    {
+     "who": "BA MIT",
+     "text": "Yêu thì ăn được à? Hừ!",
+     "at": 3.8
+    }
+   ],
+   "clip_audio": 0.0
+  },
+  {
+   "id": "SH03",
+   "scene": "Cô tiểu thư bước vào",
+   "trim_end": 3.0,
+   "dialogue": [
+    {
+     "who": "BA MIT",
+     "text": "Đây mới là con dâu mẹ chọn!",
+     "at": 0.3
+    },
+    {
+     "who": "CHOM CHOM",
+     "text": "Dạ, cháu chào bác ạ!",
+     "at": 5.0
+    }
+   ]
+  },
+  {
+   "id": "SH04",
+   "scene": "Nhận ra kẻ thù",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "THANH LONG",
+     "text": "Là cô ta... sao lại là cô ta?",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "id": "SH05",
+   "scene": "Lời thách thức",
+   "trim_end": 3.0,
+   "dialogue": [
+    {
+     "who": "CHOM CHOM",
+     "text": "Lần trước là chồng cô. Lần này... là người yêu cô.",
+     "at": 0.3
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Cô... đúng là đồ tồi!",
+     "at": 5.0
+    }
+   ]
+  },
+  {
+   "id": "SH06",
+   "scene": "Bữa tối nịnh nọt",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "BA MIT",
+     "text": "Ôi, con bé này khéo quá!",
+     "at": 0.3
+    },
+    {
+     "who": "CHOM CHOM",
+     "text": "Bác cứ ăn đi, để cháu lo hết ạ!",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "SH07",
+   "scene": "Ban công đêm",
+   "trim_end": 3.3,
+   "dialogue": [
+    {
+     "who": "ANH DUA",
+     "text": "Đừng buồn. Anh tin em.",
+     "at": 0.5
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Em sẽ cho mẹ anh thấy sự thật.",
+     "at": 4.5
+    }
+   ]
+  },
+  {
+   "id": "SH08",
+   "scene": "Cuộc gọi bất ngờ",
+   "trim_end": 5.0,
+   "dialogue": [
+    {
+     "who": "THANH LONG",
+     "text": "Anh Sầu Riêng... tôi cần anh làm chứng.",
+     "at": 0.3
+    }
+   ],
+   "clip_audio": 0.0
+  },
+  {
+   "id": "SH09",
+   "scene": "Người cũ sửa sai",
+   "trim_end": 5.0,
+   "dialogue": [
+    {
+     "who": "SAU RIENG",
+     "text": "Được! Lần này... tôi sẽ sửa sai.",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "id": "SH10",
+   "scene": "Chiếc vòng gia truyền",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "BA MIT",
+     "text": "Chiếc vòng gia truyền này... là của con!",
+     "at": 0.3
+    },
+    {
+     "who": "CHOM CHOM",
+     "text": "Dạ, cháu cảm ơn bác!",
+     "at": 3.5
+    }
+   ]
+  },
+  {
+   "id": "SH11",
+   "scene": "Khoan đã!",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "SAU RIENG",
+     "text": "Khoan đã! Cô ta là kẻ lừa đảo!",
+     "at": 0.1
+    },
+    {
+     "who": "CHOM CHOM",
+     "text": "Anh... sao anh lại ở đây?",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "SH12",
+   "scene": "Sự thật phơi bày",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "THANH LONG",
+     "text": "Bác xem đi. Cô ta đã lừa hết tiền anh ấy.",
+     "at": 0.2
+    },
+    {
+     "who": "BA MIT",
+     "text": "Trời ơi... thật vậy sao?",
+     "at": 3.5
+    }
+   ]
+  },
+  {
+   "id": "SH13",
+   "scene": "Hết đường chạy",
+   "trim_end": 3.7,
+   "dialogue": [
+    {
+     "who": "CHOM CHOM",
+     "text": "Tránh ra! Tránh ra hết đi!",
+     "at": 0.3
+    },
+    {
+     "who": "SAU RIENG",
+     "text": "Lần này cô không chạy được đâu!",
+     "at": 4.2
+    }
+   ]
+  },
+  {
+   "id": "SH14",
+   "scene": "Lời xin lỗi",
+   "trim_end": 4.0,
+   "dialogue": [
+    {
+     "who": "BA MIT",
+     "text": "Bác sai rồi... con tha lỗi cho bác nhé.",
+     "at": 0.3
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Dạ, con không giận bác đâu ạ.",
+     "at": 3.2
+    }
+   ],
+   "clip_audio": 0.0
+  },
+  {
+   "id": "SH15",
+   "scene": "Con dâu nhà này",
+   "trim_end": 1.0,
+   "dialogue": [
+    {
+     "who": "BA MIT",
+     "text": "Từ nay, con là con dâu nhà này!",
+     "at": 0.3
+    },
+    {
+     "who": "ANH DUA",
+     "text": "Con cảm ơn mẹ!",
+     "at": 2.6
+    }
+   ],
+   "clip_audio": 0.0
+  }
+ ]
+}

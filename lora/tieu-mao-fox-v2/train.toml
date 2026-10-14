@@ -1,0 +1,40 @@
+# kohya sd-scripts training config — SDXL character LoRA "Tâm" (RTX 3060 12GB, 16GB RAM)
+# Run via scripts/train-character-lora.ps1 (closes ComfyUI first; RAM is too small for both).
+pretrained_model_name_or_path = 'C:\AIVideoManager\ComfyUI\models\checkpoints\sd_xl_base_1.0.safetensors'
+dataset_config = 'C:\AIVideoManager\lora\tieu-mao-fox-v2\dataset.toml'
+output_dir = 'C:\AIVideoManager\lora\tieu-mao-fox-v2\output'
+output_name = 'tieu-mao-fox-v2'
+save_model_as = 'safetensors'
+save_precision = 'bf16'
+save_every_n_epochs = 1
+max_train_epochs = 6
+
+network_module = 'networks.lora'
+network_dim = 32
+network_alpha = 16
+network_train_unet_only = true
+
+optimizer_type = 'AdamW8bit'
+learning_rate = 1e-4
+unet_lr = 1e-4
+lr_scheduler = 'cosine'
+lr_warmup_steps = 120
+
+mixed_precision = 'bf16'
+no_half_vae = true
+gradient_checkpointing = true
+sdpa = true
+cache_latents = true
+cache_latents_to_disk = true
+cache_text_encoder_outputs = true
+cache_text_encoder_outputs_to_disk = true
+min_snr_gamma = 5
+noise_offset = 0.0357
+max_data_loader_n_workers = 1
+persistent_data_loader_workers = true
+seed = 42
+
+logging_dir = 'C:\AIVideoManager\lora\tieu-mao-fox-v2\output\logs'
+
+
+# no in-training samples: on 16GB RAM sampling at epoch end preceded a VRAM->RAM spill that stalled v1 (40x slower)

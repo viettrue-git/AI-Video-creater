@@ -1,0 +1,45 @@
+{
+  "_note": "Long-form audio story (channel 'nghe chuyện cổ đại', 16:9). Narration = TTS paragraphs joined by audio_story_narration_joiner.py; video = Muse illustrations (illustrations.json) with Ken Burns, chapter titles, name cards; built by audio_story_video_assembler.py. Audio layers below use script shot numbers (inclusive).",
+  "id": "P006",
+  "title": "Cửu Vĩ Hồ — Từ điềm lành thành yêu nữ",
+  "character": "narrator-co-dai-thien-minh",
+  "video_source": "audio-story",
+  "series": "nghe-chuyen-co-dai",
+  "episode": 1,
+  "summary": "Hành trình của cáo chín đuôi từ thú lạ trong Sơn Hải Kinh, điềm lành của vua Vũ, yêu nữ Đát Kỷ, đến Đầm Xác Cáo — Hồ Tây.",
+  "teaser": {
+    "_note": "Facebook Reel / Shorts teaser (audio_story_teaser_reel.py): best paragraphs of the episode, ends on the Ho Tay twist + call to action.",
+    "hook_text": "Nửa đêm bên đầm nước…\nai đang khóc như trẻ con?",
+    "hook_seconds": 5,
+    "segments": [
+      {"shot": 1, "image": "IMG01", "focus": 0.62},
+      {"shot": 2, "image": "IMG23", "focus": 0.7},
+      {"shot": 3, "image": "IMG04", "focus": 0.55},
+      {"shot": 31, "image": "IMG13", "focus": 0.45},
+      {"shot": 46, "image": "IMG18", "focus": 0.6}
+    ],
+    "end_card": {"image": "THUMB", "focus": 0.62, "seconds": 5, "title": "CỬU VĨ HỒ", "sub": "Từ điềm lành thành yêu nữ",
+                 "cta": "Nghe trọn câu chuyện 14 phút\ntrên YouTube — link ở bình luận"},
+    "music_index": 0
+  },
+  "story_audio": {
+    "music": [
+      {"prompt": "mysterious ancient east asian ambient, slow guzheng and bamboo flute, deep low drones, soft temple bells, dark and haunting, calm, instrumental", "shots": [1, 14], "seed": 111111},
+      {"prompt": "sacred ancient chinese court music, slow guqin and erhu, warm reverent and majestic, soft gong, gentle, instrumental", "shots": [15, 25], "seed": 222222},
+      {"prompt": "dark eerie palace ambient, slow erhu, low strings, distant war drums, tense and ominous, cinematic, instrumental", "shots": [26, 35], "seed": 333333},
+      {"prompt": "vietnamese ancient legend ambient, dan bau and bamboo flute, misty river night, mysterious then epic swelling, instrumental", "shots": [36, 48], "seed": 444444},
+      {"prompt": "calm reflective east asian ambient, soft piano with guzheng, thoughtful and warm, slow, instrumental", "shots": [49, 59], "seed": 555555},
+      {"prompt": "gentle melancholic lullaby, guzheng and soft strings under moonlight, peaceful ending, instrumental", "shots": [60, 64], "seed": 666666}
+    ],
+    "ambience": [
+      {"prompt": "still night lake, soft water lapping on reeds, crickets, very quiet distant owl, nature ambience, no music", "shots": [1, 6]},
+      {"prompt": "high mountain wind through rocks, distant birds, airy, nature ambience, no music", "shots": [8, 14]},
+      {"prompt": "heavy rain and rushing flood water, distant thunder, nature ambience, no music", "shots": [16, 17]},
+      {"prompt": "quiet ancient palace at night, crackling torches, faint wind through corridors, ambience, no music", "shots": [27, 35]},
+      {"prompt": "night village, crickets, wind in bamboo, distant river, ambience, no music", "shots": [37, 41]},
+      {"prompt": "violent storm waves crashing on rocks, roaring water, thunder, ambience, no music", "shots": [42, 44]},
+      {"prompt": "still night lake, soft water lapping on reeds, crickets, very quiet distant owl, nature ambience, no music", "shots": [59, 64]}
+    ],
+    "chapter_sting": {"prompt": "single deep temple gong hit with long reverb tail, then a soft guzheng glissando, no music", "seconds": 6}
+  }
+}

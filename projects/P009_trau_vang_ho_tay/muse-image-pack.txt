@@ -1,0 +1,60 @@
+HƯỚNG DẪN (đừng copy phần này)
+- Dán 1 LẦN khối dưới đây vào Muse. Muse tạo 39 ảnh và gom thành 1 file zip.
+- Tải zip về, bỏ nguyên file vào: projects/P009_trau_vang_ho_tay/illustration-inbox/
+- Nếu Muse dừng giữa chừng: trả lời "tiếp tục". Ảnh nào chưa ưng thì nhờ Muse làm lại đúng ảnh đó (giữ tên file).
+- Nếu Muse từ chối ảnh nào, báo tôi mã ảnh để tôi viết lại prompt.
+
+
+>>>>> COPY TỪ ĐÂY
+Mình đang làm tập 3 của kênh kể chuyện "Chuyện Kỳ Bí Cổ Đại", chủ đề truyền thuyết Việt Nam: vị thiền sư khổng lồ, chiếc túi thần, quả chuông đồng và con trâu vàng tạo nên Hồ Tây. Hãy tạo đủ 39 hình minh họa dưới đây, mỗi hình một file riêng, làm lần lượt hết không cần hỏi lại. Xong thì gom tất cả vào MỘT file zip và gửi link tải. Đặt tên đúng mã: IMG01.png ... IMG38.png và THUMB.png.
+
+QUY TẮC CHUNG CHO MỌI HÌNH:
+- Khổ NGANG 16:9, độ phân giải cao.
+- Phong cách đồng bộ với các tập trước: tranh cổ phong kết hợp thủy mặc và ánh sáng điện ảnh, tông huyền bí (xanh đêm, chàm, xám sương), điểm nhấn là ÁNH VÀNG ĐỒNG ấm của trâu vàng và quả chuông.
+- Bối cảnh là nước Việt thời Lý (thế kỷ 11–12), KHÔNG phải Trung Hoa: người mặc áo nâu, áo tứ thân, khố, chân đất, nón lá; nhà sư mặc áo nâu sồng; chùa mái ngói đỏ cong nhẹ kiểu chùa làng Bắc Bộ, cây đa, giếng, đầm sen, thuyền nan, ruộng lúa. Không dùng cung điện kiểu Tử Cấm Thành, không áo long bào kiểu Trung Hoa.
+- Đồ vật đúng thời xưa: đèn đĩa dầu lạc, đuốc, nến; không đèn dầu hỏa có thông phong thủy tinh.
+- Con trâu vàng (Kim Ngưu) là một con trâu nước Việt Nam to lớn, sừng cong, toàn thân ánh vàng kim như đồng nóng chảy, phát sáng nhẹ, hiền và buồn — KHÔNG hung dữ.
+- KHÔNG có hổ trong bất kỳ hình nào, trừ IMG10 (chỉ là bóng hổ mờ trên tường).
+- Không máu me, không cảnh đánh nhau, không binh lính, không vũ khí.
+- Không chữ, không logo, không watermark trong hình.
+
+IMG01 — Đêm trăng rằm trên một hồ nước rộng mênh mông phẳng lặng, sương mỏng, một người dân chài đứng trên chiếc thuyền nan nhỏ đang thu lưới; giữa lòng hồ một vệt sáng vàng rực đang nổi lên dưới mặt nước.
+IMG02 — Cảnh dưới đáy hồ tối xanh thẳm: một quả chuông đồng khổng lồ phủ rêu nằm nghiêng trên đáy bùn, cách đó không xa là bóng một con trâu vàng phát sáng đang lặng lẽ bơi tìm kiếm.
+IMG03 — Nhìn từ trên cao xuống: một vùng hồ nước rộng lớn có hình dáng như những dấu chân trâu khổng lồ in sâu vào mặt đất, nước tràn đầy, sương sớm, làng mạc và ruộng lúa xung quanh nhỏ xíu.
+IMG04 — Một chiếc túi vải nâu nhỏ đặt trên phiến đá, bên cạnh là quả chuông đồng cổ, phía sau là mặt hồ đêm trăng mờ ảo — không khí bí ẩn mở đầu câu chuyện.
+IMG05 — Một vị thiền sư nước Việt thời Lý, áo nâu sồng, dáng người to lớn khỏe mạnh khác thường, gương mặt hiền từ, đứng trước cổng một ngôi chùa làng mái ngói cong nhẹ bên cây đa cổ thụ.
+IMG06 — Làng chài ven sông Bắc Bộ xưa lúc bình minh: một cậu bé chân đất áo nâu cùng người cha kéo lưới trên thuyền nan; xa xa là núi đá vôi trùng điệp.
+IMG07 — Trong ngôi chùa cổ ánh đèn đĩa dầu: một thiền sư già gầy, ánh mắt sâu thẳm, đang giảng kinh cho một chàng thanh niên tóc cạo, mặc áo nâu ngồi chắp tay lắng nghe; khói hương mờ.
+IMG08 — Bên giường tre trong gian chùa tối, thiền sư già nằm yếu ớt, nắm tay người học trò trẻ đang quỳ bên cạnh, như dặn dò một điều quan trọng; ngọn đèn dầu leo lét.
+IMG09 — Vị thiền sư to lớn bước một bước dài vượt qua một con suối rộng trên đường núi, người dân nhỏ bé đứng bên kia ngước nhìn kinh ngạc — cảm giác huyền thoại.
+IMG10 — Trong gian điện gỗ thời Lý, ánh nến chập chờn: các thầy thuốc già lo lắng đứng quanh một chiếc giường có màn che; trên tường hắt lên bóng đen to lớn hình một con hổ đang gầm — chỉ là cái bóng, không thấy hổ thật.
+IMG11 — Giữa sân điện gỗ thời Lý, một chiếc vạc đồng lớn sôi sùng sục bốc hơi nghi ngút trên bếp lửa; vị thiền sư áo nâu sồng bình thản đưa tay khuấy, quan lại đứng xa kinh ngạc.
+IMG12 — Bản đồ cổ vẽ tay trên giấy dó ngả màu, mực tàu, một con đường mờ nối từ nước Nam lên phương Bắc xa xôi qua núi non; đèn dầu vàng soi trên mặt bàn gỗ.
+IMG13 — Một kinh đô phương Bắc thời xưa, tường thành rộng lớn, trong cung các thầy thuốc lắc đầu bên giường một cậu bé ốm yếu; không khí u buồn.
+IMG14 — Vị thiền sư áo nâu một mình vượt núi cao sương mù, chống gậy tre, gió thổi tung vạt áo; phía trước là dãy núi trùng điệp vô tận.
+IMG15 — Cậu bé hoàng tử khỏi bệnh đứng dậy bên cửa sổ đón nắng sớm, vị thiền sư mỉm cười hiền hậu đứng cạnh; ánh nắng ấm áp tràn vào phòng.
+IMG16 — Vị thiền sư đưa ra một chiếc túi vải nâu nhỏ xíu nằm gọn trong lòng bàn tay; trước mặt ông, một vị vua phương Bắc ngồi trên ngai bật cười chế giễu, quần thần xung quanh cũng cười.
+IMG17 — Bên trong kho báu khổng lồ chất đầy những thỏi đồng vàng óng: các thỏi đồng đang bay lơ lửng, xoáy thành dòng chảy ánh sáng vàng trôi vào miệng chiếc túi vải nhỏ trong tay vị thiền sư.
+IMG18 — Vị thiền sư khoác chiếc túi vải nhỏ trên vai, lặng lẽ bước ra khỏi cổng thành phương Bắc lúc hoàng hôn, bóng ông đổ dài trên con đường đất.
+IMG19 — Trong nhà kho đá trống trơn chỉ còn bụi và ánh trăng xuyên qua khe cửa, một con trâu vàng phát sáng nằm cuộn mình buồn bã giữa kho — cô đơn.
+IMG20 — Xưởng đúc đồng ngoài trời nước Việt xưa ban đêm: lò lửa đỏ rực, dòng đồng nóng chảy đổ vào khuôn đất khổng lồ, hàng trăm người dân áo nâu chân đất đứng quanh xem, tia lửa bay.
+IMG21 — Vị thiền sư cầm chày gỗ thỉnh quả chuông đồng khổng lồ treo dưới gác chuông chùa; những vòng sóng âm ánh vàng lan tỏa ra xa qua sông, qua núi, qua rừng.
+IMG22 — Trong kho trống phương Bắc, con trâu vàng ngẩng phắt đầu lên, đôi tai dỏng lên lắng nghe, đôi mắt long lanh như vừa nghe tiếng mẹ gọi; ánh vàng nhè nhẹ từ xa vọng tới.
+IMG23 — Con trâu vàng phát sáng lao vun vút băng qua dãy núi đá vôi trong đêm, để lại một vệt ánh vàng dài như sao băng; đá lở rơi, cây rừng nghiêng ngả; người dân xa xa quỳ xuống kinh ngạc.
+IMG24 — Con trâu vàng khổng lồ giẫm chân trên cánh đồng phía tây một kinh thành cổ nước Việt, mặt đất sụt xuống thành những hố lớn, nước tràn vào loang loáng ánh trăng.
+IMG25 — Vị thiền sư to lớn đứng trên bờ đầm, hai tay nâng quả chuông đồng khổng lồ lên cao, chuẩn bị ném xuống mặt nước rộng mênh mông; trời đêm u ám, gió lớn.
+IMG26 — Quả chuông chìm xuống làn nước tối, con trâu vàng lao theo xuống nước tạo thành bọt sóng ánh vàng; nhìn ngang mặt nước, nửa trên nửa dưới.
+IMG27 — Mặt hồ đêm trăng tĩnh lặng, một cái đầu trâu vàng với cặp sừng cong khẽ nhô lên khỏi mặt nước, ngơ ngác nhìn quanh như đang lắng nghe điều gì; sương mỏng.
+IMG28 — Hồ nước rộng mênh mông lúc rạng sáng phủ lớp sương mù dày đặc, mặt nước trắng mờ, vài chiếc thuyền nan thấp thoáng, hàng cây ven hồ chỉ còn là bóng.
+IMG29 — Tranh thủy mặc: một con cáo trắng chín đuôi mờ ảo như khói trên vách đá bên bờ đầm nước sâu, sóng nước dâng cao — phong cách tranh cổ, nét mực tàu.
+IMG30 — Một ngôi chùa cổ nhiều tầng mái ngói rêu phong trên bán đảo nhỏ giữa hồ nước rộng, khói hương bay, ánh chiều tà vàng nhạt soi bóng xuống mặt hồ; phong cách chùa Việt.
+IMG31 — Đêm trăng, hai ông lão dân chài ngồi trên thuyền nan giữa hồ, một người chỉ tay ra xa nơi mặt nước có ánh vàng lấp lánh, người kia nhìn theo đầy kinh ngạc.
+IMG32 — Bốn báu vật bằng đồng cổ xếp thành bốn ô tranh như một bộ tranh cổ: một ngọn tháp cao nhiều tầng, một quả chuông khổng lồ, một chiếc vạc lớn, một pho tượng Phật đồng to lớn — tông vàng đồng trên nền giấy dó.
+IMG33 — Ngọn tháp cổ cao nhiều tầng, đỉnh bằng đồng lấp lánh, sừng sững giữa một kinh thành cổ nước Việt với mái nhà ngói thấp, nhìn từ xa trong buổi chiều.
+IMG34 — Trước một ngôi chùa cổ, một chiếc vạc đồng khổng lồ, mấy em bé chân đất ngồi trong chiếc thuyền nan nhỏ bên trong lòng vạc — minh họa truyền thuyết, vui và kỳ lạ.
+IMG35 — Giữa cánh đồng lúa vắng, quả chuông đồng khổng lồ nằm im lặng trên mặt đất, xung quanh là nhiều con rùa nhỏ bò đến nằm quanh chuông; hoàng hôn buồn, tĩnh lặng.
+IMG36 — Ban đêm trong một tòa thành cổ, lò nung lớn đỏ rực, một quả chuông đồng khổng lồ đang bị nung chảy dần, đồng lỏng chảy ra; khói đen cuồn cuộn — không có người, chỉ có lửa và khói, cảm giác mất mát.
+IMG37 — Một cụ già kể chuyện bên đèn đĩa dầu cho đám trẻ con ngồi quây quần trong nhà gỗ xưa; trên vách là bóng hắt huyền ảo của một con trâu và một quả chuông.
+IMG38 — Bờ Hồ Tây đêm trăng rằm, hàng liễu rủ, mặt hồ phẳng như gương, giữa hồ một vệt sáng vàng mờ nhạt khẽ nổi lên trong làn sương — yên bình và hoài niệm.
+THUMB — Ảnh bìa gây tò mò mạnh: một con trâu vàng phát sáng rực rỡ đang trồi lên từ mặt hồ đêm tối, nước bắn tung ánh vàng, phía dưới mặt nước mờ mờ thấy hình một quả chuông đồng khổng lồ. Để trống khoảng 40% bên trái tối và gọn để chèn chữ tiêu đề.
+<<<<< ĐẾN ĐÂY

@@ -1,0 +1,242 @@
+[
+ {
+  "n": 1,
+  "file": "experiments/fox-dataset-candidates/body/F01_w0.70_s111111.png"
+ },
+ {
+  "n": 2,
+  "file": "experiments/fox-dataset-candidates/body/F01_w0.70_s222222.png"
+ },
+ {
+  "n": 3,
+  "file": "experiments/fox-dataset-candidates/body/F01_w0.70_s333333.png"
+ },
+ {
+  "n": 4,
+  "file": "experiments/fox-dataset-candidates/body/F02_w0.70_s111111.png"
+ },
+ {
+  "n": 5,
+  "file": "experiments/fox-dataset-candidates/body/F02_w0.70_s222222.png"
+ },
+ {
+  "n": 6,
+  "file": "experiments/fox-dataset-candidates/body/F02_w0.70_s333333.png"
+ },
+ {
+  "n": 7,
+  "file": "experiments/fox-dataset-candidates/body/F03_w0.70_s111111.png"
+ },
+ {
+  "n": 8,
+  "file": "experiments/fox-dataset-candidates/body/F03_w0.70_s222222.png"
+ },
+ {
+  "n": 9,
+  "file": "experiments/fox-dataset-candidates/body/F03_w0.70_s333333.png"
+ },
+ {
+  "n": 10,
+  "file": "experiments/fox-dataset-candidates/body/F04_w0.70_s111111.png"
+ },
+ {
+  "n": 11,
+  "file": "experiments/fox-dataset-candidates/body/F04_w0.70_s222222.png"
+ },
+ {
+  "n": 12,
+  "file": "experiments/fox-dataset-candidates/body/F04_w0.70_s333333.png"
+ },
+ {
+  "n": 13,
+  "file": "experiments/fox-dataset-candidates/body/F09_w0.70_s111111.png"
+ },
+ {
+  "n": 14,
+  "file": "experiments/fox-dataset-candidates/body/F09_w0.70_s222222.png"
+ },
+ {
+  "n": 15,
+  "file": "experiments/fox-dataset-candidates/body/F09_w0.70_s333333.png"
+ },
+ {
+  "n": 16,
+  "file": "experiments/fox-dataset-candidates/body/F10_w0.70_s111111.png"
+ },
+ {
+  "n": 17,
+  "file": "experiments/fox-dataset-candidates/body/F10_w0.70_s222222.png"
+ },
+ {
+  "n": 18,
+  "file": "experiments/fox-dataset-candidates/body/F10_w0.70_s333333.png"
+ },
+ {
+  "n": 19,
+  "file": "experiments/fox-dataset-candidates/body/F11_w0.70_s111111.png"
+ },
+ {
+  "n": 20,
+  "file": "experiments/fox-dataset-candidates/body/F11_w0.70_s222222.png"
+ },
+ {
+  "n": 21,
+  "file": "experiments/fox-dataset-candidates/body/F11_w0.70_s333333.png"
+ },
+ {
+  "n": 22,
+  "file": "experiments/fox-dataset-candidates/body/F12_w0.70_s111111.png"
+ },
+ {
+  "n": 23,
+  "file": "experiments/fox-dataset-candidates/body/F12_w0.70_s222222.png"
+ },
+ {
+  "n": 24,
+  "file": "experiments/fox-dataset-candidates/body/F12_w0.70_s333333.png"
+ },
+ {
+  "n": 25,
+  "file": "experiments/fox-dataset-candidates/body/F13_w0.70_s111111.png"
+ },
+ {
+  "n": 26,
+  "file": "experiments/fox-dataset-candidates/body/F13_w0.70_s222222.png"
+ },
+ {
+  "n": 27,
+  "file": "experiments/fox-dataset-candidates/body/F13_w0.70_s333333.png"
+ },
+ {
+  "n": 28,
+  "file": "experiments/fox-dataset-candidates/body/F14_w0.70_s111111.png"
+ },
+ {
+  "n": 29,
+  "file": "experiments/fox-dataset-candidates/body/F14_w0.70_s222222.png"
+ },
+ {
+  "n": 30,
+  "file": "experiments/fox-dataset-candidates/body/F14_w0.70_s333333.png"
+ },
+ {
+  "n": 31,
+  "file": "experiments/fox-dataset-candidates/body/F15_w0.70_s111111.png"
+ },
+ {
+  "n": 32,
+  "file": "experiments/fox-dataset-candidates/body/F15_w0.70_s222222.png"
+ },
+ {
+  "n": 33,
+  "file": "experiments/fox-dataset-candidates/body/F15_w0.70_s333333.png"
+ },
+ {
+  "n": 34,
+  "file": "experiments/fox-dataset-candidates/body/F16_w0.70_s111111.png"
+ },
+ {
+  "n": 35,
+  "file": "experiments/fox-dataset-candidates/body/F16_w0.70_s222222.png"
+ },
+ {
+  "n": 36,
+  "file": "experiments/fox-dataset-candidates/body/F16_w0.70_s333333.png"
+ },
+ {
+  "n": 37,
+  "file": "experiments/fox-dataset-candidates/body/F17_w0.70_s111111.png"
+ },
+ {
+  "n": 38,
+  "file": "experiments/fox-dataset-candidates/body/F17_w0.70_s222222.png"
+ },
+ {
+  "n": 39,
+  "file": "experiments/fox-dataset-candidates/body/F17_w0.70_s333333.png"
+ },
+ {
+  "n": 40,
+  "file": "experiments/fox-dataset-candidates/body/F18_w0.70_s111111.png"
+ },
+ {
+  "n": 41,
+  "file": "experiments/fox-dataset-candidates/body/F18_w0.70_s222222.png"
+ },
+ {
+  "n": 42,
+  "file": "experiments/fox-dataset-candidates/body/F18_w0.70_s333333.png"
+ },
+ {
+  "n": 43,
+  "file": "experiments/fox-dataset-candidates/body/F19_w0.70_s111111.png"
+ },
+ {
+  "n": 44,
+  "file": "experiments/fox-dataset-candidates/body/F19_w0.70_s222222.png"
+ },
+ {
+  "n": 45,
+  "file": "experiments/fox-dataset-candidates/body/F19_w0.70_s333333.png"
+ },
+ {
+  "n": 46,
+  "file": "experiments/fox-dataset-candidates/body/F20_w0.70_s111111.png"
+ },
+ {
+  "n": 47,
+  "file": "experiments/fox-dataset-candidates/body/F20_w0.70_s222222.png"
+ },
+ {
+  "n": 48,
+  "file": "experiments/fox-dataset-candidates/body/F20_w0.70_s333333.png"
+ },
+ {
+  "n": 49,
+  "file": "experiments/fox-dataset-candidates/closeup/F05_w0.70_s111111.png"
+ },
+ {
+  "n": 50,
+  "file": "experiments/fox-dataset-candidates/closeup/F05_w0.70_s222222.png"
+ },
+ {
+  "n": 51,
+  "file": "experiments/fox-dataset-candidates/closeup/F05_w0.70_s333333.png"
+ },
+ {
+  "n": 52,
+  "file": "experiments/fox-dataset-candidates/closeup/F06_w0.70_s111111.png"
+ },
+ {
+  "n": 53,
+  "file": "experiments/fox-dataset-candidates/closeup/F06_w0.70_s222222.png"
+ },
+ {
+  "n": 54,
+  "file": "experiments/fox-dataset-candidates/closeup/F06_w0.70_s333333.png"
+ },
+ {
+  "n": 55,
+  "file": "experiments/fox-dataset-candidates/closeup/F07_w0.70_s111111.png"
+ },
+ {
+  "n": 56,
+  "file": "experiments/fox-dataset-candidates/closeup/F07_w0.70_s222222.png"
+ },
+ {
+  "n": 57,
+  "file": "experiments/fox-dataset-candidates/closeup/F07_w0.70_s333333.png"
+ },
+ {
+  "n": 58,
+  "file": "experiments/fox-dataset-candidates/closeup/F08_w0.70_s111111.png"
+ },
+ {
+  "n": 59,
+  "file": "experiments/fox-dataset-candidates/closeup/F08_w0.70_s222222.png"
+ },
+ {
+  "n": 60,
+  "file": "experiments/fox-dataset-candidates/closeup/F08_w0.70_s333333.png"
+ }
+]

@@ -1,0 +1,494 @@
+HƯỚNG DẪN (đừng copy phần này)
+Muse CHỈ làm hình + tiếng động; máy tự lồng tiếng và chèn phụ đề. Mỗi cảnh chỉ giữ ~6 giây đầu.
+BƯỚC 0: tạo ảnh mẫu Bà Mít (khối bên dưới), lưu characters/refs/muse-fruit-ba-mit.png.
+Mở 1 cuộc trò chuyện Muse MỚI, đính kèm ảnh mẫu (characters/refs/muse-fruit-*.png), dán khối "CẢ TẬP" → tải zip
+→ bỏ nguyên file zip vào projects/P011_me_chong_che_con_dau_ai_ngo_co_tieu_thu/muse-inbox/. Máy nhận clip, làm tờ soát, rồi chờ Claude soát trước khi dựng.
+Muse chỉ làm 1 cảnh mỗi lần → dùng CÁCH TỪNG CẢNH. Cảnh Muse từ chối → mở chat mới thử lại; vẫn từ chối → xin 2 ảnh tĩnh, lưu SCnn-1.png, SCnn-2.png vào muse-inbox.
+
+
+========================= BƯỚC 0 — ẢNH MẪU BÀ MÍT =========================
+>>>>> COPY TỪ ĐÂY
+Tạo 1 ảnh mẫu nhân vật, dọc 9:16, hoạt hình 3D kiểu Pixar, toàn thân, nhìn thẳng, đứng, nền xám nhạt trơn, ánh sáng dịu, không chữ, cùng phong cách với các ảnh mẫu đính kèm:
+BÀ MÍT: bà cụ sang trọng, thân hình người bình thường nhưng đầu là quả mít to xanh vàng đầy gai nhỏ có khuôn mặt biểu cảm, đeo kính tròn nhỏ, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+<<<<< ĐẾN ĐÂY
+
+
+========================= CẢ TẬP (1 lần dán) =========================
+>>>>> COPY TỪ ĐÂY
+Bạn hãy làm tập 2 phim ngắn hoạt hình 3D của tôi. Tạo ĐỦ 15 cảnh dưới đây, mỗi cảnh là MỘT video riêng, làm lần lượt từng cảnh, không cần chờ tôi xác nhận. Làm xong, gom tất cả vào MỘT file .zip và gửi link tải. Đặt tên file đúng mã cảnh: SC01.mp4, SC02.mp4, ... SC15.mp4.
+
+QUY TẮC CHO MỌI CẢNH:
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC01 — Lời chê đầu tiên
+Phòng khách biệt thự sang trọng ban ngày. Bà Mít ngồi trên ghế bành, đặt mạnh tách trà xuống bàn, kéo kính xuống nhìn Thanh Long từ đầu đến chân. Thanh Long đứng khép nép, hai tay đan vào nhau.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (khinh khỉnh, chua chát), máy quay hướng vào Bà Mít.
+- 3–6 giây: Thanh Long đang nói (lúng túng, buồn), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC02 — Anh Dừa lên tiếng
+Cùng phòng khách. Anh Dừa bước lên đứng chắn trước Thanh Long, nhìn thẳng mẹ. Bà Mít khoanh tay, quay mặt đi.
+MỐC THỜI GIAN:
+- 0–3 giây: Anh Dừa đang nói (kiên quyết), máy quay hướng vào Anh Dừa.
+- 3–6 giây: Bà Mít đang nói (gắt, bĩu môi), máy quay hướng vào Bà Mít.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC03 — Cô tiểu thư bước vào
+Cùng phòng khách. Bà Mít vỗ tay, cửa lớn mở ra, Chôm Chôm bước vào trong váy hồng phấn điệu đà, cúi chào duyên dáng. Bà Mít cười tươi đứng dậy đón.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (hớn hở, tự hào), máy quay hướng vào Bà Mít.
+- 3–6 giây: Chôm Chôm đang nói (ngọt xớt, giả tạo), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC04 — Nhận ra kẻ thù
+Cận mặt Thanh Long, mắt mở to sững sờ khi nhận ra Chôm Chôm. Sau đó cận mặt Chôm Chôm nhếch môi cười, nháy mắt đầy thách thức.
+MỐC THỜI GIAN:
+- 0–6 giây: Thanh Long đang nói (thì thầm, sững sờ), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC05 — Lời thách thức
+Hành lang biệt thự. Chôm Chôm đi ngang qua Thanh Long, ghé sát tai nói nhỏ rồi cười khẩy. Thanh Long quay lại, nắm chặt tay, ánh mắt giận dữ.
+MỐC THỜI GIAN:
+- 0–3 giây: Chôm Chôm đang nói (thì thầm, đắc ý), máy quay hướng vào Chôm Chôm.
+- 3–6 giây: Thanh Long đang nói (giận dữ, nghiến răng), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC06 — Bữa tối nịnh nọt
+Phòng ăn sang trọng buổi tối, bàn đầy món ăn. Chôm Chôm gắp thức ăn cho Bà Mít, Bà Mít cười tít mắt. Thanh Long ngồi im lặng ở góc bàn.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (cười tít, khen), máy quay hướng vào Bà Mít.
+- 3–6 giây: Chôm Chôm đang nói (ngọt ngào, liếc Thanh Long), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC07 — Ban công đêm
+Ban công biệt thự ban đêm, ánh đèn thành phố phía xa. Thanh Long đứng tựa lan can. Anh Dừa bước đến, khoác áo vest lên vai cô.
+MỐC THỜI GIAN:
+- 0–3 giây: Anh Dừa đang nói (dịu dàng), máy quay hướng vào Anh Dừa.
+- 3–6 giây: Thanh Long đang nói (quyết tâm), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC08 — Cuộc gọi bất ngờ
+Văn phòng giám đốc ban đêm, đèn bàn ấm. Thanh Long cầm điện thoại áp tai, ánh mắt kiên định nhìn ra cửa kính.
+MỐC THỜI GIAN:
+- 0–6 giây: Thanh Long đang nói (nghiêm túc, quyết tâm), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC09 — Người cũ sửa sai
+Chòi bảo vệ trước tòa nhà công ty ban đêm. Sầu Riêng trong đồng phục bảo vệ nghe điện thoại, gật đầu chắc nịch, ánh mắt hối hận nhưng kiên quyết.
+MỐC THỜI GIAN:
+- 0–6 giây: Sầu Riêng đang nói (chân thành, quyết tâm), máy quay hướng vào Sầu Riêng.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC10 — Chiếc vòng gia truyền
+Tiệc ra mắt trong phòng khách biệt thự trang trí hoa. Bà Mít mở hộp nhung lấy chiếc vòng ngọc, chuẩn bị đeo cho Chôm Chôm. Chôm Chôm chìa tay, mắt sáng rỡ.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (trang trọng), máy quay hướng vào Bà Mít.
+- 3–6 giây: Chôm Chôm đang nói (mừng rỡ), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC11 — Khoan đã!
+Cùng buổi tiệc. Cửa lớn bật mở, Sầu Riêng trong đồng phục bảo vệ bước vào, giơ tay chỉ về phía Chôm Chôm. Chôm Chôm tái mặt, rụt tay lại.
+MỐC THỜI GIAN:
+- 0–3 giây: Sầu Riêng đang nói (dõng dạc, tức giận), máy quay hướng vào Sầu Riêng.
+- 3–6 giây: Chôm Chôm đang nói (hoảng hốt), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC12 — Sự thật phơi bày
+Cùng buổi tiệc. Thanh Long đưa máy tính bảng cho Bà Mít xem (màn hình quay về phía bà, người xem không thấy chữ). Bà Mít nhìn màn hình, tay run run, há hốc miệng.
+MỐC THỜI GIAN:
+- 0–3 giây: Thanh Long đang nói (bình tĩnh, rõ ràng), máy quay hướng vào Thanh Long.
+- 3–6 giây: Bà Mít đang nói (sốc), máy quay hướng vào Bà Mít.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC13 — Hết đường chạy
+Cùng buổi tiệc. Chôm Chôm xách váy chạy về phía cửa, nhưng hai nhân viên bảo vệ đã đứng chắn ở cửa. Sầu Riêng khoanh tay đứng cạnh, nhìn cô ta.
+MỐC THỜI GIAN:
+- 0–3 giây: Chôm Chôm đang nói (hoảng loạn, the thé), máy quay hướng vào Chôm Chôm.
+- 3–6 giây: Sầu Riêng đang nói (lạnh lùng), máy quay hướng vào Sầu Riêng.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC14 — Lời xin lỗi
+Phòng khách đã yên tĩnh. Bà Mít nắm lấy hai tay Thanh Long, mắt rơm rớm hối hận. Thanh Long mỉm cười hiền hậu, lắc đầu nhẹ.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (hối hận, nghẹn ngào), máy quay hướng vào Bà Mít.
+- 3–6 giây: Thanh Long đang nói (dịu dàng), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+
+SC15 — Con dâu nhà này
+Bà Mít đeo chiếc vòng ngọc vào tay Thanh Long. Anh Dừa ôm vai cô, cả ba cười hạnh phúc trong ánh nắng chiều. Ở cửa, Sầu Riêng mỉm cười nhẹ rồi lặng lẽ quay đi.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (ấm áp, vui vẻ), máy quay hướng vào Bà Mít.
+- 3–6 giây: Anh Dừa đang nói (xúc động, vui), máy quay hướng vào Anh Dừa.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+CÁCH TỪNG CẢNH (dự phòng): mỗi khối là 1 lần dán, chỉ copy phần giữa hai dấu mốc.
+
+
+========================= SC01 — Lời chê đầu tiên =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC01.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC01 — Lời chê đầu tiên
+Phòng khách biệt thự sang trọng ban ngày. Bà Mít ngồi trên ghế bành, đặt mạnh tách trà xuống bàn, kéo kính xuống nhìn Thanh Long từ đầu đến chân. Thanh Long đứng khép nép, hai tay đan vào nhau.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (khinh khỉnh, chua chát), máy quay hướng vào Bà Mít.
+- 3–6 giây: Thanh Long đang nói (lúng túng, buồn), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC02 — Anh Dừa lên tiếng =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC02.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC02 — Anh Dừa lên tiếng
+Cùng phòng khách. Anh Dừa bước lên đứng chắn trước Thanh Long, nhìn thẳng mẹ. Bà Mít khoanh tay, quay mặt đi.
+MỐC THỜI GIAN:
+- 0–3 giây: Anh Dừa đang nói (kiên quyết), máy quay hướng vào Anh Dừa.
+- 3–6 giây: Bà Mít đang nói (gắt, bĩu môi), máy quay hướng vào Bà Mít.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC03 — Cô tiểu thư bước vào =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC03.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC03 — Cô tiểu thư bước vào
+Cùng phòng khách. Bà Mít vỗ tay, cửa lớn mở ra, Chôm Chôm bước vào trong váy hồng phấn điệu đà, cúi chào duyên dáng. Bà Mít cười tươi đứng dậy đón.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (hớn hở, tự hào), máy quay hướng vào Bà Mít.
+- 3–6 giây: Chôm Chôm đang nói (ngọt xớt, giả tạo), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC04 — Nhận ra kẻ thù =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC04.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC04 — Nhận ra kẻ thù
+Cận mặt Thanh Long, mắt mở to sững sờ khi nhận ra Chôm Chôm. Sau đó cận mặt Chôm Chôm nhếch môi cười, nháy mắt đầy thách thức.
+MỐC THỜI GIAN:
+- 0–6 giây: Thanh Long đang nói (thì thầm, sững sờ), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC05 — Lời thách thức =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC05.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC05 — Lời thách thức
+Hành lang biệt thự. Chôm Chôm đi ngang qua Thanh Long, ghé sát tai nói nhỏ rồi cười khẩy. Thanh Long quay lại, nắm chặt tay, ánh mắt giận dữ.
+MỐC THỜI GIAN:
+- 0–3 giây: Chôm Chôm đang nói (thì thầm, đắc ý), máy quay hướng vào Chôm Chôm.
+- 3–6 giây: Thanh Long đang nói (giận dữ, nghiến răng), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC06 — Bữa tối nịnh nọt =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC06.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC06 — Bữa tối nịnh nọt
+Phòng ăn sang trọng buổi tối, bàn đầy món ăn. Chôm Chôm gắp thức ăn cho Bà Mít, Bà Mít cười tít mắt. Thanh Long ngồi im lặng ở góc bàn.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (cười tít, khen), máy quay hướng vào Bà Mít.
+- 3–6 giây: Chôm Chôm đang nói (ngọt ngào, liếc Thanh Long), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC07 — Ban công đêm =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC07.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC07 — Ban công đêm
+Ban công biệt thự ban đêm, ánh đèn thành phố phía xa. Thanh Long đứng tựa lan can. Anh Dừa bước đến, khoác áo vest lên vai cô.
+MỐC THỜI GIAN:
+- 0–3 giây: Anh Dừa đang nói (dịu dàng), máy quay hướng vào Anh Dừa.
+- 3–6 giây: Thanh Long đang nói (quyết tâm), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC08 — Cuộc gọi bất ngờ =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC08.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC08 — Cuộc gọi bất ngờ
+Văn phòng giám đốc ban đêm, đèn bàn ấm. Thanh Long cầm điện thoại áp tai, ánh mắt kiên định nhìn ra cửa kính.
+MỐC THỜI GIAN:
+- 0–6 giây: Thanh Long đang nói (nghiêm túc, quyết tâm), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC09 — Người cũ sửa sai =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC09.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC09 — Người cũ sửa sai
+Chòi bảo vệ trước tòa nhà công ty ban đêm. Sầu Riêng trong đồng phục bảo vệ nghe điện thoại, gật đầu chắc nịch, ánh mắt hối hận nhưng kiên quyết.
+MỐC THỜI GIAN:
+- 0–6 giây: Sầu Riêng đang nói (chân thành, quyết tâm), máy quay hướng vào Sầu Riêng.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC10 — Chiếc vòng gia truyền =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC10.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC10 — Chiếc vòng gia truyền
+Tiệc ra mắt trong phòng khách biệt thự trang trí hoa. Bà Mít mở hộp nhung lấy chiếc vòng ngọc, chuẩn bị đeo cho Chôm Chôm. Chôm Chôm chìa tay, mắt sáng rỡ.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (trang trọng), máy quay hướng vào Bà Mít.
+- 3–6 giây: Chôm Chôm đang nói (mừng rỡ), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC11 — Khoan đã! =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC11.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC11 — Khoan đã!
+Cùng buổi tiệc. Cửa lớn bật mở, Sầu Riêng trong đồng phục bảo vệ bước vào, giơ tay chỉ về phía Chôm Chôm. Chôm Chôm tái mặt, rụt tay lại.
+MỐC THỜI GIAN:
+- 0–3 giây: Sầu Riêng đang nói (dõng dạc, tức giận), máy quay hướng vào Sầu Riêng.
+- 3–6 giây: Chôm Chôm đang nói (hoảng hốt), máy quay hướng vào Chôm Chôm.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC12 — Sự thật phơi bày =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC12.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC12 — Sự thật phơi bày
+Cùng buổi tiệc. Thanh Long đưa máy tính bảng cho Bà Mít xem (màn hình quay về phía bà, người xem không thấy chữ). Bà Mít nhìn màn hình, tay run run, há hốc miệng.
+MỐC THỜI GIAN:
+- 0–3 giây: Thanh Long đang nói (bình tĩnh, rõ ràng), máy quay hướng vào Thanh Long.
+- 3–6 giây: Bà Mít đang nói (sốc), máy quay hướng vào Bà Mít.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC13 — Hết đường chạy =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC13.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC13 — Hết đường chạy
+Cùng buổi tiệc. Chôm Chôm xách váy chạy về phía cửa, nhưng hai nhân viên bảo vệ đã đứng chắn ở cửa. Sầu Riêng khoanh tay đứng cạnh, nhìn cô ta.
+MỐC THỜI GIAN:
+- 0–3 giây: Chôm Chôm đang nói (hoảng loạn, the thé), máy quay hướng vào Chôm Chôm.
+- 3–6 giây: Sầu Riêng đang nói (lạnh lùng), máy quay hướng vào Sầu Riêng.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC14 — Lời xin lỗi =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC14.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC14 — Lời xin lỗi
+Phòng khách đã yên tĩnh. Bà Mít nắm lấy hai tay Thanh Long, mắt rơm rớm hối hận. Thanh Long mỉm cười hiền hậu, lắc đầu nhẹ.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (hối hận, nghẹn ngào), máy quay hướng vào Bà Mít.
+- 3–6 giây: Thanh Long đang nói (dịu dàng), máy quay hướng vào Thanh Long.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC15 — Con dâu nhà này =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC15.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, biểu cảm khuôn mặt rõ ràng, nhịp NHANH: hành động chính xảy ra ngay từ giây 0, không mở đầu chậm.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: toàn bộ hành động chính và lời nói nằm trong 6 giây đầu; trong mỗi khoảng máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh). Giây 6–10: giữ nguyên khung cảnh, chuyển động nhẹ.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề, không chữ trên màn hình điện thoại/máy tính.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, khuôn mặt/đầu giữ ĐÚNG như ảnh mẫu đính kèm; trang phục theo mô tả dưới đây trong cả tập):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn.
+
+SC15 — Con dâu nhà này
+Bà Mít đeo chiếc vòng ngọc vào tay Thanh Long. Anh Dừa ôm vai cô, cả ba cười hạnh phúc trong ánh nắng chiều. Ở cửa, Sầu Riêng mỉm cười nhẹ rồi lặng lẽ quay đi.
+MỐC THỜI GIAN:
+- 0–3 giây: Bà Mít đang nói (ấm áp, vui vẻ), máy quay hướng vào Bà Mít.
+- 3–6 giây: Anh Dừa đang nói (xúc động, vui), máy quay hướng vào Anh Dừa.
+- 6–10 giây: giữ khung cảnh, chuyển động nhẹ, không ai nói.
+<<<<< ĐẾN ĐÂY

@@ -1,0 +1,362 @@
+HƯỚNG DẪN (đừng copy phần này)
+Tập 1 series "Drama trái cây". Muse CHỈ làm hình + tiếng động; máy tự lồng tiếng (mỗi nhân vật 1 giọng cố định) và chèn phụ đề.
+SC01 đã có (dùng lại, máy tắt tiếng thoại Muse trong đó) → chỉ cần làm SC02–SC12.
+Ảnh mẫu: đính kèm ảnh nhân vật (lưu ở characters/refs/muse-fruit-*.png nếu bạn đã lưu).
+CÁCH NHANH: dán 1 LẦN khối "CẢ TẬP" (đính kèm ảnh mẫu) → Muse làm SC02–SC12, gom 1 file .zip
+→ bỏ nguyên file zip vào projects/P010_bi_chong_duoi_giua_dem_mua_cai_ket_khien/muse-inbox/ (máy tự giải nén, tự lồng tiếng, tự ghép).
+Nếu Muse chỉ làm 1 cảnh mỗi lần → dùng CÁCH TỪNG CẢNH phía dưới.
+Nếu Muse vẫn tự nói thành tiếng: không sao, báo mình — máy sẽ tắt tiếng clip đó.
+
+
+========================= BƯỚC 0 — ẢNH MẪU NHÂN VẬT (nếu chưa có) =========================
+>>>>> COPY TỪ ĐÂY
+Tạo 4 ảnh mẫu nhân vật riêng biệt, dọc 9:16, hoạt hình 3D kiểu Pixar, toàn thân, nhìn thẳng, đứng, nền xám nhạt trơn, ánh sáng dịu, không chữ.
+Đây là những người có thân hình người bình thường nhưng đầu là một quả trái cây có khuôn mặt biểu cảm:
+1) THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be, giày búp bê.
+2) SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy, cà vạt.
+3) CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+4) ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt, sơ mi trắng.
+<<<<< ĐẾN ĐÂY
+
+
+========================= CẢ TẬP (1 lần dán) =========================
+>>>>> COPY TỪ ĐÂY
+Bạn hãy làm tiếp phim ngắn hoạt hình 3D của tôi. Tạo ĐỦ 11 cảnh dưới đây (SC02 đến SC12), mỗi cảnh là MỘT video riêng, làm lần lượt từng cảnh, không cần chờ tôi xác nhận. Làm xong, gom tất cả vào MỘT file .zip và gửi link tải. Đặt tên file đúng mã cảnh: SC02.mp4, SC03.mp4, ... SC12.mp4.
+
+QUY TẮC CHO MỌI CẢNH:
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC02 — Chiếc vali cạnh cửa
+Cùng phòng khách sang trọng ban đêm. Chôm Chôm đứng cạnh Sầu Riêng, khoanh tay, nhếch môi kiêu kỳ. Sầu Riêng lạnh lùng chỉ tay về phía chiếc vali đã xếp sẵn đặt cạnh cửa ra vào. Thanh Long nhìn chiếc vali, đặt tay lên ngực, đôi mắt long lanh buồn bã.
+MỐC THỜI GIAN:
+- 0–5 giây: Chôm Chôm đang nói (cười khẩy, đanh đá), máy quay hướng vào Chôm Chôm.
+- 5–10 giây: Sầu Riêng đang nói (lạnh lùng, chỉ về phía vali), máy quay hướng vào Sầu Riêng.
+
+SC03 — Rời đi trong đêm mưa
+Đêm mưa trước hiên một ngôi nhà, ánh sáng xanh dịu. Thanh Long kéo chiếc vali bước ra hiên, quay lại nhìn Sầu Riêng đang đứng ở khung cửa. Sầu Riêng quay mặt đi và khép cánh cửa gỗ lại. Thanh Long đứng một mình dưới mưa với chiếc vali.
+MỐC THỜI GIAN:
+- 0–5 giây: Thanh Long đang nói (buồn bã, hỏi khẽ), máy quay hướng vào Thanh Long.
+- 5–10 giây: Sầu Riêng đang nói (lạnh nhạt, rồi khép cửa), máy quay hướng vào Sầu Riêng.
+
+SC04 — Trạm chờ dưới đèn đường
+Con phố yên tĩnh ban đêm, mưa nhẹ dưới ánh đèn đường vàng ấm, mặt đường lấp lánh phản chiếu ánh sáng. Thanh Long ngồi trên băng ghế ở trạm chờ xe buýt, chiếc vali bên cạnh, cúi nhìn xuống, vẻ mặt buồn và trầm ngâm. Máy quay từ từ tiến lại gần.
+MỐC THỜI GIAN:
+- 0–10 giây: Thanh Long đang nói (thì thầm, buồn), máy quay hướng vào Thanh Long.
+
+SC05 — Chiếc ô của anh Dừa
+Cùng con phố mưa. Một chiếc ô đen bất ngờ che lên đầu Thanh Long, mưa ngừng rơi trên người cô. Anh Dừa cúi xuống ngồi cạnh cô, ánh mắt lo lắng. Thanh Long ngước lên, mắt đỏ hoe.
+MỐC THỜI GIAN:
+- 0–5 giây: Anh Dừa đang nói (dịu dàng, lo lắng), máy quay hướng vào Anh Dừa.
+- 5–10 giây: Thanh Long đang nói (nghẹn ngào), máy quay hướng vào Thanh Long.
+
+SC06 — Ly trà gừng
+Một quán cà phê nhỏ ấm cúng, đèn vàng, mưa ngoài cửa kính. Thanh Long quấn khăn bông, Anh Dừa đặt ly trà gừng nóng bốc khói vào tay cô. Thanh Long cầm ly bằng hai tay, mỉm cười yếu ớt lần đầu tiên.
+MỐC THỜI GIAN:
+- 0–5 giây: Anh Dừa đang nói (ấm áp), máy quay hướng vào Anh Dừa.
+- 5–10 giây: Thanh Long đang nói (mỉm cười, cảm động), máy quay hướng vào Thanh Long.
+
+SC07 — Bắt đầu lại
+Văn phòng hiện đại sáng sủa, nắng sớm qua cửa kính lớn. Thanh Long mặc vest công sở thanh lịch, tự tin trình bày trước đồng nghiệp, rồi làm việc chăm chỉ bên bàn. Anh Dừa đứng ở cửa nhìn cô, mỉm cười tự hào. Chỉ có tiếng văn phòng nhẹ nhàng.
+MỐC THỜI GIAN: không ai nói, chỉ hành động và tiếng động.
+
+SC08 — Chôm Chôm cuỗm tiền
+Căn hộ sang trọng của Sầu Riêng, ban ngày. Chôm Chôm kéo một túi xách to đầy tiền, tay kia lắc chùm chìa khóa xe, cười đắc thắng rồi bước ra cửa. Sầu Riêng chạy theo, mặt hoảng hốt, gai sầu riêng dựng đứng.
+MỐC THỜI GIAN:
+- 0–5 giây: Chôm Chôm đang nói (cười đắc thắng), máy quay hướng vào Chôm Chôm.
+- 5–10 giây: Sầu Riêng đang nói (hoảng hốt), máy quay hướng vào Sầu Riêng.
+
+SC09 — Đi xin việc
+Trước một tòa nhà tập đoàn cao lớn bằng kính, ban ngày. Sầu Riêng tiều tụy, áo sơ mi nhàu nát, tay cầm tập hồ sơ cũ, ngước nhìn tòa nhà rồi hít một hơi thật sâu bước vào.
+MỐC THỜI GIAN:
+- 0–10 giây: Sầu Riêng đang nói (mệt mỏi, thì thầm), máy quay hướng vào Sầu Riêng.
+
+SC10 — Ghế giám đốc quay lại
+Phòng giám đốc rộng sang trọng, nhìn ra thành phố. Sầu Riêng rụt rè bước vào. Chiếc ghế da sau bàn làm việc từ từ xoay lại: người ngồi đó chính là Thanh Long, vest trắng thanh lịch, bình thản và tự tin. Sầu Riêng chết lặng, tập hồ sơ rơi xuống.
+MỐC THỜI GIAN:
+- 0–5 giây: Sầu Riêng đang nói (sững sờ, lắp bắp), máy quay hướng vào Sầu Riêng.
+- 5–10 giây: Thanh Long đang nói (bình thản), máy quay hướng vào Thanh Long.
+
+SC11 — Lời cầu xin muộn màng
+Cùng phòng giám đốc. Sầu Riêng chắp tay van xin. Thanh Long đứng dậy, nhìn thẳng anh ta, ánh mắt cứng rắn nhưng điềm tĩnh. Cuối cảnh, Anh Dừa bước vào, đứng bên cạnh Thanh Long, đặt tay lên vai cô.
+MỐC THỜI GIAN:
+- 0–5 giây: Sầu Riêng đang nói (van xin), máy quay hướng vào Sầu Riêng.
+- 5–10 giây: Thanh Long đang nói (dứt khoát), máy quay hướng vào Thanh Long.
+
+SC12 — Lời cầu hôn lúc hoàng hôn
+Sân thượng lúc hoàng hôn, trời cam hồng rực rỡ, thành phố phía xa. Anh Dừa quỳ một chân, mở hộp nhẫn. Thanh Long đưa tay che miệng, nước mắt hạnh phúc, gật đầu, rồi hai người ôm nhau.
+MỐC THỜI GIAN:
+- 0–5 giây: Anh Dừa đang nói (chân thành), máy quay hướng vào Anh Dừa.
+- 5–10 giây: Thanh Long đang nói (khóc hạnh phúc), máy quay hướng vào Thanh Long.
+<<<<< ĐẾN ĐÂY
+
+
+CÁCH TỪNG CẢNH (dự phòng): mỗi khối là 1 lần dán, chỉ copy phần giữa hai dấu mốc.
+
+
+========================= SC01 — Đêm kỷ niệm bị phản bội (ĐÃ CÓ — chỉ làm lại nếu cần) =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC01.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC01 — Đêm kỷ niệm bị phản bội
+Phòng khách sang trọng ban đêm, đèn vàng ấm. Thanh Long mở cửa bước vào, tay cầm hộp bánh kem có nến, thì thấy Sầu Riêng đang ôm Chôm Chôm trên ghế sofa. Thanh Long sững sờ, hộp bánh rơi xuống sàn. Sầu Riêng đứng dậy, khoanh tay lạnh lùng.
+MỐC THỜI GIAN:
+- 0–5 giây: Thanh Long đang nói (run rẩy, nghẹn ngào), máy quay hướng vào Thanh Long.
+- 5–10 giây: Sầu Riêng đang nói (lạnh lùng), máy quay hướng vào Sầu Riêng.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC02 — Chiếc vali cạnh cửa =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC02.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC02 — Chiếc vali cạnh cửa
+Cùng phòng khách sang trọng ban đêm. Chôm Chôm đứng cạnh Sầu Riêng, khoanh tay, nhếch môi kiêu kỳ. Sầu Riêng lạnh lùng chỉ tay về phía chiếc vali đã xếp sẵn đặt cạnh cửa ra vào. Thanh Long nhìn chiếc vali, đặt tay lên ngực, đôi mắt long lanh buồn bã.
+MỐC THỜI GIAN:
+- 0–5 giây: Chôm Chôm đang nói (cười khẩy, đanh đá), máy quay hướng vào Chôm Chôm.
+- 5–10 giây: Sầu Riêng đang nói (lạnh lùng, chỉ về phía vali), máy quay hướng vào Sầu Riêng.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC03 — Rời đi trong đêm mưa =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC03.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC03 — Rời đi trong đêm mưa
+Đêm mưa trước hiên một ngôi nhà, ánh sáng xanh dịu. Thanh Long kéo chiếc vali bước ra hiên, quay lại nhìn Sầu Riêng đang đứng ở khung cửa. Sầu Riêng quay mặt đi và khép cánh cửa gỗ lại. Thanh Long đứng một mình dưới mưa với chiếc vali.
+MỐC THỜI GIAN:
+- 0–5 giây: Thanh Long đang nói (buồn bã, hỏi khẽ), máy quay hướng vào Thanh Long.
+- 5–10 giây: Sầu Riêng đang nói (lạnh nhạt, rồi khép cửa), máy quay hướng vào Sầu Riêng.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC04 — Trạm chờ dưới đèn đường =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC04.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC04 — Trạm chờ dưới đèn đường
+Con phố yên tĩnh ban đêm, mưa nhẹ dưới ánh đèn đường vàng ấm, mặt đường lấp lánh phản chiếu ánh sáng. Thanh Long ngồi trên băng ghế ở trạm chờ xe buýt, chiếc vali bên cạnh, cúi nhìn xuống, vẻ mặt buồn và trầm ngâm. Máy quay từ từ tiến lại gần.
+MỐC THỜI GIAN:
+- 0–10 giây: Thanh Long đang nói (thì thầm, buồn), máy quay hướng vào Thanh Long.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC05 — Chiếc ô của anh Dừa =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC05.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC05 — Chiếc ô của anh Dừa
+Cùng con phố mưa. Một chiếc ô đen bất ngờ che lên đầu Thanh Long, mưa ngừng rơi trên người cô. Anh Dừa cúi xuống ngồi cạnh cô, ánh mắt lo lắng. Thanh Long ngước lên, mắt đỏ hoe.
+MỐC THỜI GIAN:
+- 0–5 giây: Anh Dừa đang nói (dịu dàng, lo lắng), máy quay hướng vào Anh Dừa.
+- 5–10 giây: Thanh Long đang nói (nghẹn ngào), máy quay hướng vào Thanh Long.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC06 — Ly trà gừng =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC06.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC06 — Ly trà gừng
+Một quán cà phê nhỏ ấm cúng, đèn vàng, mưa ngoài cửa kính. Thanh Long quấn khăn bông, Anh Dừa đặt ly trà gừng nóng bốc khói vào tay cô. Thanh Long cầm ly bằng hai tay, mỉm cười yếu ớt lần đầu tiên.
+MỐC THỜI GIAN:
+- 0–5 giây: Anh Dừa đang nói (ấm áp), máy quay hướng vào Anh Dừa.
+- 5–10 giây: Thanh Long đang nói (mỉm cười, cảm động), máy quay hướng vào Thanh Long.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC07 — Bắt đầu lại =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC07.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC07 — Bắt đầu lại
+Văn phòng hiện đại sáng sủa, nắng sớm qua cửa kính lớn. Thanh Long mặc vest công sở thanh lịch, tự tin trình bày trước đồng nghiệp, rồi làm việc chăm chỉ bên bàn. Anh Dừa đứng ở cửa nhìn cô, mỉm cười tự hào. Chỉ có tiếng văn phòng nhẹ nhàng.
+MỐC THỜI GIAN: không ai nói, chỉ hành động và tiếng động.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC08 — Chôm Chôm cuỗm tiền =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC08.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC08 — Chôm Chôm cuỗm tiền
+Căn hộ sang trọng của Sầu Riêng, ban ngày. Chôm Chôm kéo một túi xách to đầy tiền, tay kia lắc chùm chìa khóa xe, cười đắc thắng rồi bước ra cửa. Sầu Riêng chạy theo, mặt hoảng hốt, gai sầu riêng dựng đứng.
+MỐC THỜI GIAN:
+- 0–5 giây: Chôm Chôm đang nói (cười đắc thắng), máy quay hướng vào Chôm Chôm.
+- 5–10 giây: Sầu Riêng đang nói (hoảng hốt), máy quay hướng vào Sầu Riêng.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC09 — Đi xin việc =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC09.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC09 — Đi xin việc
+Trước một tòa nhà tập đoàn cao lớn bằng kính, ban ngày. Sầu Riêng tiều tụy, áo sơ mi nhàu nát, tay cầm tập hồ sơ cũ, ngước nhìn tòa nhà rồi hít một hơi thật sâu bước vào.
+MỐC THỜI GIAN:
+- 0–10 giây: Sầu Riêng đang nói (mệt mỏi, thì thầm), máy quay hướng vào Sầu Riêng.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC10 — Ghế giám đốc quay lại =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC10.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC10 — Ghế giám đốc quay lại
+Phòng giám đốc rộng sang trọng, nhìn ra thành phố. Sầu Riêng rụt rè bước vào. Chiếc ghế da sau bàn làm việc từ từ xoay lại: người ngồi đó chính là Thanh Long, vest trắng thanh lịch, bình thản và tự tin. Sầu Riêng chết lặng, tập hồ sơ rơi xuống.
+MỐC THỜI GIAN:
+- 0–5 giây: Sầu Riêng đang nói (sững sờ, lắp bắp), máy quay hướng vào Sầu Riêng.
+- 5–10 giây: Thanh Long đang nói (bình thản), máy quay hướng vào Thanh Long.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC11 — Lời cầu xin muộn màng =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC11.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC11 — Lời cầu xin muộn màng
+Cùng phòng giám đốc. Sầu Riêng chắp tay van xin. Thanh Long đứng dậy, nhìn thẳng anh ta, ánh mắt cứng rắn nhưng điềm tĩnh. Cuối cảnh, Anh Dừa bước vào, đứng bên cạnh Thanh Long, đặt tay lên vai cô.
+MỐC THỜI GIAN:
+- 0–5 giây: Sầu Riêng đang nói (van xin), máy quay hướng vào Sầu Riêng.
+- 5–10 giây: Thanh Long đang nói (dứt khoát), máy quay hướng vào Thanh Long.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC12 — Lời cầu hôn lúc hoàng hôn =========================
+>>>>> COPY TỪ ĐÂY
+Tạo một video duy nhất, đặt tên SC12.mp4.
+- Video dọc 9:16, 10 giây, phong cách hoạt hình 3D kiểu Pixar, ánh sáng điện ảnh, chuyển động mượt tự nhiên, biểu cảm khuôn mặt rõ ràng.
+- KHÔNG CÓ GIỌNG NÓI NÀO: không thoại, không người dẫn chuyện, không tiếng hát (tôi sẽ tự lồng tiếng sau). Khi mốc thời gian ghi "đang nói", nhân vật đó mấp máy môi như đang nói nhưng KHÔNG phát ra tiếng.
+- Làm đúng MỐC THỜI GIAN: trong mỗi khoảng, máy quay hướng rõ vào nhân vật đang nói (cận hoặc trung cảnh), người kia im lặng.
+- Chỉ có tiếng động và âm thanh môi trường tự nhiên, KHÔNG nhạc nền. Không chữ, không phụ đề trên hình.
+
+NHÂN VẬT (người mang đầu trái cây, thân người bình thường, giữ ĐÚNG như ảnh mẫu đính kèm trong mọi cảnh, không đổi trang phục, không thêm bớt phụ kiện):
+- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền, áo sơ mi kem, chân váy be.
+- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm, vẻ mặt kiêu ngạo, vest xanh navy.
+- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm, váy đen bó sát, giày cao gót đỏ.
+- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.
+
+SC12 — Lời cầu hôn lúc hoàng hôn
+Sân thượng lúc hoàng hôn, trời cam hồng rực rỡ, thành phố phía xa. Anh Dừa quỳ một chân, mở hộp nhẫn. Thanh Long đưa tay che miệng, nước mắt hạnh phúc, gật đầu, rồi hai người ôm nhau.
+MỐC THỜI GIAN:
+- 0–5 giây: Anh Dừa đang nói (chân thành), máy quay hướng vào Anh Dừa.
+- 5–10 giây: Thanh Long đang nói (khóc hạnh phúc), máy quay hướng vào Thanh Long.
+<<<<< ĐẾN ĐÂY

@@ -1,0 +1,34 @@
+{
+  "_note": "First fruit-drama episode (Muse mode), modelled on the reference short 'Bị Phản Bội - Cái Kết Bất Ngờ': 12 short scenes, Vietnamese lip-synced dialogue made in Meta Muse from muse-pack.txt, dropped into muse-inbox/ as SC01..SC12.mp4. Pipeline: ingest -> AI music bed (ducked under the clip audio) -> upscale -> subtitles -> assemble.",
+  "id": "P010",
+  "title": "Bị chồng đuổi giữa đêm mưa — Cái kết khiến anh ta hối hận",
+  "character": "fruit-drama-cast-v1",
+  "video_source": "muse",
+  "use_lora": false,
+  "pad_seconds": 0.0,
+  "tail_seconds": 0.0,
+  "fade_out": 1.5,
+  "music": {
+    "prompt": "emotional cinematic drama, sad solo piano with soft cello in the first half, slowly building with warm strings into a hopeful uplifting ending, instrumental",
+    "bpm": 75
+  },
+  "ambience": [
+    {
+      "prompt": "steady night rain on a street and porch roof, soft distant city hum, nature ambience, no music",
+      "from_shot": "SH03",
+      "to_shot": "SH04"
+    }
+  ],
+  "sfx": [
+    {
+      "prompt": "cake box dropping onto a wooden floor, soft thud and squish, cartoon sound effect, no music",
+      "shot": "SH01",
+      "offset": 3.6,
+      "seconds": 1.2
+    }
+  ],
+  "series": "drama-trai-cay",
+  "episode": 1,
+  "summary": "Cô Thanh Long bị chồng Sầu Riêng phản bội và đuổi ra đường giữa đêm mưa; được anh Dừa giúp đỡ, cô vươn lên thành phó giám đốc, còn Sầu Riêng bị Chôm Chôm lừa sạch tiền và phải đến xin việc ở chính công ty của cô.",
+  "script_approved": "cd4ddc01a9a6"
+}

@@ -1,0 +1,28 @@
+﻿{
+    "_note":  "LoRA dataset candidates for mascot \u0027Tiểu Mão\u0027 (fox, concept made by the user with ChatGPT, 09/10/2026). Variety: front/side/back/3-4 views, close-up expressions, sitting/running/jumping, day/night/snow/desert/studio.",
+    "character_block":  "cute small anthropomorphic fox cub standing on two legs, bright orange fluffy fur, white chest and belly, white muzzle and cheeks, dark brown ear tips, big expressive brown eyes, orange legs with white feet, big fluffy orange tail with a white tip, no clothes, only a tiny blue satchel bag hanging at his side on a thin blue shoulder strap",
+    "style_block":  "stylized 3D animated movie still, cute Pixar style 3D cartoon character, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+    "negative":  "human, man, boy, girl, person, realistic photo, real animal, wolf, dog, cat, multiple characters, two foxes, character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, backpack, big bag, vest, jacket, harness, shirt, pants, clothes, hat, black legs, dark brown legs, black paws, two tails, extra tail, extra legs, extra limbs, blurry, low quality, distorted, deformed, bad anatomy, text, watermark, logo",
+    "scenes":  {
+                   "F01":  "full body front view, standing with both arms raised happily, big smile, soft neutral grey studio background, studio lighting",
+                   "F02":  "full body side profile view, walking to the left, soft neutral grey studio background, studio lighting",
+                   "F03":  "full body back view, the blue satchel strap and fluffy tail visible, soft neutral grey studio background, studio lighting",
+                   "F04":  "full body three-quarter view, standing proudly with paws on hips, soft neutral grey studio background, studio lighting",
+                   "F05":  "close-up portrait of his face, curious expression with ears perked up, bright daylight in a green forest, shallow depth of field",
+                   "F06":  "close-up portrait of his face, laughing happily with eyes squinted, sunny meadow with flowers, shallow depth of field",
+                   "F07":  "close-up portrait of his face, surprised expression with wide eyes and open mouth, misty forest, soft light",
+                   "F08":  "close-up portrait of his face, mischievous sly grin, one eyebrow raised, warm golden sunset light",
+                   "F09":  "medium shot, thinking with a paw on his chin, puzzled look, inside a cozy wooden cabin, warm lamp light",
+                   "F10":  "full body, running fast across a green grassy hill, tail flowing behind, clear blue sky, dynamic motion",
+                   "F11":  "full body, jumping over a small forest stream, mid-air, dappled sunlight",
+                   "F12":  "full body, sitting on a mossy rock, resting, looking at a mountain valley, soft morning light",
+                   "F13":  "full body, crouching low and sniffing animal footprints on a dirt path, sunny forest",
+                   "F14":  "medium shot, holding an old paper map with both paws, excited look, ancient ruins in the background, bright daylight",
+                   "F15":  "three-quarter back view, looking back over his shoulder toward the camera, snowy mountain pass, overcast light",
+                   "F16":  "full body, standing on a red rock in a desert canyon, bright midday sun",
+                   "F17":  "medium shot, sitting by a campfire at night, warm orange glow on his fur, starry sky",
+                   "F18":  "full body, lying on his back on the grass looking up at the sky, relaxed smile, sunny afternoon",
+                   "F19":  "medium shot, peeking out from behind a large tree trunk, playful expression, magical forest with soft light rays",
+                   "F20":  "full body, standing at the edge of a cliff looking at a vast valley, view from behind, wind in his fur, golden hour"
+               }
+}

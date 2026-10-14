@@ -1,0 +1,36 @@
+{
+  "_note": "Episode 2 (Ma rừng, ma trành). Image ranges = script block numbers (inclusive). Illustrations from muse-image-pack.txt → illustration-inbox/.",
+  "images": [
+    {"id": "IMG01", "shots": [1, 2]},
+    {"id": "IMG02", "shots": [3, 4]},
+    {"id": "IMG03", "shots": [5, 7]},
+    {"id": "IMG04", "shots": [8, 10]},
+    {"id": "IMG05", "shots": [11, 11]},
+    {"id": "IMG06", "shots": [12, 12]},
+    {"id": "IMG07", "shots": [13, 14]},
+    {"id": "IMG08", "shots": [15, 15]},
+    {"id": "IMG09", "shots": [16, 19]},
+    {"id": "IMG10", "shots": [20, 22]},
+    {"id": "IMG11", "shots": [23, 23]},
+    {"id": "IMG12", "shots": [24, 24]},
+    {"id": "IMG13", "shots": [25, 26]},
+    {"id": "IMG14", "shots": [27, 28]},
+    {"id": "IMG15", "shots": [29, 29]},
+    {"id": "IMG16", "shots": [30, 31]},
+    {"id": "IMG17", "shots": [32, 34]},
+    {"id": "IMG18", "shots": [35, 38]},
+    {"id": "IMG19", "shots": [39, 40]},
+    {"id": "IMG20", "shots": [41, 41]},
+    {"id": "IMG21", "shots": [42, 44]},
+    {"id": "IMG22", "shots": [45, 46]},
+    {"id": "IMG23", "shots": [47, 51]},
+    {"id": "IMG24", "shots": [52, 55]},
+    {"id": "IMG25", "shots": [56, 56]},
+    {"id": "IMG26", "shots": [57, 59]}
+  ],
+  "cards": [
+    {"shot": 12, "title": "Thái Bình Quảng Ký", "sub": "Bộ sách truyện kỳ lạ đời Tống · thế kỷ 10"},
+    {"shot": 14, "title": "Ông ba mươi, ông kễnh", "sub": "Cách gọi kiêng tên con hổ của người xưa"},
+    {"shot": 33, "title": "Cúng cô hồn", "sub": "Tục cúng vong hồn không nơi nương tựa · rằm tháng bảy"}
+  ]
+}

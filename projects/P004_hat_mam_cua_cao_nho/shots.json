@@ -1,0 +1,29 @@
+{
+  "_note": "P004 — Tiểu Mão tập 1 'Hạt mầm của cáo nhỏ' (storyboard idea by the user, adapted: no sneeze/paw-digging close-ups — Wan 5B can't animate tiny object interactions; growth + bloom on a no-character shot). Place: Rừng Phong Đỏ (bible).",
+  "shots": [
+    {"id": "SH01", "ipa_weight": 0.4,
+     "scene": "medium close-up of his face and shoulders, looking up with big surprised eyes, a tiny glowing golden seed drifting down right in front of his nose, autumn maple forest, red and orange leaves, soft sunlight",
+     "motion": "a tiny glowing golden seed slowly drifts down past his nose, he blinks in surprise and his ears perk up, very slow camera push in, stylized 3D animated movie, calm subtle motion"},
+    {"id": "SH02", "ipa_weight": 0.4,
+     "scene": "medium shot, three-quarter view, crouching and tilting his head curiously at a tiny glowing golden seed lying on a mossy stone, fluffy tail raised, autumn maple forest, mossy stones, sunbeams",
+     "motion": "he tilts his head to one side and then the other, curiously looking at the glowing seed, his fluffy tail wags slowly, gentle camera drift, stylized 3D animated movie, smooth natural motion"},
+    {"id": "SH03", "ipa_weight": 0.4,
+     "scene": "full body, side view, kneeling on the forest floor and gently patting a small mound of soft dark soil, sunlight through the leaves, autumn maple forest, red leaves on the ground",
+     "motion": "he gently pats the small mound of soil, leaves rustle softly around him, slow camera pan, stylized 3D animated movie, smooth natural motion"},
+    {"id": "SH04", "ipa_weight": 0.4,
+     "scene": "medium shot, sitting next to a small mound of soil, holding a tiny blue watering can, clear water drops falling onto the soil, warm sunbeams, autumn maple forest",
+     "motion": "clear water pours gently from the small watering can onto the soil mound, he smiles softly, very slow camera push in, stylized 3D animated movie, calm subtle motion"},
+    {"id": "SH05", "ipa_weight": 0.4,
+     "scene": "full body, front view, sitting and hugging his knees, waiting patiently beside a small soil mound with a tiny green sprout, golden afternoon light, autumn maple forest, falling leaves",
+     "motion": "he sits still hugging his knees and watches the tiny sprout, a few red leaves fall slowly, his ears move slightly, static camera, stylized 3D animated movie, calm subtle motion"},
+    {"id": "SH06", "ipa_weight": 0.0, "character_override": "",
+     "scene": "close-up of a small glowing bell-shaped flower blooming from a green stem in soft dark soil, warm golden glow, floating light particles, autumn maple forest blurred behind, no animals",
+     "motion": "the green stem grows up and the bell-shaped flower slowly opens its petals, warm golden glow spreads, soft light particles float upward, slow camera push in, stylized 3D animated movie, calm magical motion"},
+    {"id": "SH07", "ipa_weight": 0.4,
+     "scene": "medium shot, happy smile with eyes closed, a small blue butterfly resting on his ear, a glowing bell-shaped flower beside him, warm sunlight, autumn maple forest",
+     "motion": "the small butterfly gently opens and closes its wings on his ear, he smiles happily, the flower glows softly, slow camera pull back, stylized 3D animated movie, calm subtle motion"},
+    {"id": "SH08", "ipa_weight": 0.1, "character_override": "a tiny fox cub sitting next to a small glowing flower",
+     "scene": "extreme wide shot, a sunny autumn maple forest clearing full of warm sunbeams, red and orange leaves, a small glowing flower in the middle",
+     "motion": "very slow camera pull back and rise above the forest clearing, leaves drift gently in the warm light, stylized 3D animated movie, calm epic motion"}
+  ]
+}

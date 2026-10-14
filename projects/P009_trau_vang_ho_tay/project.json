@@ -1,0 +1,62 @@
+{
+  "_note": "Long-form audio story, episode 3 (Trâu vàng Hồ Tây). Retention-first: hook-only opening, no greeting, no comment call, cliffhanger per chapter, historical payoff in chapter 5. Narrator Thiện Minh (approved 13/10/2026). Music kept soft and sparse under the voice (user feedback on P008-v2: music too loud/busy).",
+  "id": "P009",
+  "title": "Trâu Vàng Hồ Tây — Quả chuông dưới đáy hồ",
+  "character": "narrator-co-dai-thien-minh",
+  "video_source": "audio-story",
+  "series": "nghe-chuyen-co-dai",
+  "episode": 3,
+  "summary": "Thiền sư Khổng Lồ Nguyễn Minh Không, chiếc túi thần lấy hết kho đồng nhà Tống, quả chuông gọi trâu vàng tạo nên Hồ Tây — và sự thật lịch sử về chuông Quy Điền bị quân Minh nấu chảy năm 1426.",
+  "teaser": {
+    "hook_text": "Dưới đáy Hồ Tây…\nmột con trâu vàng vẫn đang tìm",
+    "hook_seconds": 5,
+    "segments": [
+      {"shot": 1, "image": "IMG01", "focus": 0.55},
+      {"shot": 2, "image": "IMG02", "focus": 0.5},
+      {"shot": 21, "image": "IMG17", "focus": 0.5},
+      {"shot": 28, "image": "IMG23", "focus": 0.5},
+      {"shot": 50, "image": "IMG36", "focus": 0.5}
+    ],
+    "end_card": {"image": "THUMB", "focus": 0.62, "seconds": 5, "title": "TRÂU VÀNG HỒ TÂY", "sub": "Quả chuông dưới đáy hồ",
+                 "cta": "Nghe trọn câu chuyện 11 phút\ntrên YouTube — link ở bình luận"},
+    "music_index": 0
+  },
+  "story_audio": {
+    "_note": "Soft background music (sparse, low register, no busy melody) so the narration stays clear.",
+    "music": [
+      {"prompt": "mysterious night lake ambient, sparse soft bamboo flute notes, deep low drone, faint bronze bell shimmer, calm and haunting, minimal, background music, instrumental", "shots": [1, 5], "seed": 191919},
+      {"prompt": "gentle Vietnamese dan tranh, sparse and calm, soft drone, temple atmosphere, minimal, background music, instrumental", "shots": [6, 14], "seed": 202020},
+      {"prompt": "light mysterious dan bau with soft plucked strings, playful wonder, sparse, minimal, background music, instrumental", "shots": [15, 23], "seed": 212121},
+      {"prompt": "slow building legend theme, low drums and soft strings, distant bronze bell, sparse bamboo flute, minimal, background music, instrumental", "shots": [24, 35], "seed": 232323},
+      {"prompt": "calm misty lake morning ambient, soft dan tranh and airy pad, peaceful, minimal, background music, instrumental", "shots": [36, 43], "seed": 242424},
+      {"prompt": "sorrowful reflective ambient, soft dan nhi and low strings, quiet loss, minimal, background music, instrumental", "shots": [44, 52], "seed": 252525},
+      {"prompt": "gentle moonlit lullaby, soft bamboo flute and dan tranh, nostalgic, minimal, background music, instrumental", "shots": [53, 55], "seed": 262626}
+    ],
+    "ambience": [
+      {"prompt": "still night lake, soft water lapping against a small wooden boat, crickets, gentle wind, ambience, no music", "shots": [1, 4]},
+      {"prompt": "riverside fishing village at dawn, water, birds, distant rooster, ambience, no music", "shots": [7, 7]},
+      {"prompt": "high mountain wind, distant birds, misty forest, ambience, no music", "shots": [17, 17]},
+      {"prompt": "outdoor bronze foundry, roaring furnace fire, crackling, distant crowd murmur, ambience, no music", "shots": [25, 25]},
+      {"prompt": "night storm over a marsh, wind and water splashing, distant thunder, ambience, no music", "shots": [30, 32]},
+      {"prompt": "misty lake at dawn, soft water, birds, very quiet, ambience, no music", "shots": [37, 41]},
+      {"prompt": "large furnace burning at night, roaring fire, crackling, ambience, no music", "shots": [50, 50]},
+      {"prompt": "still night lake, soft water lapping on reeds, crickets, gentle wind, ambience, no music", "shots": [53, 55]}
+    ],
+    "sfx": [
+      {"prompt": "large pot of water boiling and bubbling vigorously, sound effect, no music", "shot": 13, "at": 0.2, "seconds": 3.0},
+      {"prompt": "cascade of many metal coins and bronze ingots clinking and pouring, magical whoosh, sound effect, no music", "shot": 21, "at": 0.3, "seconds": 3.5},
+      {"prompt": "huge ancient bronze temple bell struck once, deep long resonant ring, sound effect, no music", "shot": 26, "offset": 0.4, "seconds": 6.0},
+      {"prompt": "heavy hooves galloping, ground rumbling like an earthquake, rocks falling, sound effect, no music", "shot": 28, "offset": 0.5, "seconds": 4.0},
+      {"prompt": "huge heavy object splashing into deep water, big splash then bubbling, sound effect, no music", "shot": 31, "at": 0.85, "seconds": 3.0},
+      {"prompt": "underwater deep muffled bubbles, sound effect, no music", "shot": 32, "offset": 0.3, "seconds": 3.0}
+    ],
+    "silences": [
+      {"shot": 2, "before": 1.2, "after": 0.5},
+      {"shot": 48, "before": 1.2, "after": 0.5},
+      {"shot": 50, "before": 1.5, "after": 0.8}
+    ],
+    "chapter_sting": {"prompt": "single deep bronze temple bell hit with long reverb tail, solemn, no music", "seconds": 6},
+    "music_lufs": -26.0,
+    "duck_ratio": 8
+  }
+}

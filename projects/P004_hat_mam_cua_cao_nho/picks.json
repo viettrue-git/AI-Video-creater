@@ -1,0 +1,34 @@
+{
+  "SH01": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH01_w0.00_s333333.png",
+    "seed": 333333
+  },
+  "SH02": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH02_w0.00_s333333.png",
+    "seed": 333333
+  },
+  "SH03": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH03_w0.00_s333333.png",
+    "seed": 333333
+  },
+  "SH04": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH04_w0.00_s333333.png",
+    "seed": 333333
+  },
+  "SH05": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH05_w0.00_s444444.png",
+    "seed": 444444
+  },
+  "SH06": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH06_w0.00_s111111.png",
+    "seed": 111111
+  },
+  "SH07": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH07_w0.00_s333333.png",
+    "seed": 333333
+  },
+  "SH08": {
+    "image": "projects/P004_hat_mam_cua_cao_nho/build/images-lora/SH08_w0.00_s333333.png",
+    "seed": 333333
+  }
+}

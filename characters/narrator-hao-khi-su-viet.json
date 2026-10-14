@@ -1,0 +1,10 @@
+{
+  "_note": "Narrator of channel 2 'Hào Khí Sử Việt' (Vietnamese history, long-form ~40 min, 16:9, documentary/epic tone). Voice chosen by the user from experiments/history-channel-voice-tests (13/10/2026: Thái Sơn first; then user picked a custom blend — Minh Đức × Quốc Tuấn timbre, Thanh Bình prosody codes, temperature 0.9 — saved in characters/voices/hao-khi-su-viet-narrator.npz).",
+  "name": "narrator-hao-khi-su-viet",
+  "ref_image": "",
+  "character_block": "",
+  "style_block": "",
+  "negative": "",
+  "ipa": {"weight_type": "linear", "end_at": 1.0},
+  "narration": {"voice": "characters/voices/hao-khi-su-viet-narrator.npz", "person": "third", "syllables_per_second": 3.6}
+}

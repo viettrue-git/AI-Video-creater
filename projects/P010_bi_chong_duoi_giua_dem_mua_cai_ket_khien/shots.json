@@ -1,0 +1,178 @@
+{
+ "_note": "Muse mode, dubbed: SCnn in muse-pack.txt = SHnn. Muse makes picture + sound effects only; dialogue items {who, text, at} are voiced with the cast's fixed VieNeu voices at 'at' seconds into the clip (adjust 'at' after watching each clip) and become the burned-in subtitles. clip_audio 0 mutes a clip's own sound.",
+ "shots": [
+  {
+   "id": "SH01",
+   "scene": "Đêm kỷ niệm bị phản bội",
+   "clip_audio": 0.0,
+   "dialogue": [
+    {
+     "who": "THANH LONG",
+     "text": "Anh... hôm nay là kỷ niệm ngày cưới mà...",
+     "at": 2.3
+    },
+    {
+     "who": "SAU RIENG",
+     "text": "Thì sao? Tôi chán cô lắm rồi.",
+     "at": 6.2
+    }
+   ]
+  },
+  {
+   "id": "SH02",
+   "scene": "Ném vali",
+   "dialogue": [
+    {
+     "who": "CHOM CHOM",
+     "text": "Nhà này giờ là của tôi.",
+     "at": 0.5
+    },
+    {
+     "who": "SAU RIENG",
+     "text": "Dọn đồ rồi đi đi!",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "id": "SH03",
+   "scene": "Bị đuổi giữa đêm mưa",
+   "dialogue": [
+    {
+     "who": "THANH LONG",
+     "text": "Anh thật sự đuổi em sao?",
+     "at": 1.0
+    },
+    {
+     "who": "SAU RIENG",
+     "text": "Đừng bao giờ quay lại!",
+     "at": 5.5
+    }
+   ]
+  },
+  {
+   "id": "SH04",
+   "scene": "Một mình dưới đèn đường",
+   "dialogue": [
+    {
+     "who": "THANH LONG",
+     "text": "Năm năm... mình nhận lại được gì thế này...",
+     "at": 4.5
+    }
+   ],
+   "clip_audio": 0.0
+  },
+  {
+   "id": "SH05",
+   "scene": "Chiếc ô của anh Dừa",
+   "dialogue": [
+    {
+     "who": "ANH DUA",
+     "text": "Trời lạnh lắm. Cô có sao không?",
+     "at": 0.5
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Tôi... không còn nơi nào để đi.",
+     "at": 5.0
+    }
+   ]
+  },
+  {
+   "id": "SH06",
+   "scene": "Ly trà gừng",
+   "dialogue": [
+    {
+     "who": "ANH DUA",
+     "text": "Uống cho ấm đi. Ngày mai sẽ khác.",
+     "at": 0.5
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Cảm ơn anh...",
+     "at": 6.5
+    }
+   ]
+  },
+  {
+   "id": "SH07",
+   "scene": "Bắt đầu lại"
+  },
+  {
+   "id": "SH08",
+   "scene": "Chôm Chôm cuỗm tiền",
+   "dialogue": [
+    {
+     "who": "CHOM CHOM",
+     "text": "Tiền của anh, tôi lấy hết rồi. Tạm biệt!",
+     "at": 0.3
+    },
+    {
+     "who": "SAU RIENG",
+     "text": "Cô... cô lừa tôi?!",
+     "at": 5.0
+    }
+   ]
+  },
+  {
+   "id": "SH09",
+   "scene": "Đi xin việc",
+   "dialogue": [
+    {
+     "who": "SAU RIENG",
+     "text": "Chỉ cần có việc làm... là được rồi.",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "SH10",
+   "scene": "Ghế giám đốc quay lại",
+   "dialogue": [
+    {
+     "who": "SAU RIENG",
+     "text": "Em... em làm giám đốc ở đây sao?",
+     "at": 0.3
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Phó giám đốc. Mời anh ngồi.",
+     "at": 4.5
+    }
+   ]
+  },
+  {
+   "id": "SH11",
+   "scene": "Lời cầu xin muộn màng",
+   "dialogue": [
+    {
+     "who": "SAU RIENG",
+     "text": "Cho anh một cơ hội nữa, được không?",
+     "at": 0.5
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Năm năm qua, em đã cho anh đủ cơ hội rồi.",
+     "at": 5.0
+    }
+   ],
+   "clip_audio": 0.0
+  },
+  {
+   "id": "SH12",
+   "scene": "Lời cầu hôn lúc hoàng hôn",
+   "dialogue": [
+    {
+     "who": "ANH DUA",
+     "text": "Từ nay, em sẽ không phải khóc một mình nữa.",
+     "at": 0.3
+    },
+    {
+     "who": "THANH LONG",
+     "text": "Em đồng ý.",
+     "at": 4.5
+    }
+   ]
+  }
+ ]
+}

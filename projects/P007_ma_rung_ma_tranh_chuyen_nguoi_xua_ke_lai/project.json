@@ -1,0 +1,43 @@
+{
+  "_note": "Long-form audio story, episode 2 (ghost/eerie). Outline by the user (dan-y-ma-rung-ma-tranh.md), deep-story direction A (~15 min). Narrator voice for this eerie episode: Thiền Tâm Đức (user pick 12/10/2026), slower than the channel's Thiện Minh.",
+  "id": "P007",
+  "title": "Ma Rừng, Ma Trành — Chuyện Người Xưa Kể Lại",
+  "character": "narrator-co-dai-thien-minh",
+  "video_source": "audio-story",
+  "narration": {"voice": "Thiền Tâm Đức", "syllables_per_second": 3.5},
+  "teaser": {
+    "hook_text": "Nửa đêm giữa rừng…\nai đó gọi đúng tên bạn",
+    "hook_seconds": 5,
+    "segments": [
+      {"shot": 1, "image": "IMG01", "focus": 0.5},
+      {"shot": 2, "image": "IMG02", "focus": 0.5},
+      {"shot": 20, "image": "IMG10", "focus": 0.3},
+      {"shot": 28, "image": "IMG14", "focus": 0.6}
+    ],
+    "end_card": {"image": "IMG02", "focus": 0.5, "seconds": 5, "title": "MA TRÀNH", "sub": "Đừng vội thưa khi bị gọi tên",
+                 "cta": "Nghe trọn câu chuyện 17 phút\ntrên YouTube — link ở bình luận"},
+    "music_index": 1
+  },
+  "story_audio": {
+    "music": [
+      {"prompt": "dark mysterious night forest ambient, low drones, sparse bamboo flute, slow distant drum like a heartbeat, eerie but calm, instrumental", "shots": [1, 15], "seed": 111111},
+      {"prompt": "slow suspense ambient, low strings, trembling dan bau notes, creeping tension, soft horror atmosphere, no jump scares, instrumental", "shots": [16, 34], "seed": 222222},
+      {"prompt": "haunting slow lullaby on guzheng with soft eerie pads, melancholic and mysterious, instrumental", "shots": [35, 45], "seed": 333333},
+      {"prompt": "solemn calm ritual ambient, soft temple bells, bamboo flute, reverent and peaceful, instrumental", "shots": [46, 51], "seed": 444444},
+      {"prompt": "calm reflective soft piano and warm strings, gentle hopeful daylight mood, instrumental", "shots": [52, 56], "seed": 555555},
+      {"prompt": "gentle melancholic night ambient, soft bamboo flute and low pads, rainy night, peaceful ending, instrumental", "shots": [57, 59], "seed": 666666}
+    ],
+    "ambience": [
+      {"prompt": "deep forest at night, crickets and insects, wind rustling leaves, distant owl, nature ambience, no music", "shots": [1, 7]},
+      {"prompt": "steady light rain on a leaf roof at night, small crackling campfire, forest ambience, no music", "shots": [18, 24]},
+      {"prompt": "foggy forest at night, slow footsteps on dry leaves, torches crackling, distant owl, ambience, no music", "shots": [25, 31]},
+      {"prompt": "night mountain village, distant people banging metal pots and pans, faint calling voices, wind, ambience, no music", "shots": [40, 42]},
+      {"prompt": "peaceful forest in daytime, birdsong, gentle breeze, small stream, nature ambience, no music", "shots": [52, 56]},
+      {"prompt": "rain falling at night outside a wooden house, soft thunder far away, ambience, no music", "shots": [57, 59]}
+    ],
+    "chapter_sting": {"prompt": "single deep low wooden temple drum hit with a long dark reverb tail, eerie, no music", "seconds": 6}
+  },
+  "series": "nghe-chuyen-co-dai",
+  "episode": 2,
+  "summary": "Ma trành — hồn người bị hổ vồ phải dụ người khác thế mạng; ba chuyện người làng kể về tiếng gọi tên giữa đêm, người lạ dẫn đường và đứa trẻ bị ma giấu; kiêng kỵ đi rừng và góc nhìn ngày nay."
+}

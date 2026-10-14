@@ -1,0 +1,167 @@
+HƯỚNG DẪN (đừng copy phần này)
+CÁCH NHANH (khuyên dùng): dán 1 LẦN khối "CẢ TẬP" ngay dưới đây (đính kèm 2 ảnh mẫu) → Muse tự làm đủ các cảnh
+và gom thành 1 file .zip → tải zip về, bỏ nguyên file zip vào muse-inbox (máy tự giải nén).
+Nếu Muse chỉ làm được 1 cảnh mỗi lần → dùng CÁCH TỪNG CẢNH (các khối SC01..SC07 phía dưới), hoặc trả lời Muse "continue".
+
+========================= CẢ TẬP (1 lần dán) =========================
+>>>>> COPY TỪ ĐÂY
+You are producing Episode 1 of my 3D animated series. Please generate ALL 7 scenes below, one separate video clip per scene, working through them one by one without waiting for my confirmation. When all are done, put every clip into ONE zip file and give me the download link. Name the files SC01.mp4, SC02.mp4, ... SC07.mp4.
+
+RULES FOR EVERY CLIP:
+- Vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+- Characters must look EXACTLY like the two attached reference images in every clip (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+- TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack. Voice: cheerful young boy.
+- TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace. Voice: soft gentle young girl.
+- Dialogue is in VIETNAMESE: speak ONLY the quoted lines, exactly as written, in order, with natural lip-sync. No narrator, no extra words, no English. Scenes marked "no dialogue" have no speech at all.
+- Natural sound effects and ambience only, NO background music. No text, no subtitles. Friendly, child-friendly tone.
+
+SC01 — early morning by a clear forest stream, golden autumn leaves falling. Tieu Mao is taking photos with a small camera, slips on a wet rock, the camera falls toward the water, he panics cutely. Tieu Ly steps out from a flower bush, gently picks up the camera with both paws and hands it to him with a shy sweet smile.
+Tieu Mao (panicked): "Ơ... ơ... máy ảnh của mình!"
+Tieu Mao (relieved, shy): "Cảm ơn bạn nhiều lắm! Mình là Tiểu Mão."
+Tieu Ly (smiling): "Mình là Tiểu Ly."
+
+SC02 — same stream bank, morning sun. Tieu Mao's fur is wet. He puts the camera on a rock and shakes his whole body from head to tail, water droplets sparkling in the sunlight, his fluffy tail spinning like a fan, then strikes a funny proud pose. Tieu Ly giggles with her paws over her mouth.
+Tieu Mao (shaking): "Đợi chút... sắp khô rồi... xong!"
+Tieu Ly (laughing): "Bạn trông như cái bông lau bị ướt vậy!"
+Tieu Mao (proud, flicks his tail): "Bông lau đẹp trai nhất rừng nhé!"
+
+SC03 — sitting on a rock by the stream, light rays through the leaves. Tieu Mao takes an old worn leather map out of his blue backpack, unfolds it and points at a flower-shaped mark. Tieu Ly leans in with sparkling curious eyes. Tieu Mao holds out his paw in invitation, Tieu Ly puts her paw on his, both smile brightly.
+Tieu Mao (excited): "Nhìn nè, Thung Lũng Hoa Nắng đó! Đi cùng mình nhé?"
+Tieu Ly (paw on his paw): "Chốt! Cấm bỏ cuộc giữa chừng đó nha!"
+
+SC04 (no dialogue) — Tieu Mao leads the way holding the old map, Tieu Ly hops happily behind him, walking together along a sunlit forest trail, an old wooden bridge visible in the distance ahead. Only footsteps, birds and forest ambience.
+
+SC05 — an old creaking wooden bridge over a rushing stream. In the middle of the bridge Tieu Ly stops, ears drooping, scared. Tieu Mao turns back and holds out his paw, she takes it, they cross together carefully, then laugh happily together on the other side.
+Tieu Ly (shaky): "Cầu rung quá... mình không dám đi..."
+Tieu Mao (kind smile, holding out his paw): "Nắm tay mình nè. Không sao đâu!"
+Tieu Ly (on the other side, giggling): "Cảm ơn bạn nha!"
+
+SC06 (no dialogue) — Tieu Mao and Tieu Ly walk through a mossy ancient forest and discover a narrow crevice between rocks glowing with mysterious soft blue-purple light. Both peek inside with curious wide eyes. Only a soft magical hum and forest ambience.
+
+SC07 — inside a magical cave full of glowing blue and purple mushrooms, soft light reflecting on their fur. Both amazed with wide eyes. Tieu Mao raises his camera to take a photo; Tieu Ly puts a tiny glowing mushroom on her head like a hat and twirls gracefully.
+Tieu Ly (amazed): "Woa... đẹp như trong mơ vậy!"
+Tieu Mao (camera up): "Đứng yên nào, mình chụp cho bạn một tấm!"
+Tieu Ly (twirling): "Mình có giống tiên rừng không?"
+Tieu Mao (shy smile): "Giống... giống lắm!"
+<<<<< ĐẾN ĐÂY
+
+
+CÁCH TỪNG CẢNH (dự phòng):
+- Mỗi khối nằm giữa ">>>>> COPY TỪ ĐÂY" và "<<<<< ĐẾN ĐÂY" là 1 lần dán vào Muse. Chỉ copy phần ở giữa.
+- Nội dung bằng tiếng Anh là đúng (Muse hiểu chính xác nhất); câu trong ngoặc kép là THOẠI TIẾNG VIỆT Muse sẽ nói.
+- Bước 0 làm 1 lần: lưu 2 ảnh vào characters/refs/muse-tieu-mao.png và characters/refs/muse-tieu-ly.png.
+- Từ cảnh SC01: đính kèm 2 ảnh mẫu mỗi lần dán. Làm SC01 trước, nghe giọng Việt; ổn thì làm tiếp.
+- Tải clip về, tên bắt đầu bằng SC01 ... SC07, bỏ vào: projects/P005_khu_rung_cua_hai_dua_minh_tap_1/muse-inbox/
+  Máy tự nhận và ghép khi đủ 7 clip.
+
+
+========================= BƯỚC 0 — ẢNH MẪU NHÂN VẬT =========================
+>>>>> COPY TỪ ĐÂY
+Create two separate character reference images, vertical 9:16, Pixar-style 3D animation, full body, front view, standing, neutral happy expression, plain soft light-grey background, no text:
+1) TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly and muzzle, big brown eyes, dark brown ear tips, fluffy orange tail with white tip, blue scarf around his neck, small blue backpack.
+2) TIEU LY: small cute female 3D cartoon fox, soft pastel pink fur, white belly and muzzle, big sparkling eyes with long eyelashes, small pink bow on her left ear, jade green bead necklace, fluffy pink tail with white tip.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC01 — Cuộc gặp gỡ bên suối =========================
+>>>>> COPY TỪ ĐÂY
+Make one video clip: vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+Characters must look EXACTLY like the attached reference images (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack. Voice: cheerful young boy.
+TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace. Voice: soft gentle young girl.
+Dialogue is in VIETNAMESE: speak ONLY the quoted lines, exactly as written, in order, with natural lip-sync. No narrator, no extra words, no English. Natural sound effects and ambience only, NO background music. No text, no subtitles. Friendly, child-friendly tone.
+
+Scene: early morning by a clear forest stream, golden autumn leaves falling. Tieu Mao is taking photos with a small camera, slips on a wet rock, the camera falls toward the water, he panics cutely. Tieu Ly steps out from a flower bush, gently picks up the camera with both paws and hands it to him with a shy sweet smile.
+Dialogue:
+Tieu Mao (panicked): "Ơ... ơ... máy ảnh của mình!"
+Tieu Mao (relieved, shy): "Cảm ơn bạn nhiều lắm! Mình là Tiểu Mão."
+Tieu Ly (smiling): "Mình là Tiểu Ly."
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC02 — Rũ nước, vẫy đuôi =========================
+>>>>> COPY TỪ ĐÂY
+Make one video clip: vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+Characters must look EXACTLY like the attached reference images (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack. Voice: cheerful young boy.
+TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace. Voice: soft gentle young girl.
+Dialogue is in VIETNAMESE: speak ONLY the quoted lines, exactly as written, in order, with natural lip-sync. No narrator, no extra words, no English. Natural sound effects and ambience only, NO background music. No text, no subtitles. Friendly, child-friendly tone.
+
+Scene: same stream bank, morning sun. Tieu Mao's fur is wet. He puts the camera on a rock and shakes his whole body from head to tail, water droplets sparkling in the sunlight, his fluffy tail spinning like a fan, then strikes a funny proud pose. Tieu Ly giggles with her paws over her mouth.
+Dialogue:
+Tieu Mao (shaking): "Đợi chút... sắp khô rồi... xong!"
+Tieu Ly (laughing): "Bạn trông như cái bông lau bị ướt vậy!"
+Tieu Mao (proud, flicks his tail): "Bông lau đẹp trai nhất rừng nhé!"
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC03 — Lời mời phiêu lưu =========================
+>>>>> COPY TỪ ĐÂY
+Make one video clip: vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+Characters must look EXACTLY like the attached reference images (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack. Voice: cheerful young boy.
+TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace. Voice: soft gentle young girl.
+Dialogue is in VIETNAMESE: speak ONLY the quoted lines, exactly as written, in order, with natural lip-sync. No narrator, no extra words, no English. Natural sound effects and ambience only, NO background music. No text, no subtitles. Friendly, child-friendly tone.
+
+Scene: sitting on a rock by the stream, light rays through the leaves. Tieu Mao takes an old worn leather map out of his blue backpack, unfolds it and points at a flower-shaped mark. Tieu Ly leans in with sparkling curious eyes. Tieu Mao holds out his paw in invitation, Tieu Ly puts her paw on his, both smile brightly.
+Dialogue:
+Tieu Mao (excited): "Nhìn nè, Thung Lũng Hoa Nắng đó! Đi cùng mình nhé?"
+Tieu Ly (paw on his paw): "Chốt! Cấm bỏ cuộc giữa chừng đó nha!"
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC04 — Đường đến cầu gỗ (không thoại) =========================
+>>>>> COPY TỪ ĐÂY
+Make one video clip: vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+Characters must look EXACTLY like the attached reference images (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack.
+TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace.
+No dialogue, no narrator, no background music: only footsteps, birds and forest ambience. No text, no subtitles.
+
+Scene: Tieu Mao leads the way holding the old map, Tieu Ly hops happily behind him, walking together along a sunlit forest trail, an old wooden bridge visible in the distance ahead.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC05 — Qua cầu gỗ =========================
+>>>>> COPY TỪ ĐÂY
+Make one video clip: vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+Characters must look EXACTLY like the attached reference images (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack. Voice: cheerful young boy.
+TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace. Voice: soft gentle young girl.
+Dialogue is in VIETNAMESE: speak ONLY the quoted lines, exactly as written, in order, with natural lip-sync. No narrator, no extra words, no English. Natural sound effects and ambience only, NO background music. No text, no subtitles. Friendly, child-friendly tone.
+
+Scene: an old creaking wooden bridge over a rushing stream. In the middle of the bridge Tieu Ly stops, ears drooping, scared. Tieu Mao turns back and holds out his paw, she takes it, they cross together carefully, then laugh happily together on the other side.
+Dialogue:
+Tieu Ly (shaky): "Cầu rung quá... mình không dám đi..."
+Tieu Mao (kind smile, holding out his paw): "Nắm tay mình nè. Không sao đâu!"
+Tieu Ly (on the other side, giggling): "Cảm ơn bạn nha!"
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC06 — Khe đá phát sáng (không thoại) =========================
+>>>>> COPY TỪ ĐÂY
+Make one video clip: vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+Characters must look EXACTLY like the attached reference images (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack.
+TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace.
+No dialogue, no narrator, no background music: only a soft magical hum and forest ambience. No text, no subtitles.
+
+Scene: Tieu Mao and Tieu Ly walk through a mossy ancient forest and discover a narrow crevice between rocks glowing with mysterious soft blue-purple light. Both peek inside with curious wide eyes.
+<<<<< ĐẾN ĐÂY
+
+
+========================= SC07 — Rừng nấm phát sáng =========================
+>>>>> COPY TỪ ĐÂY
+Make one video clip: vertical 9:16, 10 seconds, Pixar-style 3D animation, warm cinematic lighting, smooth natural motion.
+Characters must look EXACTLY like the attached reference images (same fur colors, scarf, backpack, bow, necklace). Do not add or remove accessories.
+TIEU MAO: small cute male 3D cartoon fox, bright orange fur, white belly, blue scarf, small blue backpack. Voice: cheerful young boy.
+TIEU LY: small cute female 3D cartoon fox, soft pink fur, white belly, long eyelashes, pink bow on left ear, jade green necklace. Voice: soft gentle young girl.
+Dialogue is in VIETNAMESE: speak ONLY the quoted lines, exactly as written, in order, with natural lip-sync. No narrator, no extra words, no English. Natural sound effects and ambience only, NO background music. No text, no subtitles. Friendly, child-friendly tone.
+
+Scene: inside a magical cave full of glowing blue and purple mushrooms, soft light reflecting on their fur. Both amazed with wide eyes. Tieu Mao raises his camera to take a photo; Tieu Ly puts a tiny glowing mushroom on her head like a hat and twirls gracefully.
+Dialogue:
+Tieu Ly (amazed): "Woa... đẹp như trong mơ vậy!"
+Tieu Mao (camera up): "Đứng yên nào, mình chụp cho bạn một tấm!"
+Tieu Ly (twirling): "Mình có giống tiên rừng không?"
+Tieu Mao (shy smile): "Giống... giống lắm!"
+<<<<< ĐẾN ĐÂY

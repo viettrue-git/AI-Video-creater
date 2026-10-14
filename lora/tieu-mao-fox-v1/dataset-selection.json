@@ -1,0 +1,146 @@
+{
+ "_note": "Character LoRA 'Tiểu Mão' (fox mascot, concept by the user via ChatGPT). 35 images approved by the user 09/10/2026 from experiments/fox-dataset-candidates (IPA start_at 0.3). Captions = pose/framing/background only; fur, markings, blue satchel + strap bind to the trigger.",
+ "trigger": "tieumao fox",
+ "images": [
+  {
+   "src": "experiments/fox-dataset-candidates/body/F01_w0.70_s111111.png",
+   "caption": "full body front view, standing with both arms raised happily, big smile, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F01_w0.70_s222222.png",
+   "caption": "full body front view, standing with both arms raised happily, big smile, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F02_w0.70_s111111.png",
+   "caption": "full body side profile view, walking to the left, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F02_w0.70_s222222.png",
+   "caption": "full body side profile view, walking to the left, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F03_w0.70_s222222.png",
+   "caption": "full body back view, the blue satchel strap and fluffy tail visible, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F04_w0.70_s111111.png",
+   "caption": "full body three-quarter view, standing proudly with paws on hips, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F09_w0.70_s111111.png",
+   "caption": "medium shot, thinking with a paw on his chin, puzzled look, inside a cozy wooden cabin, warm lamp light, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F09_w0.70_s222222.png",
+   "caption": "medium shot, thinking with a paw on his chin, puzzled look, inside a cozy wooden cabin, warm lamp light, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F10_w0.70_s111111.png",
+   "caption": "full body, running fast across a green grassy hill, tail flowing behind, clear blue sky, dynamic motion, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F10_w0.70_s222222.png",
+   "caption": "full body, running fast across a green grassy hill, tail flowing behind, clear blue sky, dynamic motion, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F10_w0.70_s333333.png",
+   "caption": "full body, running fast across a green grassy hill, tail flowing behind, clear blue sky, dynamic motion, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F11_w0.70_s111111.png",
+   "caption": "full body, jumping over a small forest stream, mid-air, dappled sunlight, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F11_w0.70_s222222.png",
+   "caption": "full body, jumping over a small forest stream, mid-air, dappled sunlight, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F11_w0.70_s333333.png",
+   "caption": "full body, jumping over a small forest stream, mid-air, dappled sunlight, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F12_w0.70_s111111.png",
+   "caption": "full body, sitting on a mossy rock, resting, looking at a mountain valley, soft morning light, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F12_w0.70_s222222.png",
+   "caption": "full body, sitting on a mossy rock, resting, looking at a mountain valley, soft morning light, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F13_w0.70_s111111.png",
+   "caption": "full body, crouching low and sniffing animal footprints on a dirt path, sunny forest, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F13_w0.70_s222222.png",
+   "caption": "full body, crouching low and sniffing animal footprints on a dirt path, sunny forest, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F14_w0.70_s111111.png",
+   "caption": "medium shot, holding an old paper map with both paws, excited look, ancient ruins in the background, bright daylight, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F14_w0.70_s222222.png",
+   "caption": "medium shot, holding an old paper map with both paws, excited look, ancient ruins in the background, bright daylight, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F15_w0.70_s222222.png",
+   "caption": "three-quarter back view, looking back over his shoulder toward the camera, snowy mountain pass, overcast light, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F16_w0.70_s111111.png",
+   "caption": "full body, standing on a red rock in a desert canyon, bright midday sun, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F16_w0.70_s222222.png",
+   "caption": "full body, standing on a red rock in a desert canyon, bright midday sun, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F16_w0.70_s333333.png",
+   "caption": "full body, standing on a red rock in a desert canyon, bright midday sun, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F17_w0.70_s111111.png",
+   "caption": "medium shot, sitting by a campfire at night, warm orange glow on his fur, starry sky, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F18_w0.70_s111111.png",
+   "caption": "full body, lying on his back on the grass looking up at the sky, relaxed smile, sunny afternoon, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F18_w0.70_s222222.png",
+   "caption": "full body, lying on his back on the grass looking up at the sky, relaxed smile, sunny afternoon, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F19_w0.70_s111111.png",
+   "caption": "medium shot, peeking out from behind a large tree trunk, playful expression, magical forest with soft light rays, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F19_w0.70_s222222.png",
+   "caption": "medium shot, peeking out from behind a large tree trunk, playful expression, magical forest with soft light rays, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F20_w0.70_s111111.png",
+   "caption": "full body, standing at the edge of a cliff looking at a vast valley, view from behind, wind in his fur, golden hour, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F20_w0.70_s222222.png",
+   "caption": "full body, standing at the edge of a cliff looking at a vast valley, view from behind, wind in his fur, golden hour, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/closeup/F05_w0.70_s222222.png",
+   "caption": "close-up portrait of his face, curious expression with ears perked up, bright daylight in a green forest, shallow depth of field"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/closeup/F06_w0.70_s111111.png",
+   "caption": "close-up portrait of his face, laughing happily with eyes squinted, sunny meadow with flowers, shallow depth of field"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/closeup/F07_w0.70_s111111.png",
+   "caption": "close-up portrait of his face, surprised expression with wide eyes and open mouth, misty forest, soft light"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/closeup/F07_w0.70_s222222.png",
+   "caption": "close-up portrait of his face, surprised expression with wide eyes and open mouth, misty forest, soft light"
+  }
+ ]
+}

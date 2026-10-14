@@ -1,0 +1,244 @@
+{
+ "intro": "tập 2 phim ngắn hoạt hình 3D của tôi",
+ "cast_block": [
+  "- THANH LONG: cô gái trẻ, đầu là quả thanh long hồng bóng với vảy xanh ở đầu, mắt to hiền; tập này mặc vest trắng thanh lịch.",
+  "- ANH DỪA: người đàn ông, đầu là quả dừa xanh tươi, nụ cười ấm áp, vest xám nhạt.",
+  "- BÀ MÍT: bà cụ sang trọng (mẹ Anh Dừa), đầu là quả mít to xanh vàng đầy gai nhỏ, đeo kính tròn, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai.",
+  "- CHÔM CHÔM: cô gái trẻ, đầu là quả chôm chôm đỏ rực nhiều lông, trang điểm đậm; tập này giả làm tiểu thư: váy hồng phấn điệu đà, túi xách hàng hiệu.",
+  "- SẦU RIÊNG: người đàn ông, đầu là quả sầu riêng xanh ô liu đầy gai, lông mày rậm; tập này mặc đồng phục bảo vệ xanh đậm, vẻ mặt đã hiền hơn."
+ ],
+ "new_refs": [
+  {
+   "name": "Bà Mít",
+   "file": "muse-fruit-ba-mit.png",
+   "prompt": "BÀ MÍT: bà cụ sang trọng, thân hình người bình thường nhưng đầu là quả mít to xanh vàng đầy gai nhỏ có khuôn mặt biểu cảm, đeo kính tròn nhỏ, vẻ mặt nghiêm khắc, áo dài nhung tím, vòng ngọc trai."
+  }
+ ],
+ "scenes": [
+  {
+   "title": "Lời chê đầu tiên",
+   "action": "Phòng khách biệt thự sang trọng ban ngày. Bà Mít ngồi trên ghế bành, đặt mạnh tách trà xuống bàn, kéo kính xuống nhìn Thanh Long từ đầu đến chân. Thanh Long đứng khép nép, hai tay đan vào nhau.",
+   "lines": [
+    {
+     "who": "BA MIT",
+     "emotion": "khinh khỉnh, chua chát",
+     "text": "Trời ơi! Một người bị chồng bỏ mà đòi làm dâu nhà này à?"
+    },
+    {
+     "who": "THANH LONG",
+     "emotion": "lúng túng, buồn",
+     "text": "Dạ... cháu..."
+    }
+   ]
+  },
+  {
+   "title": "Anh Dừa lên tiếng",
+   "action": "Cùng phòng khách. Anh Dừa bước lên đứng chắn trước Thanh Long, nhìn thẳng mẹ. Bà Mít khoanh tay, quay mặt đi.",
+   "lines": [
+    {
+     "who": "ANH DUA",
+     "emotion": "kiên quyết",
+     "text": "Mẹ! Cô ấy là người con yêu."
+    },
+    {
+     "who": "BA MIT",
+     "emotion": "gắt, bĩu môi",
+     "text": "Yêu thì ăn được à? Hừ!"
+    }
+   ]
+  },
+  {
+   "title": "Cô tiểu thư bước vào",
+   "action": "Cùng phòng khách. Bà Mít vỗ tay, cửa lớn mở ra, Chôm Chôm bước vào trong váy hồng phấn điệu đà, cúi chào duyên dáng. Bà Mít cười tươi đứng dậy đón.",
+   "lines": [
+    {
+     "who": "BA MIT",
+     "emotion": "hớn hở, tự hào",
+     "text": "Đây mới là con dâu mẹ chọn!"
+    },
+    {
+     "who": "CHOM CHOM",
+     "emotion": "ngọt xớt, giả tạo",
+     "text": "Dạ, cháu chào bác ạ!"
+    }
+   ]
+  },
+  {
+   "title": "Nhận ra kẻ thù",
+   "action": "Cận mặt Thanh Long, mắt mở to sững sờ khi nhận ra Chôm Chôm. Sau đó cận mặt Chôm Chôm nhếch môi cười, nháy mắt đầy thách thức.",
+   "lines": [
+    {
+     "who": "THANH LONG",
+     "emotion": "thì thầm, sững sờ",
+     "text": "Là cô ta... sao lại là cô ta?"
+    }
+   ]
+  },
+  {
+   "title": "Lời thách thức",
+   "action": "Hành lang biệt thự. Chôm Chôm đi ngang qua Thanh Long, ghé sát tai nói nhỏ rồi cười khẩy. Thanh Long quay lại, nắm chặt tay, ánh mắt giận dữ.",
+   "lines": [
+    {
+     "who": "CHOM CHOM",
+     "emotion": "thì thầm, đắc ý",
+     "text": "Lần trước là chồng cô. Lần này... là người yêu cô."
+    },
+    {
+     "who": "THANH LONG",
+     "emotion": "giận dữ, nghiến răng",
+     "text": "Cô... đúng là đồ tồi!"
+    }
+   ]
+  },
+  {
+   "title": "Bữa tối nịnh nọt",
+   "action": "Phòng ăn sang trọng buổi tối, bàn đầy món ăn. Chôm Chôm gắp thức ăn cho Bà Mít, Bà Mít cười tít mắt. Thanh Long ngồi im lặng ở góc bàn.",
+   "lines": [
+    {
+     "who": "BA MIT",
+     "emotion": "cười tít, khen",
+     "text": "Ôi, con bé này khéo quá!"
+    },
+    {
+     "who": "CHOM CHOM",
+     "emotion": "ngọt ngào, liếc Thanh Long",
+     "text": "Bác cứ ăn đi, để cháu lo hết ạ!"
+    }
+   ]
+  },
+  {
+   "title": "Ban công đêm",
+   "action": "Ban công biệt thự ban đêm, ánh đèn thành phố phía xa. Thanh Long đứng tựa lan can. Anh Dừa bước đến, khoác áo vest lên vai cô.",
+   "lines": [
+    {
+     "who": "ANH DUA",
+     "emotion": "dịu dàng",
+     "text": "Đừng buồn. Anh tin em."
+    },
+    {
+     "who": "THANH LONG",
+     "emotion": "quyết tâm",
+     "text": "Em sẽ cho mẹ anh thấy sự thật."
+    }
+   ]
+  },
+  {
+   "title": "Cuộc gọi bất ngờ",
+   "action": "Văn phòng giám đốc ban đêm, đèn bàn ấm. Thanh Long cầm điện thoại áp tai, ánh mắt kiên định nhìn ra cửa kính.",
+   "lines": [
+    {
+     "who": "THANH LONG",
+     "emotion": "nghiêm túc, quyết tâm",
+     "text": "Anh Sầu Riêng... tôi cần anh làm chứng."
+    }
+   ]
+  },
+  {
+   "title": "Người cũ sửa sai",
+   "action": "Chòi bảo vệ trước tòa nhà công ty ban đêm. Sầu Riêng trong đồng phục bảo vệ nghe điện thoại, gật đầu chắc nịch, ánh mắt hối hận nhưng kiên quyết.",
+   "lines": [
+    {
+     "who": "SAU RIENG",
+     "emotion": "chân thành, quyết tâm",
+     "text": "Được! Lần này... tôi sẽ sửa sai."
+    }
+   ]
+  },
+  {
+   "title": "Chiếc vòng gia truyền",
+   "action": "Tiệc ra mắt trong phòng khách biệt thự trang trí hoa. Bà Mít mở hộp nhung lấy chiếc vòng ngọc, chuẩn bị đeo cho Chôm Chôm. Chôm Chôm chìa tay, mắt sáng rỡ.",
+   "lines": [
+    {
+     "who": "BA MIT",
+     "emotion": "trang trọng",
+     "text": "Chiếc vòng gia truyền này... là của con!"
+    },
+    {
+     "who": "CHOM CHOM",
+     "emotion": "mừng rỡ",
+     "text": "Dạ, cháu cảm ơn bác!"
+    }
+   ]
+  },
+  {
+   "title": "Khoan đã!",
+   "action": "Cùng buổi tiệc. Cửa lớn bật mở, Sầu Riêng trong đồng phục bảo vệ bước vào, giơ tay chỉ về phía Chôm Chôm. Chôm Chôm tái mặt, rụt tay lại.",
+   "lines": [
+    {
+     "who": "SAU RIENG",
+     "emotion": "dõng dạc, tức giận",
+     "text": "Khoan đã! Cô ta là kẻ lừa đảo!"
+    },
+    {
+     "who": "CHOM CHOM",
+     "emotion": "hoảng hốt",
+     "text": "Anh... sao anh lại ở đây?"
+    }
+   ]
+  },
+  {
+   "title": "Sự thật phơi bày",
+   "action": "Cùng buổi tiệc. Thanh Long đưa máy tính bảng cho Bà Mít xem (màn hình quay về phía bà, người xem không thấy chữ). Bà Mít nhìn màn hình, tay run run, há hốc miệng.",
+   "lines": [
+    {
+     "who": "THANH LONG",
+     "emotion": "bình tĩnh, rõ ràng",
+     "text": "Bác xem đi. Cô ta đã lừa hết tiền anh ấy."
+    },
+    {
+     "who": "BA MIT",
+     "emotion": "sốc",
+     "text": "Trời ơi... thật vậy sao?"
+    }
+   ]
+  },
+  {
+   "title": "Hết đường chạy",
+   "action": "Cùng buổi tiệc. Chôm Chôm xách váy chạy về phía cửa, nhưng hai nhân viên bảo vệ đã đứng chắn ở cửa. Sầu Riêng khoanh tay đứng cạnh, nhìn cô ta.",
+   "lines": [
+    {
+     "who": "CHOM CHOM",
+     "emotion": "hoảng loạn, the thé",
+     "text": "Tránh ra! Tránh ra hết đi!"
+    },
+    {
+     "who": "SAU RIENG",
+     "emotion": "lạnh lùng",
+     "text": "Lần này cô không chạy được đâu!"
+    }
+   ]
+  },
+  {
+   "title": "Lời xin lỗi",
+   "action": "Phòng khách đã yên tĩnh. Bà Mít nắm lấy hai tay Thanh Long, mắt rơm rớm hối hận. Thanh Long mỉm cười hiền hậu, lắc đầu nhẹ.",
+   "lines": [
+    {
+     "who": "BA MIT",
+     "emotion": "hối hận, nghẹn ngào",
+     "text": "Bác sai rồi... con tha lỗi cho bác nhé."
+    },
+    {
+     "who": "THANH LONG",
+     "emotion": "dịu dàng",
+     "text": "Dạ, con không giận bác đâu ạ."
+    }
+   ]
+  },
+  {
+   "title": "Con dâu nhà này",
+   "action": "Bà Mít đeo chiếc vòng ngọc vào tay Thanh Long. Anh Dừa ôm vai cô, cả ba cười hạnh phúc trong ánh nắng chiều. Ở cửa, Sầu Riêng mỉm cười nhẹ rồi lặng lẽ quay đi.",
+   "lines": [
+    {
+     "who": "BA MIT",
+     "emotion": "ấm áp, vui vẻ",
+     "text": "Từ nay, con là con dâu nhà này!"
+    },
+    {
+     "who": "ANH DUA",
+     "emotion": "xúc động, vui",
+     "text": "Con cảm ơn mẹ!"
+    }
+   ]
+  }
+ ]
+}

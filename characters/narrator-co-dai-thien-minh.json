@@ -1,0 +1,10 @@
+{
+  "_note": "Narrator of the long-form audio-story channel (history & mythology). No on-screen character: visuals are illustrations. Voice picked by the user 11/10/2026: VieNeu 'Thiện Minh', original (no pitch/tempo change).",
+  "name": "narrator-co-dai-thien-minh",
+  "ref_image": "",
+  "character_block": "",
+  "style_block": "",
+  "negative": "",
+  "ipa": {"weight_type": "linear", "end_at": 1.0},
+  "narration": {"voice": "Thiện Minh", "person": "third", "syllables_per_second": 4.4}
+}

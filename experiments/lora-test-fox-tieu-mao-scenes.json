@@ -1,0 +1,14 @@
+{
+    "_note":  "LoRA test for Tiểu Mão (trigger + short identity block; IPA off). Unseen scenes.",
+    "character_block":  "tieumao fox, cute small fox cub, orange fur, white chest, small blue satchel bag",
+    "style_block":  "stylized 3D animated movie still, cute Pixar style 3D cartoon character, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+    "negative":  "human, man, boy, girl, person, realistic photo, real animal, wolf, dog, cat, multiple characters, two foxes, character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, backpack, big bag, vest, jacket, harness, shirt, pants, clothes, hat, black legs, dark brown legs, black paws, two tails, extra tail, extra legs, extra limbs, blurry, low quality, distorted, deformed, bad anatomy, text, watermark, logo, blue feet, blue shoes, shoes, boots, standing still, facing the camera, scarf",
+    "scenes":  {
+                   "T1":  "close-up portrait of his face, curious expression, autumn forest, shallow depth of field",
+                   "T2":  "full body side profile view, walking to the right along a riverbank, morning light",
+                   "T3":  "view from behind, full body, standing on a hill looking at a village far away, sunset",
+                   "T4":  "medium shot, sitting on a log by a campfire at night, dark starry sky, warm orange glow",
+                   "T5":  "full body, fishing with a small rod on a wooden dock by a lake, sunny day",
+                   "T6":  "close-up portrait, mischievous sly grin, one eyebrow raised, inside a cozy library with old books"
+               }
+}

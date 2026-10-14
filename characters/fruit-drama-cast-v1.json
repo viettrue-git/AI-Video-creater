@@ -1,0 +1,49 @@
+{
+  "_note": "Cast of the fruit-head drama series (Muse mode: Muse renders picture + sound effects from reference images; dialogue is dubbed with one fixed VieNeu voice per cast member by muse_dialogue_dubbing_with_character_voices.py). narration.voice is required by VideoProject but unused in Muse mode.",
+  "name": "fruit-drama-cast-v1",
+  "ref_image": "",
+  "character_block": "",
+  "style_block": "",
+  "negative": "",
+  "ipa": {
+    "weight_type": "linear",
+    "end_at": 1.0
+  },
+  "narration": {
+    "voice": "Thiện Minh",
+    "person": "third",
+    "syllables_per_second": 4.4
+  },
+  "cast": {
+    "THANH LONG": {
+      "name": "Thanh Long",
+      "refs": "characters/refs/muse-fruit-thanh-long.png",
+      "look": "young woman, human body, head is a glossy bright pink dragon fruit with green-tipped scales, big gentle eyes, cream blouse and beige skirt",
+      "voice": "Trúc Ly"
+    },
+    "SAU RIENG": {
+      "name": "Sầu Riêng",
+      "refs": "characters/refs/muse-fruit-sau-rieng.png",
+      "look": "man, human body, head is a spiky olive-green durian, thick eyebrows, smug face, dark navy suit",
+      "voice": "Hải Đăng"
+    },
+    "CHOM CHOM": {
+      "name": "Chôm Chôm",
+      "refs": "characters/refs/muse-fruit-chom-chom.png",
+      "look": "young woman, human body, head is a bright red hairy rambutan, heavy makeup, tight black dress, red high heels",
+      "voice": "Đoan Trang"
+    },
+    "ANH DUA": {
+      "name": "Anh Dừa",
+      "refs": "characters/refs/muse-fruit-anh-dua.png",
+      "look": "man, human body, head is a fresh green coconut, warm kind smile, light grey suit",
+      "voice": "Quốc Tuấn"
+    },
+    "BA MIT": {
+      "name": "Bà Mít",
+      "refs": "characters/refs/muse-fruit-ba-mit.png",
+      "look": "elderly woman (Anh Dua's mother), human body, head is a large green-yellow spiky jackfruit, small round glasses, stern face, purple velvet ao dai, pearl necklace",
+      "voice": "Ngọc Linh"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_note": "Drama ep 2 (Muse mode, dubbed, fast pacing ~6 s per scene via trim_end). Clips SC01..SC15 from muse-pack.txt -> muse-inbox/. Pipeline: ingest -> dub (VieNeu cast voices) -> AI music -> upscale -> subtitles -> assemble.",
+  "id": "P011",
+  "title": "Mẹ chồng chê con dâu — Ai ngờ cô tiểu thư lại là kẻ lừa đảo",
+  "character": "fruit-drama-cast-v1",
+  "video_source": "muse",
+  "use_lora": false,
+  "pad_seconds": 0.0,
+  "tail_seconds": 0.0,
+  "fade_out": 1.0,
+  "music": {
+    "prompt": "tense dramatic soap opera underscore, pizzicato strings and low piano pulses building suspense, a sharp dramatic hit in the middle, then warm hopeful strings for a happy family ending, instrumental",
+    "bpm": 100
+  },
+  "ambience": [],
+  "sfx": [
+    {
+      "prompt": "porcelain teacup set down hard on a wooden table, sharp clink, cartoon sound effect, no music",
+      "shot": "SH01",
+      "offset": 0.1,
+      "seconds": 0.8
+    },
+    {
+      "prompt": "dramatic orchestral hit, sudden tense sting, cartoon sound effect, no music",
+      "shot": "SH11",
+      "offset": 0.1,
+      "seconds": 1.5
+    }
+  ],
+  "series": "drama-trai-cay",
+  "episode": 2,
+  "summary": "Bà Mít chê Thanh Long là người bị chồng bỏ và chọn 'tiểu thư' Chôm Chôm làm con dâu; Thanh Long nhờ Sầu Riêng (nay làm bảo vệ) làm chứng, vạch mặt Chôm Chôm ngay trong tiệc ra mắt, Bà Mít xin lỗi và trao vòng gia truyền cho Thanh Long.",
+  "script_approved": "bbf0034fbdde"
+}

@@ -1,0 +1,234 @@
+{
+ "_note": "LoRA v2 for 'Tiểu Mão' (approved by the user 10/10/2026): 39 pose-variety renders made with LoRA v1 e5, 8 head-and-shoulders crops (close-ups), 10 best v1 images (identity anchor). Captions = pose/framing/background only.",
+ "trigger": "tieumao fox",
+ "images": [
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V01_w0.00_s111111.png",
+   "caption": "sitting on the ground with legs stretched out, side view, eating a red apple, sunny meadow"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V01_w0.00_s222222.png",
+   "caption": "sitting on the ground with legs stretched out, side view, eating a red apple, sunny meadow"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V02_w0.00_s222222.png",
+   "caption": "lying on his belly on the grass, chin resting on his paws, looking at a ladybug, close to the camera, morning light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V03_w0.00_s111111.png",
+   "caption": "running fast to the right, side view, legs mid-stride, tail flying behind, dirt path in a forest, motion blur background"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V03_w0.00_s222222.png",
+   "caption": "running fast to the right, side view, legs mid-stride, tail flying behind, dirt path in a forest, motion blur background"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V04_w0.00_s111111.png",
+   "caption": "full body side profile, walking to the left on a mossy log over a stream, dappled sunlight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V04_w0.00_s222222.png",
+   "caption": "full body side profile, walking to the left on a mossy log over a stream, dappled sunlight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V05_w0.00_s111111.png",
+   "caption": "view from behind, walking away along a snowy path between pine trees, footprints in the snow, overcast"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V05_w0.00_s222222.png",
+   "caption": "view from behind, walking away along a snowy path between pine trees, footprints in the snow, overcast"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V06_w0.00_s111111.png",
+   "caption": "curled up asleep inside a hollow tree trunk, eyes closed, tail wrapped around his body, night, soft moonlight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V06_w0.00_s222222.png",
+   "caption": "curled up asleep inside a hollow tree trunk, eyes closed, tail wrapped around his body, night, soft moonlight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V07_w0.00_s111111.png",
+   "caption": "climbing up a large rock with both paws, seen from below, low angle, blue sky"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V07_w0.00_s222222.png",
+   "caption": "climbing up a large rock with both paws, seen from below, low angle, blue sky"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V08_w0.00_s222222.png",
+   "caption": "jumping high in the air, all four paws off the ground, catching a falling autumn leaf, orange forest"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V09_w0.00_s111111.png",
+   "caption": "sitting at a small wooden desk, side view, writing in a notebook with a pencil, candle light at night"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V10_w0.00_s111111.png",
+   "caption": "kneeling by a puddle, looking at his reflection in the water, three-quarter back view, rainy day"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V10_w0.00_s222222.png",
+   "caption": "kneeling by a puddle, looking at his reflection in the water, three-quarter back view, rainy day"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V11_w0.00_s111111.png",
+   "caption": "sitting cross-legged in a small wooden boat on a calm lake, rowing with an oar, sunset"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V11_w0.00_s222222.png",
+   "caption": "sitting cross-legged in a small wooden boat on a calm lake, rowing with an oar, sunset"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V12_w0.00_s111111.png",
+   "caption": "hiding behind a large mushroom, only half of his face peeking out, magical glowing forest at dusk"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V13_w0.00_s111111.png",
+   "caption": "three-quarter view from the side, looking up at the starry night sky with wonder, sitting on a hill"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V13_w0.00_s222222.png",
+   "caption": "three-quarter view from the side, looking up at the starry night sky with wonder, sitting on a hill"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V14_w0.00_s111111.png",
+   "caption": "crouching and digging in the sand with both paws, side view, sunny beach, seashells"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V14_w0.00_s222222.png",
+   "caption": "crouching and digging in the sand with both paws, side view, sunny beach, seashells"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V15_w0.00_s111111.png",
+   "caption": "walking through tall golden wheat field, view from behind and slightly above, late afternoon"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V17_w0.00_s111111.png",
+   "caption": "pushing open a heavy old wooden door with both paws, side view, dark stone castle hallway, torch light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V18_w0.00_s111111.png",
+   "caption": "holding a small lantern up high, walking into a dark cave, three-quarter back view, blue crystals glowing"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V18_w0.00_s222222.png",
+   "caption": "holding a small lantern up high, walking into a dark cave, three-quarter back view, blue crystals glowing"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V19_w0.00_s222222.png",
+   "caption": "sliding down a snowy hill on a wooden sled, excited open mouth, winter, bright daylight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V20_w0.00_s222222.png",
+   "caption": "sitting under a big leaf as an umbrella, rain falling, side view, green forest"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V21_w0.00_s111111.png",
+   "caption": "dancing happily on one leg, arms out, spinning, flower field, bright daylight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V21_w0.00_s222222.png",
+   "caption": "dancing happily on one leg, arms out, spinning, flower field, bright daylight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V22_w0.00_s111111.png",
+   "caption": "carefully crossing a rope bridge over a deep canyon, side view, wind, dramatic clouds"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V22_w0.00_s222222.png",
+   "caption": "carefully crossing a rope bridge over a deep canyon, side view, wind, dramatic clouds"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V23_w0.00_s111111.png",
+   "caption": "reading a big old book lying open on the floor, lying on his side, cozy room, fireplace light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V24_w0.00_s111111.png",
+   "caption": "drinking water from a stream with his paws cupped, kneeling, side view, forest, morning light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V24_w0.00_s222222.png",
+   "caption": "drinking water from a stream with his paws cupped, kneeling, side view, forest, morning light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V25_w0.00_s111111.png",
+   "caption": "waving goodbye with one paw while walking away, looking back over his shoulder, sunset road"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/pose/V25_w0.00_s222222.png",
+   "caption": "waving goodbye with one paw while walking away, looking back over his shoulder, sunset road"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C13_from_V07_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, big open smile, rocky cliff and blue sky behind"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C17_from_V09_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, gentle smile, dark wooden room, warm candle light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C19_from_V10_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, curious smile, holding his blue satchel, soft daylight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C27_from_V14_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, happy open smile, sunny beach"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C33_from_V17_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, shy smile, old wooden door, warm torch light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C41_from_V21_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, laughing, flower field, bright daylight"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C47_from_V24_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, calm smile, holding a small blue cup, green forest, morning light"
+  },
+  {
+   "src": "experiments/fox-dataset-v2-candidates/closeup-crops/C49_from_V25_w0.00_s111111.png",
+   "caption": "close-up portrait of his face and shoulders, soft smile, warm sunset light"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F01_w0.70_s111111.png",
+   "caption": "full body front view, standing with both arms raised happily, big smile, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F01_w0.70_s222222.png",
+   "caption": "full body front view, standing with both arms raised happily, big smile, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F02_w0.70_s111111.png",
+   "caption": "full body side profile view, walking to the left, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F04_w0.70_s111111.png",
+   "caption": "full body three-quarter view, standing proudly with paws on hips, plain blue background, blue flowers on the ground"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F10_w0.70_s111111.png",
+   "caption": "full body, running fast across a green grassy hill, tail flowing behind, clear blue sky, dynamic motion, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F10_w0.70_s222222.png",
+   "caption": "full body, running fast across a green grassy hill, tail flowing behind, clear blue sky, dynamic motion, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F11_w0.70_s222222.png",
+   "caption": "full body, jumping over a small forest stream, mid-air, dappled sunlight, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F12_w0.70_s111111.png",
+   "caption": "full body, sitting on a mossy rock, resting, looking at a mountain valley, soft morning light, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F13_w0.70_s111111.png",
+   "caption": "full body, crouching low and sniffing animal footprints on a dirt path, sunny forest, blue flowers"
+  },
+  {
+   "src": "experiments/fox-dataset-candidates/body/F14_w0.70_s111111.png",
+   "caption": "medium shot, holding an old paper map with both paws, excited look, ancient ruins in the background, bright daylight, blue flowers"
+  }
+ ]
+}

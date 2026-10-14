@@ -1,0 +1,19 @@
+{
+  "_note": "First Muse-mode episode: clips (9:16, Vietnamese dialogue + sound effects) made in Meta Muse from muse-pack.txt and dropped into muse-inbox/ as SC01..SC07.mp4. Pipeline: ingest -> AI music bed (ducked under the clip audio) -> upscale -> assemble.",
+  "id": "P005",
+  "title": "Khu rừng của hai đứa mình — Tập 1: Cuộc gặp gỡ bất ngờ",
+  "character": "fox-tieu-mao-v1",
+  "video_source": "muse",
+  "pad_seconds": 0.0,
+  "tail_seconds": 0.0,
+  "fade_out": 1.0,
+  "end_card": {"text": "Còn tiếp...", "seconds": 2.5},
+  "music": {
+    "prompt": "playful gentle adventure, light pizzicato strings, soft ukulele and glockenspiel, warm and curious, a little magical at the end, instrumental",
+    "bpm": 95
+  },
+  "ambience": [],
+  "series": "khu-rung-hai-dua",
+  "episode": 1,
+  "summary": "Tiểu Mão trượt chân làm rơi máy ảnh, được Tiểu Ly nhặt giúp; hai bạn rủ nhau theo tấm bản đồ, qua cầu gỗ và tìm thấy hang nấm phát sáng."
+}

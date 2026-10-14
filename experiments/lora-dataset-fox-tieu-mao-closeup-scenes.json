@@ -1,0 +1,12 @@
+﻿{
+    "_note":  "Close-up variant of lora-dataset-fox-tieu-mao-scenes.json: head-only character block (no legs/feet/tail words, which forced full-body framing).",
+    "character_block":  "head and shoulders of a cute anthropomorphic fox cub, bright orange fluffy fur, white muzzle and cheeks, dark brown ear tips, big expressive brown eyes, thin blue shoulder strap with a black buckle",
+    "style_block":  "stylized 3D animated movie still, cute Pixar style 3D cartoon character, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+    "negative":  "human, man, boy, girl, person, realistic photo, real animal, wolf, dog, cat, multiple characters, two foxes, character sheet, reference sheet, multiple views, turnaround, collage, split screen, grid, backpack, big bag, vest, jacket, harness, shirt, pants, clothes, hat, black legs, dark brown legs, black paws, two tails, extra tail, extra legs, extra limbs, blurry, low quality, distorted, deformed, bad anatomy, text, watermark, logo, full body, legs, feet, standing, wide shot",
+    "scenes":  {
+                   "F05":  "extreme close-up headshot filling the frame, close-up portrait of his face, curious expression with ears perked up, bright daylight in a green forest, shallow depth of field",
+                   "F06":  "extreme close-up headshot filling the frame, close-up portrait of his face, laughing happily with eyes squinted, sunny meadow with flowers, shallow depth of field",
+                   "F07":  "extreme close-up headshot filling the frame, close-up portrait of his face, surprised expression with wide eyes and open mouth, misty forest, soft light",
+                   "F08":  "extreme close-up headshot filling the frame, close-up portrait of his face, mischievous sly grin, one eyebrow raised, warm golden sunset light"
+               }
+}

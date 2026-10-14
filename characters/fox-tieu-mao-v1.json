@@ -1,0 +1,12 @@
+{
+  "_note": "Mascot 'Tiểu Mão' (fox; concept image made by the user with ChatGPT, 09/10/2026 — commercial OK). Use with \"use_lora\": true. LoRA v1 learned mostly front-facing standing poses; v2 (pose-variety dataset) replaces it when verified.",
+  "name": "fox-tieu-mao-v1",
+  "ref_image": "characters/refs/fox-adventurer-original-concept.png",
+  "character_block": "cute small fox cub, orange fur, white chest, small blue satchel bag",
+  "style_block": "stylized 3D animated movie still, cute Pixar style 3D cartoon character, cinematic 3D render, soft global illumination, detailed environment, vertical cinematic composition",
+  "negative": "human, person, realistic photo, multiple characters, two foxes, character sheet, multiple views, collage, grid, clothes, jacket, vest, shirt, blue feet, blue shoes, shoes, boots, extra tail, extra legs, extra limbs, blurry, low quality, distorted, deformed, bad anatomy, text, watermark, logo",
+  "ipa": {"weight_type": "linear", "end_at": 1.0},
+  "narration": {"name": "Tiểu Mão", "voice": "Trúc Ly", "person": "first", "self": "tớ", "audience": "các cậu", "syllables_per_second": 4.9},
+  "lora": {"_note": "v2 epoch 6 (10/10/2026; 57 imgs incl. pose-variety + close-up crops). Still leans to front-facing standing with one seed; with 4 seeds/shot each hard scene (sitting, side walk, medium close-up, night) had 1-3 usable picks. v1 = tieu-mao-fox-v1-e5.",
+           "file": "tieu-mao-fox-v2-e6.safetensors", "strength": 0.65, "trigger": "tieumao fox"}
+}
