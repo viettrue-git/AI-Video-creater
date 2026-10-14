@@ -5,7 +5,8 @@ Tài liệu gốc để **bạn và Claude nói chung một ngôn ngữ** khi s�
 
 **Đang sản xuất: dòng B (truyện audio dài) và dòng C (drama trái cây).** Dòng A (hoạt hình Tiểu Mão) **ngừng sản xuất từ 14/10/2026**
 (không khả thi); giữ lại bảng bên dưới và P004–P005 làm tư liệu.
-Tài liệu cũ [ai-video-factory-project-overview-v3.md](ai-video-factory-project-overview-v3.md) mô tả giai đoạn ComfyUI (P001–P004) — nay chỉ còn là phương án dự phòng.
+Tài liệu cũ [ai-video-factory-project-overview-v3.md](ai-video-factory-project-overview-v3.md) mô tả giai đoạn ComfyUI (P001–P004) — đã ngừng; model ảnh/video nội bộ (SDXL, Wan, LoRA) đã xóa 14/10/2026.
+ComfyUI vẫn dùng cho nhạc/hiệu ứng AI (ACE-Step, Stable Audio) và upscale (Real-ESRGAN).
 
 ---
 
