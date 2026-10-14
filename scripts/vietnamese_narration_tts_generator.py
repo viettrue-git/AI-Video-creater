@@ -57,11 +57,21 @@ def trailing_babble_start(audio, rate, min_gap=0.55, max_burst=0.8):
     return None
 
 
+def load_voice(voice):
+    """Preset name -> (name, {}); a custom voice file (.npz from vieneu_blended_voice_demo.py: speaker_emb + codes +
+    temperature) -> ({"speaker_emb", "codes"}, {"temperature": t})."""
+    if not str(voice).lower().endswith(".npz"):
+        return voice, {}
+    data = np.load(ROOT / voice)
+    return {"speaker_emb": data["speaker_emb"], "codes": data["codes"]}, {"temperature": float(data["temperature"])}
+
+
 def synthesize_clean(tts, text, voice, retries=4):
     """Infer, regenerating when trailing babble is detected; last resort: cut the stray tail."""
     rate = tts.sample_rate
+    voice, options = load_voice(voice)
     for attempt in range(1, retries + 1):
-        audio = np.asarray(tts.infer(text, voice=voice), dtype=np.float32)
+        audio = np.asarray(tts.infer(text, voice=voice, **options), dtype=np.float32)
         cut = trailing_babble_start(audio, rate)
         if cut is None:
             return audio, "ok" if attempt == 1 else f"ok after {attempt} tries"
@@ -90,7 +100,7 @@ def main():
 
     any_failed = False
     for voice in [v.strip() for v in args.voices.split(",") if v.strip()]:
-        voice_dir = out_root / slug(voice)
+        voice_dir = out_root / slug(Path(voice).stem if voice.lower().endswith(".npz") else voice)
         voice_dir.mkdir(parents=True, exist_ok=True)
         pieces, rows, started = [], [], time.time()
         for no, desc, text in shots:

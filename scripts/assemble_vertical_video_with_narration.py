@@ -7,6 +7,7 @@ Final audio is loudness-normalized (-14 LUFS, Shorts/TikTok) -> H.264 yuv420p + 
 Manifest JSON (paths relative to repo root):
   {"output": "projects/P001_rung_co/final/vs.mp4", "music": null, "music_start": 0, "music_volume": 0.25,
    "fade_out": 1.5, "ambience": [{"file": "...mp3", "start": 0, "end": 19.4, "volume": 0.3, "fade": 1.5}],
+   "sfx": [{"file": "...flac", "start": 0.4, "duration": 1.5, "volume": 0.8}],
    "shots": [{"id": "SH01", "clip": "...mp4", "narration": "...wav", "duration": 3.16}, ...]}
 Usage: python scripts/assemble_vertical_video_with_narration.py projects/P001_rung_co/vertical-slice-manifest.json
 """
@@ -20,6 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 WIDTH, HEIGHT, FPS = 1080, 1920, 24
+CARD_FONT = "C\\:/Windows/Fonts/seguibl.ttf"  # Segoe UI Black: bold, has Vietnamese glyphs (colon escaped for drawtext)
 
 
 def find_ffmpeg():
@@ -47,20 +49,36 @@ def build_command(ffmpeg, manifest):
         d = shot["duration"]
         v, a = 2 * i, 2 * i + 1
         grade = f"eq={shot['eq']}," if shot.get("eq") else ""  # per-shot color fix, e.g. "gamma=1.2"
+        ts = float(shot.get("trim_start", 0))  # skip a slow clip start (stronger hook); audio cut the same way
+        vcut = f"trim=start={ts},setpts=PTS-STARTPTS," if ts else ""
+        acut = f"atrim=start={ts},asetpts=PTS-STARTPTS," if ts else ""
         # scale to cover 1080x1920 then center-crop (never stretch); hold last frame if clip is short
-        filters.append(f"[{v}:v]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase:flags=lanczos,"
+        filters.append(f"[{v}:v]{vcut}scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase:flags=lanczos,"
                        # deflicker: safety net vs brightness pulses (VAE temporal-tile seams, 2026-10-05)
                        f"crop={WIDTH}:{HEIGHT},fps={FPS},deflicker=mode=pm:size=9,{grade}"
                        f"tpad=stop_mode=clone:stop_duration={d},"
                        f"trim=duration={d},setpts=PTS-STARTPTS,setsar=1[v{i}]")
-        filters.append(f"[{a}:a]aresample=48000,aformat=channel_layouts=stereo,apad,"
+        filters.append(f"[{a}:a]{acut}aresample=48000,aformat=channel_layouts=stereo,apad,"
                        f"atrim=duration={d},asetpts=PTS-STARTPTS[a{i}]")
         concat_inputs += f"[v{i}][a{i}]"
     total = sum(s["duration"] for s in shots)
     fade = float(manifest.get("fade_out", 0))
     video_fade = f",fade=t=out:st={total - fade:.3f}:d={fade}" if fade else ""
     filters.append(f"{concat_inputs}concat=n={len(shots)}:v=1:a=1[vcat][voice]")
-    filters.append(f"[vcat]null{video_fade}[vout]")
+    card = manifest.get("end_card")  # e.g. {"text": "Còn tiếp...", "seconds": 2.5}: text over the last seconds
+    card_filter = ""
+    if card:
+        st, text = total - float(card.get("seconds", 2.5)), card["text"].replace(":", "\\:").replace("'", "")
+        card_filter = (f",drawtext=fontfile='{CARD_FONT}':text='{text}':fontsize=96:fontcolor=white:borderw=6:"
+                       f"bordercolor=black@0.6:x=(w-text_w)/2:y=h*0.16:enable='gte(t,{st:.2f})':"
+                       f"alpha='min(1,(t-{st:.2f})/0.6)'")
+    subs = ""
+    if manifest.get("subtitles"):  # relative path, run from the repo root (avoids Windows drive-colon escaping)
+        # libass units: PlayResY 288 -> FontSize 11 ~ 73 px on 1920; MarginV 70 keeps lines above the Shorts/TikTok UI
+        style = ("FontName=Segoe UI Black,FontSize=11,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,"
+                 "BorderStyle=1,Outline=1.6,Shadow=0,Alignment=2,MarginV=70,MarginL=20,MarginR=20")
+        subs = f",subtitles='{manifest['subtitles']}':force_style='{style}'"
+    filters.append(f"[vcat]null{subs}{card_filter}{video_fade}[vout]")
     # background bed = music + ambience layers; the whole bed is ducked under the narrator
     bed_layers, next_input = [], 2 * len(shots)
     if music:
@@ -89,6 +107,18 @@ def build_command(ffmpeg, manifest):
         last = "mix"
     else:
         last = "voice"
+    fx_layers = []  # one-shot SFX: placed at their moment, short fade-out, NOT ducked under the narrator
+    for k, fx in enumerate(manifest.get("sfx", [])):
+        dur, delay = float(fx["duration"]), int(float(fx["start"]) * 1000)
+        cmd += ["-i", str(ROOT / fx["file"])]
+        filters.append(f"[{next_input}:a]aresample=48000,aformat=channel_layouts=stereo,atrim=duration={dur},"
+                       f"afade=t=out:st={max(dur - 0.3, 0):.3f}:d=0.3,volume={fx.get('volume', 0.5)},"
+                       f"adelay={delay}|{delay},apad,atrim=duration={total}[fx{k}]")
+        fx_layers.append(f"[fx{k}]")
+        next_input += 1
+    if fx_layers:
+        filters.append(f"[{last}]{''.join(fx_layers)}amix=inputs={len(fx_layers) + 1}:normalize=0[withfx]")
+        last = "withfx"
     audio_fade = f",afade=t=out:st={total - fade:.3f}:d={fade}" if fade else ""
     filters.append(f"[{last}]loudnorm=I=-14:TP=-1.5:LRA=11{audio_fade}[aout]")
     out = ROOT / manifest["output"]

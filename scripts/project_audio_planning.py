@@ -4,11 +4,13 @@ project.json audio entries may use one of:
   {"prompt": "campfire crackling at night", "from_shot": "SH04", "to_shot": "SH06"}  -> AI-generated (Stable Audio 3 / ACE-Step)
   {"tag": "forest", ...}                                                              -> shared library
   {"file": "path.mp3", ...}                                                           -> explicit file
-"music" is one entry (whole video); "ambience" is a list of entries placed by shot range.
+"music" is one entry (whole video); "ambience" is a list of entries placed by shot range;
+"sfx" is a list of one-shot effects: {"prompt": "...", "shot": "SH01", "offset": 0.4, "seconds": 1.5} (AI only).
 """
 import hashlib
 
 MIN_AI_SECONDS, MAX_SFX_SECONDS, TAIL_MARGIN = 10.0, 120.0, 2.0  # Stable Audio 3 Small-SFX: up to 2:00
+MIN_ONESHOT_SECONDS = 3.0  # one-shot effects are generated short (a long render repeats the sound), then trimmed
 
 
 def segment_bounds(plan, entry, total):
@@ -23,18 +25,21 @@ def ai_audio_jobs(project):
     plan = {p["id"]: p for p in project.plan()}
     total = sum(p["duration"] for p in plan.values())
     entries = [("music", project.config.get("music"))] + [("sfx", a) for a in project.config.get("ambience", [])]
+    entries += [("oneshot", s) for s in project.config.get("sfx", [])]
     jobs = []
     for kind, entry in entries:
         if not entry or "prompt" not in entry:
             continue
         if kind == "music":
             seconds = total + TAIL_MARGIN
+        elif kind == "oneshot":
+            seconds = max(float(entry.get("seconds", 2.0)) + 1.0, MIN_ONESHOT_SECONDS)
         else:
             start, end = segment_bounds(plan, entry, total)
             seconds = min(max(end - start + TAIL_MARGIN, MIN_AI_SECONDS), MAX_SFX_SECONDS)
         seconds = round(seconds, 1)
         seed = entry.get("seed", 111111)
         key = hashlib.sha1(f"{kind}|{entry['prompt']}|{seconds}|{seed}|{entry.get('bpm', 90)}".encode()).hexdigest()[:10]
-        jobs.append({"kind": kind, "entry": entry, "prompt": entry["prompt"], "seconds": seconds, "seed": seed,
+        jobs.append({"kind": "music" if kind == "music" else "sfx", "layer": kind, "entry": entry, "prompt": entry["prompt"], "seconds": seconds, "seed": seed,
                      "bpm": entry.get("bpm", 90), "path": project.build / "audio-ai" / f"{kind}-{key}.flac"})
     return jobs

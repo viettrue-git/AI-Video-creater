@@ -36,6 +36,8 @@ def parse_args():
     p.add_argument("--ref", default="projects/P001_rung_co/refs/char_main_front.png")
     p.add_argument("--checkpoint", default="sd_xl_base_1.0.safetensors")
     p.add_argument("--weight-type", default="linear")
+    p.add_argument("--start-at", type=float, default=0.0,
+                   help="IPA starts later (e.g. 0.3): the prompt sets pose/framing first, IPA adds identity")
     p.add_argument("--end-at", type=float, default=1.0)
     p.add_argument("--steps", type=int, default=25)
     p.add_argument("--cfg", type=float, default=6.5)
@@ -112,7 +114,8 @@ def main():
                     "IN_NegativePrompt": {"text": scenes_cfg["negative"]},
                     "IN_Size": {"width": args.width, "height": args.height},
                     "IN_RefImage": {"image": ref_name},
-                    "IN_IPAdapter": {"weight": weight, "weight_type": args.weight_type, "end_at": args.end_at},
+                    "IN_IPAdapter": {"weight": weight, "weight_type": args.weight_type,
+                                     "start_at": args.start_at, "end_at": args.end_at},
                     "IN_Sampler": {"seed": seed, "steps": args.steps, "cfg": args.cfg},
                     "OUT_Image": {"filename_prefix": f"tests/{args.test_id}/{image_path.stem}"},
                 })

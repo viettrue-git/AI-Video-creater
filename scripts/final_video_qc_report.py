@@ -11,7 +11,7 @@ import av
 import numpy as np
 from PIL import Image, ImageDraw
 
-from video_project_config import ROOT, VideoProject, read_json
+from video_project_config import ROOT, VideoProject
 
 FPS = 24
 
@@ -20,7 +20,7 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     p = VideoProject(sys.argv[1])
     final = sorted((p.dir / "final").glob(f"{p.id}-v*.mp4"), key=lambda f: f.stat().st_mtime)[-1]
-    plan = read_json(p.build / "plan.json")
+    plan = p.plan()  # computed (Muse projects have no plan.json: no TTS/plan stage)
     fade = float(p.config.get("fade_out", 1.5))
     frames = [f.to_image() for f in av.open(str(final)).decode(video=0)]
     small = [np.asarray(f.convert("L").resize((54, 96)), np.float32) for f in frames]

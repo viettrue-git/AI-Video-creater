@@ -20,7 +20,7 @@ CATALOG = LIB / "catalog.csv"
 AUDIO_EXT = {".mp3", ".wav", ".ogg", ".m4a", ".flac"}
 COLUMNS = ["tag", "kind", "file", "duration_s", "lufs", "license_proof", "source", "added"]
 # Pre-mix loudness targets that matched the hand-balanced P001 v4 mix (music ×0.35, forest ×3.0, wind ×2.5)
-TARGET_LUFS = {"music": -22.0, "sfx": -30.0}
+TARGET_LUFS = {"music": -22.0, "sfx": -30.0, "oneshot": -20.0}  # oneshot: per-shot SFX, not ducked
 
 
 def kind_of(tag):
