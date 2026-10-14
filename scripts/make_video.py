@@ -16,11 +16,14 @@ import sys
 
 from desktop_notification import notify
 from image_picker_web_server import run_picker
-from video_project_config import ROOT, VideoProject, read_json, write_json
+from validate_video_project import check_approved
+from video_project_config import RISKY_MOTION, ROOT, VideoProject, read_json, write_json
 
 COMFY_PY = ROOT / "ComfyUI" / "venv" / "Scripts" / "python.exe"
 TTS_PY = ROOT / "tools" / "vieneu-tts-venv" / "Scripts" / "python.exe"
+ASR_PY = ROOT / "tools" / "asr-venv" / "Scripts" / "python.exe"  # faster-whisper (subtitle timing)
 STAGES = ["tts", "plan", "audio", "images", "pick", "videos", "upscale", "assemble"]
+MUSE_STAGES = ["ingest", "dub", "audio", "upscale", "subtitles", "assemble"]  # "video_source": "muse": clips come from muse-inbox/
 
 
 def run(cmd, py=COMFY_PY, check=True):
@@ -54,7 +57,7 @@ def stage_tts(p):
     if timing.exists() and timing.stat().st_mtime > script.stat().st_mtime:
         return print("  giọng đọc đã có")
     run(["scripts/vietnamese_narration_tts_generator.py", "--script", p.rel(script),
-         "--voices", p.config["voice"], "--out", p.rel(p.build / "audio")], py=TTS_PY)
+         "--voices", p.voice, "--out", p.rel(p.build / "audio")], py=TTS_PY)
 
 
 def stage_plan(p):
@@ -63,10 +66,8 @@ def stage_plan(p):
                if s["id"] not in timing or not (p.voice_dir / f"shot_{int(s['id'][2:]):02d}.wav").exists()]
     if missing:  # catch it now, not hours later at assemble time
         raise SystemExit(f"DỪNG: thiếu giọng đọc cho {missing} — kiểm tra [SHOT n] trong script.txt khớp shots.json")
-    # lessons learned (P001/P002): these words in motion prompts tend to cause brightness flicker / finger glitches
-    risky = re.compile(r"\b(flicker\w*|shimmer\w*|twinkl\w*|strob\w*|fingers?)\b", re.I)
     for shot in p.shots:
-        if (m := risky.findall(shot["motion"])):
+        if (m := RISKY_MOTION.findall(shot["motion"])):
             print(f"  CẢNH BÁO {shot['id']}: prompt chuyển động có {sorted(set(m))} — dễ gây nhấp nháy/lỗi ngón tay")
     plan = p.plan()
     write_json(p.build / "plan.json", plan)
@@ -160,6 +161,32 @@ def stage_videos(p):
     run(["scripts/render_video_queue.py"])
 
 
+def stage_ingest(p):
+    from muse_clip_ingest import ingest
+    done, missing, problems = ingest(p)
+    print(f"  nhận clip Muse: {done or 'không có clip mới'}")
+    if problems or missing:
+        raise SystemExit("DỪNG: " + "; ".join(problems + ([f"thiếu clip {missing} trong muse-inbox/"] if missing else [])))
+
+
+def stage_dub(p):
+    """Muse episodes with dialogue objects {"who", "text", "at"}: fixed VieNeu voice per character, mixed onto the clip."""
+    if not any(isinstance(d, dict) for s in p.shots for d in s.get("dialogue", [])):
+        return print("  thoại do Muse nói -> không lồng tiếng")
+    run(["scripts/muse_dialogue_dubbing_with_character_voices.py", p.id], py=TTS_PY)
+
+
+def stage_subtitles(p):
+    """Muse episodes: burned-in Vietnamese subtitles from shots.json "dialogue", timed by Whisper."""
+    srt, lines = p.build / "subtitles.srt", [s for s in p.shots if s.get("dialogue")]
+    sources = [p.dir / "shots.json"] + [p.voice_dir / f"shot_{int(s['id'][2:]):02d}.wav" for s in lines]
+    if not lines:
+        return print("  không có thoại -> không phụ đề")
+    if srt.exists() and all(srt.stat().st_mtime > f.stat().st_mtime for f in sources):
+        return print("  phụ đề đã có")
+    run(["scripts/muse_dialogue_subtitles.py", p.id], py=ASR_PY)
+
+
 def stage_upscale(p):
     names = [s["id"] for s in p.shots if not p.upscaled_path(s["id"]).exists()]
     if not names:
@@ -205,12 +232,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("project")
     ap.add_argument("command", nargs="?", default="run", choices=["run", "status"])
-    ap.add_argument("--only", choices=STAGES)
+    ap.add_argument("--only", choices=sorted(set(STAGES + MUSE_STAGES)))
     ap.add_argument("--redo", nargs=2, metavar=("SHOT", "images|video"))
     args = ap.parse_args()
     p = VideoProject(args.project)
     if args.command == "status":
         return status(p)
+    check_approved(p)  # before --redo deletes anything and for every --only stage
     if args.redo:
         shot = next((s for s in p.shots if s["id"] == args.redo[0].upper()), None)
         if shot is None or args.redo[1] not in ("images", "video"):
@@ -227,16 +255,17 @@ def main():
             write_json(p.dir / "picks.json", picks)
         p.clip_path(shot["id"]).unlink(missing_ok=True)
         p.upscaled_path(shot["id"]).unlink(missing_ok=True)
+    last_output = read_json(p.build / "state.json", {}).get("last_assembly", {}).get("output")
     try:
-        for name in ([args.only] if args.only else STAGES):
+        for name in ([args.only] if args.only else (MUSE_STAGES if p.muse else STAGES)):
             print(f"\n== {name.upper()} ==")
             globals()[f"stage_{name}"](p)
     except (SystemExit, Exception) as e:  # tell the user right away instead of failing silently
         notify(f"{p.id}: bị lỗi, đã dừng", str(e).strip()[:200] or type(e).__name__)
         raise
-    if not args.only or args.only == "assemble":
-        final = read_json(p.build / "state.json", {}).get("last_assembly", {}).get("output", "")
-        notify(f"{p.id}: video đã xong", final or "Xem thư mục final.")
+    final = read_json(p.build / "state.json", {}).get("last_assembly", {}).get("output")
+    if final and final != last_output:  # only when a new MP4 was written (assemble skips unchanged inputs)
+        notify(f"{p.id}: video đã xong", final)
     print("\nXong. Xem trạng thái: make_video.py", p.id, "status")
 
 

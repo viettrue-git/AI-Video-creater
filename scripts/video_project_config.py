@@ -14,6 +14,8 @@ ROOT = Path(__file__).resolve().parent.parent
 FPS = 24
 MIN_FRAMES, MAX_FRAMES = 49, 117  # Wan 5B: 117 frames is the longest clip proven stable on 16GB RAM
 DEFAULT_SEEDS = [111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888]
+# lessons learned (P001/P002): these words in motion prompts tend to cause brightness flicker / finger glitches
+RISKY_MOTION = re.compile(r"\b(flicker\w*|shimmer\w*|twinkl\w*|strob\w*|fingers?|paws?)\b", re.I)
 
 
 def read_json(path, default=None):
@@ -34,7 +36,8 @@ SHOT_HEADER = re.compile(r"^\[SHOT\s+(\d+)\s*[—-]?\s*(.*?)\]\s*$")
 def parse_shots(script_path):
     """Return [(shot_no, description, narration_text)] from a '[SHOT n — description]' narrator script."""
     shots, current = [], None
-    for line in Path(script_path).read_text(encoding="utf-8-sig").splitlines():
+    text = unicodedata.normalize("NFC", Path(script_path).read_text(encoding="utf-8-sig"))  # NFD breaks \w / \b
+    for line in text.splitlines():
         if line.strip() == "---":
             break
         header = SHOT_HEADER.match(line.strip())
@@ -75,6 +78,14 @@ class VideoProject:
         self.build = self.dir / "build"
         # LoRA mode (opt-in per project): character LoRA replaces IP-Adapter (IPA pulled poses to the front-facing ref)
         self.lora = self.character.get("lora") if self.config.get("use_lora") else None
+        # Muse mode: clips (with dialogue + sound effects) are made in Meta Muse and dropped into muse-inbox/
+        self.muse = self.config.get("video_source") == "muse"
+        # narrator: character default (voice, 1st/3rd person, speaking rate) with per-project overrides
+        self.narration = {**self.character.get("narration", {}), **self.config.get("narration", {})}
+        # project-level "voice" (P001-P003) still wins; otherwise narration.voice (project override > character)
+        self.voice = self.config.get("voice") or self.narration.get("voice")
+        if not self.voice:
+            raise SystemExit(f"Thiếu giọng đọc: thêm narration.voice vào characters/{self.config['character']}.json hoặc project.json")
 
     def ipa_weight(self, shot):
         return 0.0 if self.lora else float(shot["ipa_weight"])
@@ -85,7 +96,9 @@ class VideoProject:
     # ---- paths -------------------------------------------------------------------------------
     @property
     def voice_dir(self):
-        return self.build / "audio" / slug(self.config["voice"])
+        # Muse: each clip's own audio stands in for the narration track
+        voice = Path(self.voice).stem if str(self.voice).lower().endswith(".npz") else self.voice  # custom blended voice file
+        return self.build / "audio" / ("muse-clip" if self.muse else slug(voice))
 
     def image_path(self, shot, seed):
         folder = "images-lora" if self.lora else "images"  # keep LoRA candidates apart from older IPA ones
@@ -108,6 +121,10 @@ class VideoProject:
 
     # ---- timing plan --------------------------------------------------------------------------
     def narration_seconds(self):
+        if self.muse:  # shot length = Muse clip length minus optional "trim_start"/"trim_end" (pad/tail 0 in project.json)
+            trims = {s["id"]: float(s.get("trim_start", 0)) + float(s.get("trim_end", 0)) for s in self.shots}
+            return {sid: round(v["seconds"] - trims.get(sid, 0), 2)
+                    for sid, v in read_json(self.build / "muse-clips.json", {}).items()}
         timing = self.voice_dir / "timing.csv"
         with timing.open(encoding="utf-8-sig") as f:
             return {f"SH{int(r['shot']):02d}": float(r["seconds"]) for r in csv.DictReader(f)}
@@ -160,6 +177,8 @@ class VideoProject:
         with_file = lambda e: {**e, "file": generated[id(e)]} if e and id(e) in generated else e  # noqa: E731
         music = self.resolve_audio(with_file(self.config.get("music")), kind="music")
         manifest = {"output": self.rel(output), "fade_out": self.config.get("fade_out", 1.5),
+                    "end_card": self.config.get("end_card"),
+                    "subtitles": self.rel(self.build / "subtitles.srt") if (self.build / "subtitles.srt").exists() else None,
                     "music": music["file"] if music else None,
                     "music_start": music.get("start", 0) if music else 0,
                     "music_volume": music.get("volume", 0.3) if music else 0, "ambience": [], "shots": []}
@@ -167,11 +186,16 @@ class VideoProject:
             start, end = segment_bounds(plan, amb, total)
             manifest["ambience"].append({"file": amb["file"], "start": start, "end": end,
                                          "volume": amb.get("volume", 0.3), "fade": amb.get("fade", 1.5)})
+        manifest["sfx"] = []  # one-shot effects at a moment inside a shot; mixed after ducking (not under the voice)
+        for fx in (self.resolve_audio(with_file(s), kind="oneshot") for s in self.config.get("sfx", [])):
+            manifest["sfx"].append({"file": fx["file"], "start": round(plan[fx["shot"]]["start"] + fx.get("offset", 0), 2),
+                                    "duration": fx.get("seconds", 2.0), "volume": fx.get("volume", 0.5)})
         for shot in self.shots:
             entry = {"id": shot["id"], "clip": self.rel(self.upscaled_path(shot["id"])),
                      "narration": self.rel(self.voice_dir / f"shot_{int(shot['id'][2:]):02d}.wav"),
                      "duration": plan[shot["id"]]["duration"]}
-            if shot.get("eq"):
-                entry["eq"] = shot["eq"]
+            for key in ("eq", "trim_start"):
+                if shot.get(key):
+                    entry[key] = shot[key]
             manifest["shots"].append(entry)
         return manifest
