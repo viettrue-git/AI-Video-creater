@@ -17,6 +17,14 @@ experiments/*.log
 projects/**/shots/
 projects/**/final/
 projects/*/build/
+# Muse deliveries (clips, illustration images, zips) — re-downloadable, back up separately
+projects/*/muse-inbox/
+projects/*/illustration-inbox/
+*.zip
+*.zip.done
+*.webp
+*.exe
+library/audio/inbox/
 *.safetensors
 *.gguf
 *.ckpt
